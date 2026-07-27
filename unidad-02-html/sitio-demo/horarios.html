@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="horario de clases del sitio-demo">
     <meta name="keywords" content="horario, clases, sitio demo">
-    <meta name="author" content="Rosa.Almendarez"
-    <title>Horario | sitio demo</title>
+    <meta name="author" content="Rosa.Almendarez">
+    <title> title> Horario | sitio demo</title>
 
 </head>
 <body>
@@ -15,7 +15,7 @@
  <!--Lista desordenada-->
  <h2>Materiales del Curso con lista desordenada--</h2>
 
- <ul type="squere">
+ <ul type="square"></ul>
      <!--Type de los ul: square, circle, disc-->
     <li> Visual Studio Code</li>
     <li> Cuenta de GitHub</li>
@@ -61,7 +61,8 @@
         <!--Lista anidada, usada en menús y submenús-->
         <h2>Temario de la unidad: con lista anidada</h2>
         <!--Emmet: ul>li>ul>li*2-->
-        <ul><li>Estructura de un documento
+        <ul>
+            <li>Estructura de un documento
             <ul>
                 <li>DOCTYPE Y HTML</li>
                 <li>Head y Metadatos</li>
@@ -76,6 +77,38 @@
                 <li>Listas y tablas</li>
             </ul>
         </li>
+
+        <br/><br/>
+        <hr/>
+
+        <!--Esqueleto de la tabla-->
+        <table border="2">
+            <caption>Horario de clases del programa</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Día</th>
+                    <th scope="col">Modalidad</th>
+                    <th scope="col">Horario</th>
+                    <th scope="col">Contenidos</th>
+
+                  </tr>
+            </thead>
+            <!--tbody: cuerpo de la tabla-->
+             <tbody>
+                  <tr>
+                    <td>Lunes</td>
+                    <td>Presencial</td>
+                    <td>1:30pm a 5:30pm</td>
+                    <td>Listas y tablas</td>
+                </tr>
+             </tbody>
+
+        <!--El pie de la tabla-->
+
+        <tfoot>
+            <tr>
+            </table>
+            <!--table>caption+>thead>tr>th*4^^tbody>tr*5>td*4-->
 
 </body>
 </html>
