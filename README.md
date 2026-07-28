@@ -65,7 +65,6 @@ Portafolio-Codificación de Páginas Web/
 |  S07   | Multimedia                     |                                                                                                                                                                                                                                                                                                                                                      |                    [ver](unidad-02/)                    |                                                                     [ver](recursos/)                                                                      |
 |  S08   | SVG y repaso                   |                                                                                                                                                                                                                                                                                                                                                      |                    [ver](unidad-02/)                    |                                                                     [ver](recursos/)                                                                      |
 
-</details>
 
 <details markdown="1">
 <summary><b>Unidad 3 · Codificación de hojas de estilo</b> (sesiones 11 a 20)</summary>
