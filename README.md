@@ -48,60 +48,46 @@ Portafolio-Codificación de Páginas Web/
 
 ### Unidad 1 · Implementación de control de versiones
 
+| Sesión | Tema |Qué aprendí | Trabajo | Captura |
 
+| :----: | :------------------------- | :------------------------------------------------------------------------------------------------------- | :---------------: | :--------------: |
 
-| Sesión | Tema                       |Qué aprendí                                                                                                |      Trabajo      |     Captura      |
-
-| :----: | :------------------------- | :-------------------------------------------------------------------------------------------------------  | :---------------: | :--------------: |
-
-|  S01   | Git y GitHub               | Inicialización de repositorios locales mediante Git -Conexión del repositorio local con GitHub, 
-repositorio remoto -Configuración inicial para el control de versiones -Establecimiento de buenas prácticas de commits para el desarrollo web     | [ver](unidad-01/) | [ver](recursos/) 
+| S01 | Git y GitHub | Inicialización de repositorios locales mediante Git -Conexión del repositorio local con GitHub,
+repositorio remoto -Configuración inicial para el control de versiones -Establecimiento de buenas prácticas de commits para el desarrollo web | [ver](unidad-01/) | [ver](recursos/)
 
 <details markdown="1">
 <summary><b>Unidad 2 · Etiquetas y atributos HTML</b> (sesiones 2 a 8)</summary>
 
-| Sesión | Tema                          |Qué aprendí                                                                                                  |      Trabajo      |     Captura      |
+| Sesión | Tema |Qué aprendí | Trabajo | Captura |
 
-|  S02   |Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo                                                        | [ver](unidad-03/) | [ver](recursos/) |
+| S02 |Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo | [ver](unidad-03/) | [ver](recursos/) |
 
+| S03 |Estructura del documento HTML5 | | [ver](unidad-02-html/) | [ver](recursos/) |
 
-|  S03   |Estructura del documento HTML5 |                                                                                                             | [ver](unidad-03/) | [ver](recursos/) |
+| S04 | Texto, enlaces y anclas | Agregamos el Favicon y los metadatosde una pagina personales; profundizamos en la estructura y
+organización de documentos HTML mediante la implementación de etiquetas semánticas, mejorando la accesibilidad y el orden lógico del sitio.
+Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna dentro de la misma página | [ver](unidad-02-html/sitio-demo/articulo.html/) | [ver](recursos/S.4.Enlaces-tipo-anclas1.png) |
 
+| S05 | Listas y tablas | | [ver](unidad-02/) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
 
-|  S04   | Texto, enlaces y anclas       | Agregamos el Favicon y los metadatosde una pagina personales; profundizamos en la estructura y 
-organización de documentos HTML mediante la implementación de etiquetas semánticas, mejorando la accesibilidad y el orden lógico del sitio. 
-Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna dentro de la misma página                                              | [ver](unidad-03/) | [ver](recursos/) |
+| S06 | Formularios y semántica | | [ver](unidad-02/) | [ver](recursos/) |
 
+| S07 | Multimedia | | [ver](unidad-02/) | [ver](recursos/) |
 
-|  S05   | Listas y tablas               |                                                                                                             | [ver](unidad-03/) | [ver](recursos/) |
+| S08 | SVG y repaso | | [ver](unidad-02/) | [ver](recursos/) |
 
+<!-- FALTA CORREGIR ESTA PARTEMWWOWOOOOOWWWWWWWW -->
 
+| S02 | Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo | [ver](unidad-02-html/sitio-demo/recursos/horarios.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
+| S03 | Estructura del documento HTML5 | | [ver](unidad-02/) | [ver](recursos/) |
+| S04 | Texto, enlaces y anclas | Agregamos el Favicon y los metadatosde una pagina personales; profundizamos en la estructura y organización de documentos HTML |
 
-|  S06   | Formularios y semántica       |                                                                                                             | [ver](unidad-03/) | [ver](recursos/) |
-
-
-
-|  S07   | Multimedia                    |                                                                                                             | [ver](unidad-03/) | [ver](recursos/) |
-
-
-
-|  S08   | SVG y repaso                  |                                                                                                             | [ver](unidad-03/) | [ver](recursos/) |
-
-
-
-
-
-| Sesión | Tema                           | Qué aprendí                                                                                                                                                                                                                                                                                                                                        |                         Trabajo                         |                                                                          Captura                                                                          |
-| :----: | :----------------------------- | :----------------------------------------------: | :-----------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|  S02   | Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo                                                                                                                                                                                                                                                                                                 | [ver](unidad-02-html/sitio-demo/recursos/horarios.html) |                                              [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png)                                              |
-|  S03   | Estructura del documento HTML5 |                                                                                                                                                                                                                                                                                                                                                      |                    [ver](unidad-02/)                    |                                                                     [ver](recursos/)                                                                      |
-|  S04   | Texto, enlaces y anclas        | Agregamos el Favicon y los metadatosde una pagina personales; profundizamos en la estructura y organización de documentos HTML 
-mediante la implementación de etiquetas semánticas, mejorando la accesibilidad y el orden lógico del sitio. Asimismo, integramos 
-enlaces de tipo ancla para optimizar la navegación interna dentro de la misma página |                    [ver](unidad-02/)                    | [ver](recursos/Evidencia-favicon.png/S.4.Enlaces-tipo-anclas1.png/S.4.Enlaces-tipo-anclas.png/S.4.Enlaces-tipo-anclas3.png/S.4.Texto_Semantico_citas.png) |
-|  S05   | Listas y tablas                | Aprendí a trabajar los 3 tipos de lista y estilos. También la parte de tablas y                                                                                                                                                                                                                                                                      |        [ver](unidad-02/sitio-demo/horario.html)         |                                              [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png)                                              |
-|  S06   | Formularios y semántica        |                                                                                                                                                                                                                                                                                                                                                      |                    [ver](unidad-02/)                    |                                                                     [ver](recursos/)                                                                      |
-|  S07   | Multimedia                     |                                                                                                                                                                                                                                                                                                                                                      |                    [ver](unidad-02/)                    |                                                                     [ver](recursos/)                                                                      |
-|  S08   | SVG y repaso                   |                                                                                                                                                                                                                                                                                                                                                      |                    [ver](unidad-02/)                    |                                                                     [ver](recursos/)       
+mediante la implementación de etiquetas semánticas, mejorando la accesibilidad y el orden lógico del sitio. Asimismo, integramos
+enlaces de tipo ancla para optimizar la navegación interna dentro de la misma página | [ver](unidad-02/) | [ver](recursos/Evidencia-favicon.png/S.4.Enlaces-tipo-anclas1.png/S.4.Enlaces-tipo-anclas.png/S.4.Enlaces-tipo-anclas3.png/S.4.Texto_Semantico_citas.png) |
+| S05 | Listas y tablas | Aprendí a trabajar los 3 tipos de lista y estilos. También la parte de tablas y | [ver](unidad-02/sitio-demo/horario.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
+| S06 | Formularios y semántica | | [ver](unidad-02/) | [ver](recursos/) |
+| S07 | Multimedia | | [ver](unidad-02/) | [ver](recursos/) |
+| S08 | SVG y repaso | | [ver](unidad-02/) | [ver](recursos/)
 
 </details>
 
@@ -208,7 +194,7 @@ _(Escribir al cerrar el módulo. Tres preguntas para orientarla:)_
 
 <div align="center" markdown="1">>
 
-**Nombre Completo** · correo@ejemplo.com
+**Rosa.Almendarez** · rosa.almendarez09@gmail.com
 
 Portafolio elaborado durante el módulo CSTI12002 · Instituto Nacional de Aprendizaje · 2026
 
