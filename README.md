@@ -72,7 +72,7 @@ Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna
 
 | S06 | Formularios y semántica | | [ver](unidad-02/) | [ver](recursos/) |
 
-| S07 | Multimedia | | [ver](unidad-02/) | [ver](recursos/) |
+| S07 | Multimedia |Etiquetas, formatos y portadas y subtítulos | [ver](unidad-02-html/sitio-demo/galeria.html) | [ver](recursos/S.07.Multimedia.png) |
 
 | S08 | SVG y repaso | | [ver](unidad-02/) | [ver](recursos/) |
 
