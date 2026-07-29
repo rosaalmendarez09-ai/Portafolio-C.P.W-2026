@@ -25,18 +25,41 @@
     </nav>
   </header>
 
-  <main>
-    <h1>Galería</h1>
+  <main> id="contenido">
+
+    <article>
+    <h2>Galería</h2>
+
     <!-- Imagen y sus atributos -->
-     <img src="recursos/S.7_Lab01" alt="Imagen de la galería de un laboratorio de informatica" width="600" height="400"/>  
+     <img src="recursos/S.7_Lab01.jpg" alt="Imagen de la galería de un laboratorio de informatica" width="600" height="400"/>  
     
-    <!-- FIGURE: Agrupa un contenido con una explicación --> 
+    <!-- FIGURE: Agrupa un contenido con un pie --> 
     <figure>
-        <img src="recursos/S.7_Lab02" alt="Imagen de la galería de un laboratorio de informatica" width="800" height="500"/>
+        <img src="recursos/S.7_Lab02.jpg" alt="Imagen de la galería de un laboratorio de informatica" width="800" height="500"/>
         <figcaption>Imagen de la galería de un laboratorio de informatica</figcaption>
     </figure>
 
+    <!-- Varios formatos: el navegador elige uno -->
 
+    <figure>
+        <picture>
+            <source srcset="recursos/S.7_Lab01.webp" type="image/webp">
+            <source srcset="recursos/S.7_Lab02.jpg" type="image/jpeg">
+            <img src="recursos/S.7_Lab01.jpg" alt="Imagen de la galería de un laboratorio de informatica" width="800" height="500"/>
+        </picture>
+        <figcaption>Imagen de la galería de un laboratorio de informatica</figcaption>
+        </figure>
+    </article>
+
+    <section> id="audio">
+        <h3>Audio de bienvenida</h3>
+        
+        audio controls>
+            <source src="recursos/End of Line.mp3" type="audio/mpeg">
+            <source src="recursos/End of Line.ogg" type="audio/ogg">
+            Tu navegador no soporta el elemento de audio.
+
+    </section>
 
  <p><a href="#inicio">Volver al inicio de la página</a></p>
   <!-- PIE DE PÁGINA -->
