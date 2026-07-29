@@ -21,6 +21,7 @@
         <li><a href="articulo.html">Artículo</a></li>
         <li><a href="horario.html">Horario</a></li>
         <li><a href="registro.html">Registro</a></li>
+        <li><a href="galeria.html">Galería</a></li>
       </ul>
     </nav>
   </header>
@@ -49,17 +50,47 @@
         </picture>
         <figcaption>Imagen de la galería de un laboratorio de informatica</figcaption>
         </figure>
-    </article>
+    
 
-    <section> id="audio">
+    <!-- Audio -->
+    <section id="audio">
         <h3>Audio de bienvenida</h3>
         
-        audio controls>
-            <source src="recursos/End of Line.mp3" type="audio/mpeg">
-            <source src="recursos/End of Line.ogg" type="audio/ogg">
-            Tu navegador no soporta el elemento de audio.
-
+        <audio controls>
+            <source src="recursos/End of Line.mp3" type="audio/mpeg"/>
+            <source src="recursos/End of Line.ogg" type="audio/ogg"/>
+            <p>Tu navegador no soporta el elemento de audio.</p>
+            <a href="recursos/End of Line.mp3">Descargar el archivo</a>
+        </audio>
     </section>
+
+    <!-- Video -->
+     <section id="video">
+        <h3>Video de bienvenida</h3>
+        
+        <video controls width="800" height="500" poster="recursos/tutorial.jpg" preload="metadata" >
+            <source src="recursos/video1.mp4" type="video/mp4"/>
+            <source src="recursos/video1.webm" type="video/webm"/>
+            <track src="recursos/video1.vtt" kind="subtitles" srclang="es" label="Español" default/>
+            <p>Tu navegador no soporta el elemento de video.</p>
+            <a href="recursos/video1.mp4">Descargar el archivo</a>
+        </video>
+    </section>  
+     <h3>Mini tutorial</h3>
+
+    <video controls width="800" height="500" poster="recursos/tutorial.jpg" preload="metadata" >
+
+    </video>alt="Imagen de la galería de un laboratorio de informatica"/>
+        <source src="recursos/video2.mp4" type="video/mp4"/>
+        <source src="recursos/video2.webm" type="video/webm"/>
+        <track src="recursos/video2.vtt" kind="subtitles" srclang="es" label="Español" default/>
+
+        <p>Tu navegador no soporta el elemento de video.</p>
+        <a href="recursos/video2.mp4">Descargar el archivo</a>
+    </video>
+    <section/>
+  </article>
+
 
  <p><a href="#inicio">Volver al inicio de la página</a></p>
   <!-- PIE DE PÁGINA -->
