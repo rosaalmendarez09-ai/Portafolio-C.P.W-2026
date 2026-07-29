@@ -1,92 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Textos | Enlaces</title>
-
-     <!-- Nuestros metadatos -->
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Giocoto" />
     <meta
       name="description"
-      content="Sitio demo para el curso de codificación de páginas web"/>
-
+      content="Artículo sobre la evolución del HTML y el estándar vivo de la WHATWG."
+    />
     <meta
       name="keywords"
-      content="HTML, CSS, JavaScript, codificación paginas web"/>
+      content="HTML5, estándar vivo, WHATWG, W3C, historia de la web"
+    />
 
-     <meta name="author" content="Rosa.Almendarez"/>
-     <link rel="icon" type="image/x-icon" href="recursos/Favicon.png" />
-</head>
+    <title>Artículo | Codificación de páginas web</title>
 
+    <link rel="icon" href="recursos/favicon.png" type="image/png" />
+  </head>
 
-<body>
-  <h1><em>La Historia de la Web</em></h1>   
-  <P>Un recorrido por el invento que cambió la forma de comunicarnos</P>
+  <body>
+    <header id="inicio">
+      <h1>Codificación de páginas web</h1>
+      <p>
+        Sitio de demostración del módulo
+        <abbr title="Código del módulo">CSTI12002</abbr>.
+      </p>
 
-<section>
-  <h2 id="origenes"><strong>Los orígenes</strong></h2>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis neque ex quo est doloremque eius magnam aspernatur nihil suscipit rem, exercitationem labore tempora consequatur dolore amet dolor! Sint, nobis sapiente?</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="articulo.html">Artículo</a></li>
+          <li><a href="horario.html">Horario</a></li>
+          <li><a href="registro.html">Registro</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <h3>El primer navegador</h3>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis dolores numquam corporis, sed sequi natus minus, debitis vero rem distinctio ex aspernatur quis fugiat vel ut aliquid culpa. Iste?</p>
-</section>
+    <main id="contenido"> <!--Con el uso de anclas-->
+      <nav>
+        <h2>Contenido del artículo</h2>
+        <ul>
+          <li><a href="#origen">El origen</a></li>
+          <li><a href="#versiones">Las versiones numeradas</a></li>
+          <li><a href="#estandar-vivo">El estándar vivo</a></li>
+          <li><a href="#validacion">Por qué validar</a></li>
+        </ul>
+      </nav>
 
+      <article>
+        <h2>La evolución del HTML: de las versiones al estándar vivo</h2>
 
-<section>
-  <h2 id="web-hoy"> La web hoy</h2>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum et, dolorum voluptates veniam placeat laborum. Illum vitae, commodi sequi reiciendis quasi deleniti nemo dolores praesentium in porro, exceturi provident expedita nobis! Sequi, soluta harum.</p>
+        <p>
+          El lenguaje que estructura la web cumple más de tres décadas. Su
+          historia explica por qué hoy se escribe como se escribe.
+        </p>
 
-  <Blockquote cite="https://www.w3.org/People/Berners-Lee/"> 
-    <p>"La web es más una creación social que técnica"</p> </blockquote>
+        <section id="origen">
+          <h3>El origen</h3>
+          <p>
+            El <abbr title="HyperText Markup Language">HTML</abbr> nació en
+            <strong>1989</strong>, cuando Tim Berners-Lee trabajaba en el
+            <abbr title="Organización Europea para la Investigación Nuclear"
+              >CERN</abbr>. Su propósito original era <em>vincular y compartir documentos científicos<em> entre investigadores.
+          </p>
+          <p>
+            Aquella primera propuesta no buscaba crear páginas atractivas:
+            buscaba que un documento pudiera enlazar a otro. De ahí viene el
+            nombre <q>hipertexto</q>.
+          </p>
+        </section>
 
-  <p>
-    Tim Bernes-Lee lo desarrolla en <cite>Tejido de la red</cite>, donde afirma <q>diseñé la Web para un efecto social</q>.Hoy la <abbr title="Word Wide Web Consortium">W3C</abbr> custodia tus estándares.</p>
-    </section>
+        <section id="versiones">
+          <h3>Las versiones numeradas</h3>
+          <p>
+            Durante dos décadas el lenguaje avanzó por versiones. El hito más
+            importante llegó en <strong>1999</strong> con HTML 4.01, que
+            estableció un principio vigente hasta hoy:
+            <strong>separar el contenido de la presentación</strong>. El
+            contenido queda en HTML; la apariencia, en
+            <abbr title="Cascading Style Sheets">CSS</abbr>.
+          </p>
 
-    
-    <article>
-      <h2 id="referencias">Referencias</h2>
-      <p><a href="htpps://developer.mozilla.org/es/" target="_blank" rel="nooperner" 
-      title="Documentación de referencia">Documentación en MDN</a></p>
-    </article>
+          <blockquote cite="https://www.w3.org/TR/html401/">
+            <p>
+              La separación entre estructura y presentación permite que un mismo
+              documento se muestre de formas distintas según el medio, sin
+              reescribir su contenido.
+            </p>
+            <footer>
+              Principio recogido en la especificación
+              <cite>HTML 4.01</cite> del W3C
+            </footer>
+          </blockquote>
 
-    
-    <aside>
-      <h3>Recursos</h3>
-    <P><a href="mailto:docencia@ina.ac.cr">Escribir a la persona docente</a></P>
-    <p><a href="recursos/Favicon.png" download>Descargar la imagen (PNG)</a></p>
-    <p><a href="recursos/Conceptos_S04_Texto_Enlaces_Anclas.pdf" download>Descargar archivo con concepto de clase 4 (PDF)</a></p>
-    </aside>
-  
+          <p>
+            En <strong>2014</strong> se publicó HTML5, que incorporó las
+            etiquetas semánticas, la reproducción nativa de audio y video, y la
+            <abbr title="Interfaz de Programación de Aplicaciones">API</abbr> de
+            dibujo en lienzo.
+          </p>
+        </section>
 
-    <!-- Enlazamos páginas con rutas -->
-    <a href="index.html">Volver</a>
-    
-    <!--Navegación por anclas--> 
-  <p><strong>Lista de enlaces tipo anclas a los h2</strong></p> 
-   <a href="#origenes">Ir a Los orígenes</a><br /><br /> 
-   <a href="#web-hoy">Ir a La web hoy</a><br /><br /> 
-   <a href="#referencias">Ir a referencias</a> 
-   
-  
+        <section id="estandar-vivo">
+          <h3>El estándar vivo</h3>
+          <p>
+            Desde <strong>2019</strong> las versiones numeradas desaparecieron.
+            La
+            <abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr>
+            &mdash;integrada por Apple, Google, Mozilla y Microsoft&mdash;
+            gestiona el <em>HTML Living Standard</em>.
+          </p>
+          <p>
+            Esto significa que el lenguaje ya no se actualiza por lanzamientos
+            anuales, sino de manera continua: se añaden etiquetas y capacidades
+            de forma progresiva, manteniendo la compatibilidad con lo anterior.
+            Por eso el código escrito hace años sigue funcionando.
+          </p>
+          <p>
+            La especificación puede consultarse en
+            <a
+              href="https://html.spec.whatwg.org/" target="_blank" rel="noopener">
+              el sitio oficial de la WHATWG </a>.
+          </p>
+        </section>
 
-   <!--Enlace a otra página--> 
-   <a href="index.html">Volver</a><br> 
- 
+        <section id="validacion">
+          <h3>Por qué validar</h3>
+          <p>
+            El <abbr title="World Wide Web Consortium">W3C</abbr> desarrolla los
+            estándares abiertos de la web. Que exista un estándar es lo que
+            garantiza que una página se vea igual en cualquier navegador.
+          </p>
+          <p>
+            Su validador comprueba que el documento cumple la especificación. Un
+            documento válido es más fácil de mantener, se interpreta igual en
+            todas partes y evita errores difíciles de diagnosticar al aplicar
+            estilos.
+          </p>
+          <p>
+            Herramienta:
+            <a href="https://validator.w3.org/" target="_blank" rel="noopener">
+              Validador de marcado del W3C </a>.
+          </p>
+        </section>
+      </article>
 
+      <aside>
+        <h2>Para ampliar</h2>
+        <p>
+          El recorrido completo de las sesiones está en la
+          <a href="horario.html">página de horario</a>, y las inscripciones se
+          gestionan desde el <a href="registro.html">formulario de registro</a>.
+        </p>
+      </aside>
+
+      <p><a href="#inicio">Volver al inicio de la página</a></p>
+    </main>
 
     <footer>
-      <!-- Footer: Pie, créditos, contacto, derechos -->
+      <h2>Contacto</h2>
+      <address>
+        Instituto Nacional de Aprendizaje<br />
+        Correo: <a href="mailto:giocoto@ejemplo.com">giocoto@ejemplo.com</a>
+      </address>
       <p>
-        ©2026 INA Programa Desarrollo de Páginas Web.Todos los derechos
-        reservados
+        <small
+          >&copy; 2026 &middot; INA &middot; Todos los derechos reservados</small>
       </p>
     </footer>
- </body>
+  </body>
 </html>
