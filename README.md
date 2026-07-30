@@ -52,7 +52,7 @@ Portafolio-Codificación de Páginas Web/
 
 | :----: | :------------------------- | :----------------------------------------------------------- | :---------------: | :--------------: |
 
-| S01 | Git y GitHub | Inicialización de repositorios locales mediante Git -Conexión del repositorio local con GitHub,repositorio remoto -Configuración inicial para el control de versiones -Establecimiento de buenas prácticas de commits para el desarrollo web | [ver](unidad-01-control-versiones/1.Guia_GitHub_Interfaz_Herramientas.pdf)<br>[ ](unidad-01-control-versiones/2.DESARROLLO-MarcoTeorico-Sesion1-2.pdf)<br>[](unidad-01-control-versiones/2.Tarjeta_Bolsillo_Git_GitHub.pdf)<br>[](unidad-01-control-versiones/MarcoTeoricoS2-2.pdf) | [ver](recursos/)
+| S01 | Git y GitHub | Inicialización de repositorios locales mediante Git -Conexión del repositorio local con GitHub,repositorio remoto -Configuración inicial para el control de versiones -Establecimiento de buenas prácticas de commits para el desarrollo web | [ver](unidad-01-control-versiones/1.Guia_GitHub_Interfaz_Herramientas.pdf)<br>[ ](unidad-01-control-versiones/2.DESARROLLO-MarcoTeorico-Sesion1-2.pdf)<br>[](unidad-01-control-versiones/2.Tarjeta_Bolsillo_Git_GitHub.pdf)<br>[](unidad-01-control-versiones/MarcoTeoricoS2-2.pdf) | [ver](recursos/S.01-Evidencia-Estructura-Portafolio.png)
 
 <details markdown="1">
 <summary><b>Unidad 2 · Etiquetas y atributos HTML</b> (sesiones 2 a 8)</summary>
@@ -75,7 +75,7 @@ Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna
 
 | S07 | Multimedia |Etiquetas, formatos y portadas y subtítulos | [ver](unidad-02-html/sitio-demo/galeria.html) | [ver](recursos/S.07.Multimedia.png) |
 
-| S08 | SVG y repaso | | [ver](unidad-02/) | [ver](recursos/) |
+| S08 | SVG y repaso |Aprendi a realizar pagina de insignia html con estructura y a la vez repasamos conceptos y practicas dada | [ver](unidad-02-html/sitio-demo/insignia.html) | [ver](recursos/S.09-vg-html.png) |
 
 </details>
 
