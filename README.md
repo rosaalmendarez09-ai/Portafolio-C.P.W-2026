@@ -50,15 +50,17 @@ Portafolio-Codificación de Páginas Web/
 
 | Sesión | Tema |Qué aprendí | Trabajo | Captura |
 
-| :----: | :------------------------- | :------------------------------------------------------------------------------------------------------- | :---------------: | :--------------: |
+| :----: | :------------------------- | :------------------------------------------------------------- | :---------------: | :--------------: |
 
 | S01 | Git y GitHub | Inicialización de repositorios locales mediante Git -Conexión del repositorio local con GitHub,
-repositorio remoto -Configuración inicial para el control de versiones -Establecimiento de buenas prácticas de commits para el desarrollo web | [ver](unidad-01/) | [ver](recursos/)
+repositorio remoto -Configuración inicial para el control de versiones -Establecimiento de buenas prácticas de commits para el desarrollo web | [ver](unidad-01-control-versiones/1.Guia_GitHub_Interfaz_Herramientas.pdf)<br>[ ](unidad-01-control-versiones/2.DESARROLLO-MarcoTeorico-Sesion1-2.pdf)<br>[](unidad-01-control-versiones/2.Tarjeta_Bolsillo_Git_GitHub.pdf)<br>[](unidad-01-control-versiones/MarcoTeoricoS2-2.pdf) | [ver](recursos/)
 
 <details markdown="1">
 <summary><b>Unidad 2 · Etiquetas y atributos HTML</b> (sesiones 2 a 8)</summary>
 
 | Sesión | Tema |Qué aprendí | Trabajo | Captura |
+
+| :----: | :------------------------- | :------------------------------------------------------------- | :---------------: | :--------------: |
 
 | S02 |Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo | [ver](unidad-03/) | [ver](recursos/) |
 
