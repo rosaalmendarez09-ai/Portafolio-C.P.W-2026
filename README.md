@@ -48,48 +48,34 @@ Portafolio-Codificación de Páginas Web/
 
 ### Unidad 1 · Implementación de control de versiones
 
-| Sesión | Tema |Qué aprendí | Trabajo | Captura |
+| Sesión | Tema | Qué aprendí | Trabajo | Captura |
 
-| :----: | :------------------------- | :------------------------------------------------------------- | :---------------: | :--------------: |
+| :----: | :------------------------- | :----------------------------------------------------------- | :---------------: | :--------------: |
 
-| S01 | Git y GitHub | Inicialización de repositorios locales mediante Git -Conexión del repositorio local con GitHub,
-repositorio remoto -Configuración inicial para el control de versiones -Establecimiento de buenas prácticas de commits para el desarrollo web | [ver](unidad-01-control-versiones/1.Guia_GitHub_Interfaz_Herramientas.pdf)<br>[ ](unidad-01-control-versiones/2.DESARROLLO-MarcoTeorico-Sesion1-2.pdf)<br>[](unidad-01-control-versiones/2.Tarjeta_Bolsillo_Git_GitHub.pdf)<br>[](unidad-01-control-versiones/MarcoTeoricoS2-2.pdf) | [ver](recursos/)
+| S01 | Git y GitHub | Inicialización de repositorios locales mediante Git -Conexión del repositorio local con GitHub,repositorio remoto -Configuración inicial para el control de versiones -Establecimiento de buenas prácticas de commits para el desarrollo web | [ver](unidad-01-control-versiones/1.Guia_GitHub_Interfaz_Herramientas.pdf)<br>[ ](unidad-01-control-versiones/2.DESARROLLO-MarcoTeorico-Sesion1-2.pdf)<br>[](unidad-01-control-versiones/2.Tarjeta_Bolsillo_Git_GitHub.pdf)<br>[](unidad-01-control-versiones/MarcoTeoricoS2-2.pdf) | [ver](recursos/)
 
 <details markdown="1">
 <summary><b>Unidad 2 · Etiquetas y atributos HTML</b> (sesiones 2 a 8)</summary>
 
 | Sesión | Tema |Qué aprendí | Trabajo | Captura |
 
-| :----: | :------------------------- | :------------------------------------------------------------- | :---------------: | :--------------: |
+| :----: | :------------------------- | :----------------------------------------------------------- | :---------------: | :--------------: |
 
-| S02 |Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo | [ver](unidad-03/) | [ver](recursos/) |
+| S02 |Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo | [ver](unidad-02-html/sitio-demo/recursos/horarios.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
 
 | S03 |Estructura del documento HTML5 | | [ver](unidad-02-html/) | [ver](recursos/) |
 
-| S04 | Texto, enlaces y anclas | Agregamos el Favicon y los metadatosde una pagina personales; profundizamos en la estructura y
+| S04 |Texto, enlaces y anclas |Agregamos el Favicon y los metadatosde una pagina personales; profundizamos en la estructura y
 organización de documentos HTML mediante la implementación de etiquetas semánticas, mejorando la accesibilidad y el orden lógico del sitio.
-Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna dentro de la misma página | [ver](unidad-02-html/sitio-demo/articulo.html/) | [ver](recursos/S.4.Enlaces-tipo-anclas1.png) |
+Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna dentro de la misma página | [ver](unidad-02-html/sitio-demo/articulo.html/) | [ver](recursos/Evidencia-favicon.png/S.4.Enlaces-tipo-anclas1.png/S.4.Enlaces-tipo-anclas.png/S.4.Enlaces-tipo-anclas3.png/S.4.Texto_Semantico_citas.png) |
 
-| S05 | Listas y tablas | | [ver](unidad-02/) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
+| S05 | Listas y tablas | | [ver](unidad-02-html/horario.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
 
 | S06 | Formularios y semántica | | [ver](unidad-02/) | [ver](recursos/) |
 
 | S07 | Multimedia |Etiquetas, formatos y portadas y subtítulos | [ver](unidad-02-html/sitio-demo/galeria.html) | [ver](recursos/S.07.Multimedia.png) |
 
 | S08 | SVG y repaso | | [ver](unidad-02/) | [ver](recursos/) |
-
-<!-- FALTA CORREGIR ESTA PARTEMWWOWOOOOOWWWWWWWW -->
-
-| S02 | Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo | [ver](unidad-02-html/sitio-demo/recursos/horarios.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
-| S03 | Estructura del documento HTML5 | | [ver](unidad-02/) | [ver](recursos/) |
-| S04 | Texto, enlaces y anclas | Agregamos el Favicon y los metadatosde una pagina personales; profundizamos en la estructura y organización de documentos HTML |
-
-mediante la implementación de etiquetas semánticas, mejorando la accesibilidad y el orden lógico del sitio. Asimismo, integramos
-enlaces de tipo ancla para optimizar la navegación interna dentro de la misma página | [ver](unidad-02/) | [ver](recursos/Evidencia-favicon.png/S.4.Enlaces-tipo-anclas1.png/S.4.Enlaces-tipo-anclas.png/S.4.Enlaces-tipo-anclas3.png/S.4.Texto_Semantico_citas.png) |
-| S05 | Listas y tablas | Aprendí a trabajar los 3 tipos de lista y estilos. También la parte de tablas y | [ver](unidad-02/sitio-demo/horario.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
-| S06 | Formularios y semántica | | [ver](unidad-02/) | [ver](recursos/) |
-| S07 | Multimedia | | [ver](unidad-02/) | [ver](recursos/) |
-| S08 | SVG y repaso | | [ver](unidad-02/) | [ver](recursos/)
 
 </details>
 
