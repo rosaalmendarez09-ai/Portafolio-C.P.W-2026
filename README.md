@@ -61,9 +61,9 @@ Portafolio-Codificación de Páginas Web/
 
 | :----: | :------------------------- | :----------------------------------------------------------- | :---------------: | :--------------: |
 
-| S02 |Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo | [ver](unidad-02-html/sitio-demo/recursos/horarios.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
+| S02 |Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo | [ver](unidad-02-html/sitio-demo/recursos/horarios.html) | [ver](unidad-02-html/sitio-demo/recursos/) |
 
-| S03 |Estructura del documento HTML5 | | [ver](unidad-02-html/) | [ver](recursos/) |
+| S03 |Estructura del documento HTML5 |Trabajamos en grupo en creacion de páginas en formato HTML y trabajo colaborativo en GitHub| [ver](unidad-02-html/) | [ver](recursos/S.03TrabajoColaborativo02.png) |
 
 | S04 |Texto, enlaces y anclas |Agregamos el Favicon y los metadatosde una pagina personales; profundizamos en la estructura y
 organización de documentos HTML mediante la implementación de etiquetas semánticas, mejorando la accesibilidad y el orden lógico del sitio.
@@ -71,7 +71,7 @@ Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna
 
 | S05 | Listas y tablas | | [ver](unidad-02-html/horario.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
 
-| S06 | Formularios y semántica | | [ver](unidad-02/) | [ver](recursos/) |
+| S06 | Formularios y semántica | | [ver](unidad-02-html/sitio-demo/registro.html) | [ver](recursos/S.06.Formularios-y-semantica.png) |
 
 | S07 | Multimedia |Etiquetas, formatos y portadas y subtítulos | [ver](unidad-02-html/sitio-demo/galeria.html) | [ver](recursos/S.07.Multimedia.png) |
 
