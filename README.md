@@ -67,9 +67,9 @@ Portafolio-Codificación de Páginas Web/
 
 | S04 |Texto, enlaces y anclas |Agregamos el Favicon y los metadatosde una pagina personales; profundizamos en la estructura y
 organización de documentos HTML mediante la implementación de etiquetas semánticas, mejorando la accesibilidad y el orden lógico del sitio.
-Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna dentro de la misma página | [ver](unidad-02-html/sitio-demo/articulo.html/) | [ver](recursos/S.04.Enlaces-tipo-anclas.png) |
+Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna dentro de la misma página | [ver](unidad-02-html/sitio-demo/articulo.html/) | [ver](recursos/S.4.Enlaces-tipo-anclas1.png)[ver](recursos/S.4.Enlaces-tipo-anclas2.png)[ver](recursos/S.4.Enlaces-tipo-anclas3.png)[ver](recursos/S.4.Texto_Semantico_citas.png) |
 
-| S05 | Listas y tablas | Crear listas ordenadas, desordenadas y de descripciones, a colocar una lista dentro de otra para organizarla mejor, y a diseñar tablas uniendo varias celdas para presentar información ordenada.| [ver](unidad-02-html/horarios.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
+| S05 | Listas y tablas | Crear listas ordenadas, desordenadas y de descripciones, a colocar una lista dentro de otra para organizarla mejor, y a diseñar tablas uniendo varias celdas para presentar información ordenada.| [ver](unidad-02-html/sitio-demo/horarios.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
 
 | S06 | Formularios y semántica | Aprendí a crear formularios interactivos para recopilar información de los usuarios y a usar etiquetas con significado claro| [ver](unidad-02-html/sitio-demo/registro.html) | [ver](recursos/S.6.Captura-Evidencia-formulario-semántica.png) |
 
