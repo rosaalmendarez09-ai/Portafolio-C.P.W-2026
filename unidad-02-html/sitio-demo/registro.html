@@ -182,51 +182,32 @@
             </fieldset>
 
             <!-- Casillas de verificación: se pueden marcar varias -->
-            <fieldset>
-              <legend>Recursos que solicita</legend>
-
-              <p>
-                <input
-                  type="checkbox"
-                  id="equipo"
-                  name="recursos"
-                  value="equipo"
-                />
-                <label for="equipo">Equipo de cómputo del centro</label>
-              </p>
-              <p>
-                <input
-                  type="checkbox"
-                  id="material"
-                  name="recursos"
-                  value="material"
-                />
-                <label for="material">Material impreso</label>
-              </p>
-              <p>
-                <input
-                  type="checkbox"
-                  id="grabacion"
-                  name="recursos"
-                  value="grabacion"
-                />
-                <label for="grabacion">Grabación de la sesión</label>
-              </p>
-            </fieldset>
+             <fieldset>
+            <legend>Recursos que solicita</legend>
 
             <p>
-              <label for="comentarios">Comentarios</label>
-              <textarea
-                id="comentarios"
-                name="comentarios"
-                rows="4"
-                maxlength="300"
-                placeholder="Indique qué temas desea reforzar"> 
-              </textarea>
-              <small>Máximo 300 caracteres.</small>
+              <input type="checkbox" id="equipo" name="recursos" value="equipo">
+              <label for="equipo">Equipo de cómputo del centro</label>
+            </p>
+            <p>
+              <input type="checkbox" id="material" name="recursos" value="material">
+              <label for="material">Material impreso</label>
+            </p>
+            <p>
+              <input type="checkbox" id="grabacion" name="recursos" value="grabacion">
+              <label for="grabacion">Grabación de la sesión</label>
             </p>
           </fieldset>
 
+          <p>
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios"
+                      rows="4" maxlength="300"
+                      placeholder="Indique qué temas desea reforzar"></textarea>
+            <small>Máximo 300 caracteres.</small>
+          </p>
+        </fieldset>
+        
           <!-- GRUPO 3: CONFIRMACIÓN -->
           <fieldset>
             <legend>Confirmación</legend>
