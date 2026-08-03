@@ -69,11 +69,11 @@ Portafolio-Codificación de Páginas Web/
 organización de documentos HTML mediante la implementación de etiquetas semánticas, mejorando la accesibilidad y el orden lógico del sitio.
 Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna dentro de la misma página | [ver](unidad-02-html/sitio-demo/articulo.html/) | [ver](recursos/Evidencia-favicon.png/S.4.Enlaces-tipo-anclas1.png/S.4.Enlaces-tipo-anclas.png/S.4.Enlaces-tipo-anclas3.png/S.4.Texto_Semantico_citas.png) |
 
-| S05 | Listas y tablas | | [ver](unidad-02-html/horario.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
+| S05 | Listas y tablas | Crear listas ordenadas, desordenadas y de descripciones, a colocar una lista dentro de otra para organizarla mejor, y a diseñar tablas uniendo varias celdas para presentar información ordenada.| [ver](unidad-02-html/horario.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
 
-| S06 | Formularios y semántica | | [ver](unidad-02-html/sitio-demo/registro.html) | [ver](recursos/S.06.Formularios-y-semantica.png) |
+| S06 | Formularios y semántica | Aprendí a crear formularios interactivos para recopilar información de los usuarios y a usar etiquetas con significado claro| [ver](unidad-02-html/sitio-demo/registro.html) | [ver](recursos/S.06.Formularios-y-semantica.png) |
 
-| S07 | Multimedia |Etiquetas, formatos y portadas y subtítulos | [ver](unidad-02-html/sitio-demo/galeria.html) | [ver](recursos/S.07.Multimedia.png) |
+| S07 | Multimedia |Etiquetas, formatos y portadas, incorporar contenido multimedia como videos con subtítulos en VTT, a optimizar el peso de los archivos gráficos| [ver](unidad-02-html/sitio-demo/galeria.html) | [ver](recursos/S.07.Multimedia.png) |
 
 | S08 | SVG y repaso |Aprendi a realizar pagina de insignia html con estructura y a la vez repasamos conceptos y practicas dada | [ver](unidad-02-html/sitio-demo/insignia.html) | [ver](recursos/S.09-vg-html.png) |
 
@@ -94,11 +94,11 @@ Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna
 ### El sitio personal
 
 Proyecto propio construido de forma autónoma.
-**Tema del sitio:** _(escribir aquí el tema elegido)_
+**Tema del sitio:** _(Pastelería SWEET COLLECTION)_
 
 | Página | Qué contiene | Sesiones aplicadas | Ver | Validación |
 |:-------|:-------------|:------------------:|:---:|:----------:|
-| `index.html` | Estructura semántica, metadatos, texto jerarquizado, citas, enlaces y anclas | S03 · S04 · S06 | [ver](unidad-02-html/sitio-personal/index.html) | [ver](recursos/sp-validacion-index.png) |
+| `index.html` | Estructura semántica, metadatos, texto jerarquizado, citas, enlaces y anclas | S03 · S04 · S05 | [ver](unidad-02-html/sitio-personal/index.html) | [ver](recursos/sp-validacion-index.png) |
 | `listas.html` | Las tres listas, lista anidada y tabla con celdas combinadas | S05 | [ver](unidad-02-html/sitio-personal/listas.html) | [ver](recursos/sp-validacion-listas.png) |
 | `contacto.html` | Formulario con ocho campos y validación de HTML | S06 | [ver](unidad-02-html/sitio-personal/contacto.html) | [ver](recursos/sp-validacion-contacto.png) |
 | `galeria.html` | Imágenes, audio, video con subtítulos y gráficas SVG | S07 · S08 | [ver](unidad-02-html/sitio-personal/galeria.html) | [ver](recursos/sp-validacion-galeria.png) |
@@ -107,10 +107,10 @@ Proyecto propio construido de forma autónoma.
 
 | Decisión | Qué elegí | Por qué |
 |:---------|:----------|:--------|
-| Tema del sitio | | |
-| Atributo de la lista ordenada | | |
-| Formatos de imagen usados | | |
-| Formas del gráfico SVG | | |
+| Tema del sitio | Patelería Artesanal | Me gustaba el tema y me permitía expresar mi creatividad |
+| Atributo de la lista ordenada | `type="1"`| Permite numerar los elementos de la lista en orden iniciando por el queque mas vendido |
+| Formatos de imagen usados | `webp` | HAce que las imágenes carguen más rápido |
+| Formas del gráfico SVG | `circle`, `polygon`, `text` |Permite crear formas y texto en el gráfico |
 
 **Cómo se ve**
 
@@ -125,7 +125,7 @@ Proyecto propio construido de forma autónoma.
 </div>
 
 **Comprobado en dos navegadores:**
-[Chrome](recursos/sp-navegador-chrome.png) · [Firefox](recursos/sp-navegador-firefox.png)
+[Chrome](recursos/sp-navegador-chrome.png) · [Firefox](recursos/sp-navegador-safari.png)
 
 
 </details>
