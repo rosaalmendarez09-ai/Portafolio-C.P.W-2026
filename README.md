@@ -50,26 +50,26 @@ Portafolio-Codificación de Páginas Web/
 
 | Sesión | Tema | Qué aprendí | Trabajo | Captura |
 
-| :----: | :------------------------- | :----------------------------------------------------------- | :---------------: | :--------------: |
+| :----: | :----------- | :-------------------------------------------------------------------------------------------------- | :---------------: | :--------------: |
 
-| S01 | Git y GitHub | Inicialización de repositorios locales mediante Git -Conexión del repositorio local con GitHub,repositorio remoto -Configuración inicial para el control de versiones -Establecimiento de buenas prácticas de commits para el desarrollo web | [ver](unidad-01-control-versiones/1.Guia_GitHub_Interfaz_Herramientas.pdf)<br>[ ](unidad-01-control-versiones/2.DESARROLLO-MarcoTeorico-Sesion1-2.pdf)<br>[](unidad-01-control-versiones/2.Tarjeta_Bolsillo_Git_GitHub.pdf)<br>[](unidad-01-control-versiones/MarcoTeoricoS2-2.pdf) | [ver](recursos/S.01-Evidencia-Estructura-Portafolio.png)
+| S01 | Git y GitHub | Inicialización de repositorios locales mediante Git -Conexión del repositorio local con GitHub,repositorio remoto -Configuración inicial para el control de versiones -Establecimiento de buenas prácticas de commits para el desarrollo web | [ver](unidad-01-control-versiones/1.Guia_GitHub_Interfaz_Herramientas.pdf)<br>[ver](unidad-01-control-versiones/2.DESARROLLO-MarcoTeorico-Sesion1-2.pdf)<br>[ver](unidad-01-control-versiones/2.Tarjeta_Bolsillo_Git_GitHub.pdf)<br>[ver](unidad-01-control-versiones/MarcoTeoricoS2-2.pdf) | [ver](recursos/S.01-Evidencia-Estructura-Portafolio.png)
 
 <details markdown="1">
 <summary><b>Unidad 2 · Etiquetas y atributos HTML</b> (sesiones 2 a 8)</summary>
 
 | Sesión | Tema |Qué aprendí | Trabajo | Captura |
 
-| :----: | :------------------------- | :----------------------------------------------------------- | :---------------: | :--------------: |
+| :----: | :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------: | :--------------: |
 
-| S02 |Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo | [ver](unidad-02-html/sitio-demo/horarios.html) | [ver](recursos/S.02-Git-Colaborativo.png) |
+| S02 |Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo | [ver](recursos/S.02.Trabajo-colaborativo1.png) | [ver](recursos/S.02.Evidencia-colaborativo1.png) |
 
-| S03 |Estructura del documento HTML5 |Trabajamos en grupo en creacion de páginas en formato HTML y trabajo colaborativo en GitHub| [ver](unidad-02-html/sitio-demo/index.html) | [ver](recursos/S.03TrabajoColaborativo02.png) |
+| S03 |Estructura del documento HTML5 |Trabajamos en grupo en creacion de páginas en formato HTML y trabajo colaborativo en GitHub| [ver](recursos/S.03.Trabajo_colaborativo2.png) | [ver](recursos/S.03EvidenciaColaborativo02.png) |
 
 | S04 |Texto, enlaces y anclas |Agregamos el Favicon y los metadatosde una pagina personales; profundizamos en la estructura y
 organización de documentos HTML mediante la implementación de etiquetas semánticas, mejorando la accesibilidad y el orden lógico del sitio.
 Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna dentro de la misma página | [ver](unidad-02-html/sitio-demo/articulo.html/) | [ver](recursos/S.4.Enlaces-tipo-anclas1.png)<br>[ver](recursos/S.4.Enlaces-tipo-anclas2.png)<br>[ver](recursos/S.4.Enlaces-tipo-anclas3.png)<br>[ver](recursos/S.4.Texto_Semantico_citas.png) |
 
-| S05 | Listas y tablas | Crear listas ordenadas, desordenadas y de descripciones, a colocar una lista dentro de otra para organizarla mejor, y a diseñar tablas uniendo varias celdas para presentar información ordenada.| [ver](unidad-02-html/sitio-demo/registro.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
+| S05 | Listas y tablas | Crear listas ordenadas, desordenadas y de descripciones, a colocar una lista dentro de otra para organizarla mejor, y a diseñar tablas uniendo varias celdas para presentar información ordenada.| [ver](unidad-02-html/sitio-demo/horarios.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
 
 | S06 | Formularios y semántica | Aprendí a crear formularios interactivos para recopilar información de los usuarios y a usar etiquetas con significado claro| [ver](unidad-02-html/sitio-demo/registro.html) | [ver](recursos/S.6.Captura-Evidencia-formulario-semántica.png) |
 
@@ -96,21 +96,21 @@ Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna
 Proyecto propio construido de forma autónoma.
 **Tema del sitio:** _(Pastelería SWEET COLLECTION)_
 
-| Página | Qué contiene | Sesiones aplicadas | Ver | Validación |
-|:-------|:-------------|:------------------:|:---:|:----------:|
-| `index.html` | Estructura semántica, metadatos, texto jerarquizado, citas, enlaces y anclas | S03 · S04 · S05 | [ver](unidad-02-html/sitio-personal/index.html) | [ver](recursos/sp-validacion-index.png) |
-| `listas.html` | Las tres listas, lista anidada y tabla con celdas combinadas | S05 | [ver](unidad-02-html/sitio-personal/listas.html) | [ver](recursos/sp-validacion-listas.png) |
-| `contacto.html` | Formulario con ocho campos y validación de HTML | S06 | [ver](unidad-02-html/sitio-personal/contacto.html) | [ver](recursos/sp-validacion-contacto.png) |
-| `galeria.html` | Imágenes, audio, video con subtítulos y gráficas SVG | S07 · S08 | [ver](unidad-02-html/sitio-personal/galeria.html) | [ver](recursos/sp-validacion-galeria.png) |
+| Página          | Qué contiene                                                                 | Sesiones aplicadas |                        Ver                         |                 Validación                 |
+| :-------------- | :--------------------------------------------------------------------------- | :----------------: | :------------------------------------------------: | :----------------------------------------: |
+| `index.html`    | Estructura semántica, metadatos, texto jerarquizado, citas, enlaces y anclas |  S03 · S04 · S05   |  [ver](unidad-02-html/sitio-personal/index.html)   |  [ver](recursos/sp-validacion-index.png)   |
+| `listas.html`   | Las tres listas, lista anidada y tabla con celdas combinadas                 |        S05         |  [ver](unidad-02-html/sitio-personal/listas.html)  |  [ver](recursos/sp-validacion-listas.png)  |
+| `contacto.html` | Formulario con ocho campos y validación de HTML                              |        S06         | [ver](unidad-02-html/sitio-personal/contacto.html) | [ver](recursos/sp-validacion-contacto.png) |
+| `galeria.html`  | Imágenes, audio, video con subtítulos y gráficas SVG                         |     S07 · S08      | [ver](unidad-02-html/sitio-personal/galeria.html)  | [ver](recursos/sp-validacion-galeria.png)  |
 
 **Decisiones que tomé**
 
-| Decisión | Qué elegí | Por qué |
-|:---------|:----------|:--------|
-| Tema del sitio | Patelería Artesanal | Me gustaba el tema y me permitía expresar mi creatividad |
-| Atributo de la lista ordenada | `type="1"`| Permite numerar los elementos de la lista en orden iniciando por el queque mas vendido |
-| Formatos de imagen usados | `webp` | HAce que las imágenes carguen más rápido |
-| Formas del gráfico SVG | `circle`, `polygon`, `text` |Permite crear formas y texto en el gráfico |
+| Decisión                      | Qué elegí                   | Por qué                                                                                |
+| :---------------------------- | :-------------------------- | :------------------------------------------------------------------------------------- |
+| Tema del sitio                | Patelería Artesanal         | Me gustaba el tema y me permitía expresar mi creatividad                               |
+| Atributo de la lista ordenada | `type="1"`                  | Permite numerar los elementos de la lista en orden iniciando por el queque mas vendido |
+| Formatos de imagen usados     | `webp`                      | HAce que las imágenes carguen más rápido                                               |
+| Formas del gráfico SVG        | `circle`, `polygon`, `text` | Permite crear formas y texto en el gráfico                                             |
 
 **Cómo se ve**
 
@@ -120,13 +120,12 @@ Proyecto propio construido de forma autónoma.
 
 <div align="center" markdown="1">
 
-*Portada del sitio personal al cerrar la Unidad 2.*
+_Portada del sitio personal al cerrar la Unidad 2._
 
 </div>
 
 **Comprobado en dos navegadores:**
 [Chrome](recursos/sp-navegador-chrome.png) · [Firefox](recursos/sp-navegador-safari.png)
-
 
 </details>
 
