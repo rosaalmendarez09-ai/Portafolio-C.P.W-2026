@@ -94,7 +94,7 @@ Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna
 ### El sitio personal
 
 Proyecto propio construido de forma autónoma.
-**Tema del sitio:** _(escribir aquí el tema elegido)_
+**Tema del sitio:** _(Pastelería SWEET COLLECTION)_
 
 | Página | Qué contiene | Sesiones aplicadas | Ver | Validación |
 |:-------|:-------------|:------------------:|:---:|:----------:|
