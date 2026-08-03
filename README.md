@@ -58,23 +58,15 @@ Portafolio-Codificación de Páginas Web/
 <summary><b>Unidad 2 · Etiquetas y atributos HTML</b> (sesiones 2 a 8)</summary>
 
 | Sesión | Tema |Qué aprendí | Trabajo | Captura |
-
-| :----: | :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------: | :--------------: |
-
+| :----: | :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- | :---------------: | :--------------: |
 | S02 |Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo | [ver](recursos/S.02.Trabajo-colaborativo1.png) | [ver](recursos/S.02.Evidencia-colaborativo1.png) |
-
 | S03 |Estructura del documento HTML5 |Trabajamos en grupo en creacion de páginas en formato HTML y trabajo colaborativo en GitHub| [ver](recursos/S.03.Trabajo_colaborativo2.png) | [ver](recursos/S.03EvidenciaColaborativo02.png) |
-
 | S04 |Texto, enlaces y anclas |Agregamos el Favicon y los metadatosde una pagina personales; profundizamos en la estructura y
 organización de documentos HTML mediante la implementación de etiquetas semánticas, mejorando la accesibilidad y el orden lógico del sitio.
 Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna dentro de la misma página | [ver](unidad-02-html/sitio-demo/articulo.html/) | [ver](recursos/S.4.Enlaces-tipo-anclas1.png)<br>[ver](recursos/S.4.Enlaces-tipo-anclas2.png)<br>[ver](recursos/S.4.Enlaces-tipo-anclas3.png)<br>[ver](recursos/S.4.Texto_Semantico_citas.png) |
-
 | S05 | Listas y tablas | Crear listas ordenadas, desordenadas y de descripciones, a colocar una lista dentro de otra para organizarla mejor, y a diseñar tablas uniendo varias celdas para presentar información ordenada.| [ver](unidad-02-html/sitio-demo/horarios.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
-
 | S06 | Formularios y semántica | Aprendí a crear formularios interactivos para recopilar información de los usuarios y a usar etiquetas con significado claro| [ver](unidad-02-html/sitio-demo/registro.html) | [ver](recursos/S.6.Captura-Evidencia-formulario-semántica.png) |
-
 | S07 | Multimedia |Etiquetas, formatos y portadas, incorporar contenido multimedia como videos con subtítulos en VTT, a optimizar el peso de los archivos gráficos| [ver](unidad-02-html/sitio-demo/galeria.html) | [ver](recursos/S.07.Multimedia.png) |
-
 | S08 | SVG y repaso |Aprendi a realizar pagina de insignia html con estructura y a la vez repasamos conceptos y practicas dada | [ver](unidad-02-html/sitio-demo/insignia.html) | [ver](recursos/S.09-vg-html.png) |
 
 <!--
