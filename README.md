@@ -125,7 +125,7 @@ Proyecto propio construido de forma autónoma.
 </div>
 
 **Comprobado en dos navegadores:**
-[Chrome](recursos/sp-navegador-chrome.png) · [Firefox](recursos/sp-navegador-firefox.png)
+[Chrome](recursos/sp-navegador-chrome.png) · [Firefox](recursos/sp-navegador-safari.png)
 
 
 </details>
