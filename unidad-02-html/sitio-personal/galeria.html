@@ -17,7 +17,7 @@
 
     <header id="inicio">
         <h1>Sweet Collection</h1>
-        <p>Descubre nuestra pastelería artesanal con postres y pasteles horneados con amor y recetas de la abuela<br>con ingredientes frescos cada día.</p>
+        <p>Descubre nuestra pastelería artesanal con postres y pasteles horneados con amor y recetas de la abuela<br> con ingredientes frescos cada día.</p>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -59,8 +59,8 @@
             <img
               src="recursos/imagen3.jpg"
               alt="Imagen de nuestra deliciosa torta artesanal de melocotón"
-              width="700"
-              height="900">
+              width="800">
+              <!--height="500-->
           </picture>
           <figcaption>
             Imagen de nuestra deliciosa torta artesanal de melocotón
@@ -80,37 +80,72 @@
 
         <!-- Video -->
         <section id="video">
-          <h3>Video de nuestro proceso</h3>
+          <h3>Mini tutorial Capcut</h3>
 
           <video
             controls
-            width="700"
-            height="900"
+            width="800"
+            height="500"
             poster="recursos/imagen3.jpg"
             preload="metadata">
             <source src="recursos/video.mp4" type="video/mp4">
             <source src="recursos/video.webm" type="video/webm">
-
             <track
-              src="recursos/video2.vtt"
+              src="recursos/video.vtt"
               kind="subtitles"
               srclang="es"
               label="Español"
               default>
             <p>Tu navegador no soporta el elemento de video.</p>
-            <a href="recursos/video2.mp4">Descargar el archivo</a>
+            <a href="recursos/video.mp4">Descargar el archivo</a>
           </video>
         </section>
       </article>
 
+       <article>
+        <h2>Gráficas vectoriales</h2>
+
+        <!-- SVG LINEA -->
+         <section id="insignia">
+            <h3>Insignia del módulo</h3>
+            <svg width="250" height="250" 
+            viewBox="0 0 200 200" 
+            xmlns="http://www.w3.org/2000/svg">
+
+            <!--Circle SVG-->
+                <circle cx="100" cy="100" r="90" fill="#FFC0CB"
+                stroke="#FF69B4"
+                stroke-width="1.5"/><!--Fil: COLOR DE RELLENO-->
+                <circle cx="100" cy="100" r="72"
+                fill="#FF69B4" 
+                stroke="#1F4E79" 
+                stroke-width="4" /> <!--Stroke: COLOR DEL BORDE-->
+                
+             <!--POLYGON SVG-->
+             <polygon points="100,45 112,80 149,80 119,102 130,137 100,115 70,137 81,102 51,80 88,80"
+                      fill="#E0E0E0"
+                      stroke="#1F4E79"
+                      stroke-width="2"/>
+
+            <!-- TEXTO SVG-->
+            <text x="100" y="150" text-anchor="middle" font-size="14" 
+            fill="#5C4033">
+                Sweet Collection</text> 
+            </svg>
+            <P>Quise crear una insignia para mi sitio web, la cual representa la esencia de mi pastelería artesanal. La insignia está diseñada con colores que evocan dulzura y calidez, reflejando la pasión y dedicación que ponemos en cada uno de nuestros productos.</P>
+         </section>
+    </article>
+
         <p><a href="#inicio">Volver al inicio de la página</a></p>
         </main>
-     <!-- Pie de página -->
+
+      <!-- Pie de página -->
         <footer>    
             <address>
                 <p><strong><em>Sweet Collection</em></strong></p>
                 <p>Teléfono: +1 (555) 123-4567</p>
-                <p>Email: <a href="mailto:info@sweetcollection.com">info@sweetcollection.com</a></p></address>
+                <p>Email: <a href="mailto:info@sweetcollection.com">info@sweetcollection.com</a></p>
+            </address>
                 <p>Sitio externo:
                      <a href="https://blog.tipscr.com/" target="_blank" rel="noopener">Blog</a></p>
             
