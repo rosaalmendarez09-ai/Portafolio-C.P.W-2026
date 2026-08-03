@@ -61,17 +61,17 @@ Portafolio-Codificación de Páginas Web/
 
 | :----: | :------------------------- | :----------------------------------------------------------- | :---------------: | :--------------: |
 
-| S02 |Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo | [ver](unidad-02-html/sitio-demo/recursos/horarios.html) | [ver](unidad-02-html/sitio-demo/recursos/) |
+| S02 |Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo | [ver](unidad-02-html/sitio-demo/horarios.html) | [ver](recursos/S.02-Git-Colaborativo.png) |
 
-| S03 |Estructura del documento HTML5 |Trabajamos en grupo en creacion de páginas en formato HTML y trabajo colaborativo en GitHub| [ver](unidad-02-html/) | [ver](recursos/S.03TrabajoColaborativo02.png) |
+| S03 |Estructura del documento HTML5 |Trabajamos en grupo en creacion de páginas en formato HTML y trabajo colaborativo en GitHub| [ver](unidad-02-html/sitio-demo/index.html) | [ver](recursos/S.03TrabajoColaborativo02.png) |
 
 | S04 |Texto, enlaces y anclas |Agregamos el Favicon y los metadatosde una pagina personales; profundizamos en la estructura y
 organización de documentos HTML mediante la implementación de etiquetas semánticas, mejorando la accesibilidad y el orden lógico del sitio.
-Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna dentro de la misma página | [ver](unidad-02-html/sitio-demo/articulo.html/) | [ver](recursos/Evidencia-favicon.png/S.4.Enlaces-tipo-anclas1.png/S.4.Enlaces-tipo-anclas.png/S.4.Enlaces-tipo-anclas3.png/S.4.Texto_Semantico_citas.png) |
+Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna dentro de la misma página | [ver](unidad-02-html/sitio-demo/articulo.html/) | [ver](recursos/S.04.Enlaces-tipo-anclas.png) |
 
-| S05 | Listas y tablas | Crear listas ordenadas, desordenadas y de descripciones, a colocar una lista dentro de otra para organizarla mejor, y a diseñar tablas uniendo varias celdas para presentar información ordenada.| [ver](unidad-02-html/horario.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
+| S05 | Listas y tablas | Crear listas ordenadas, desordenadas y de descripciones, a colocar una lista dentro de otra para organizarla mejor, y a diseñar tablas uniendo varias celdas para presentar información ordenada.| [ver](unidad-02-html/horarios.html) | [ver](unidad-02-html/sitio-demo/recursos/S05_ListasyTablas.png) |
 
-| S06 | Formularios y semántica | Aprendí a crear formularios interactivos para recopilar información de los usuarios y a usar etiquetas con significado claro| [ver](unidad-02-html/sitio-demo/registro.html) | [ver](recursos/S.06.Formularios-y-semantica.png) |
+| S06 | Formularios y semántica | Aprendí a crear formularios interactivos para recopilar información de los usuarios y a usar etiquetas con significado claro| [ver](unidad-02-html/sitio-demo/registro.html) | [ver](recursos/S.6.Captura-Evidencia-formulario-semántica.png) |
 
 | S07 | Multimedia |Etiquetas, formatos y portadas, incorporar contenido multimedia como videos con subtítulos en VTT, a optimizar el peso de los archivos gráficos| [ver](unidad-02-html/sitio-demo/galeria.html) | [ver](recursos/S.07.Multimedia.png) |
 
