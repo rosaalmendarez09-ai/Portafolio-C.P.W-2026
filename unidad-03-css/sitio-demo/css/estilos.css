@@ -1,0 +1,9 @@
+/*css/estilos.css*/
+/*Reset básico*/
+*{box-sizing:border-box; margin:0; padding:0;}/*esta regla elimina los márgenes 
+y el relleno, borde en el ancho y alto del elemento predeterminados de todos los elementos y establece el modelo de caja para todos ellos.*/
+body {
+    font-family:Arial, sans-serif; color: #241350; background:#cccfd3}
+/*esta regla define la fuente y el color del texto en el cuerpo del documento*/
+h1{color:#1f4e79; font-size:32px; text-align:center;}
+

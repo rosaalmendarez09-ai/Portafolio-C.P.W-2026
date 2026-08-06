@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre Sweet Collection, tu pastelería artesanal con postres y pasteles horneados con amor y recetas de la abuela con ingredientes frescos cada día.">
+    <meta name="keywords" content="pasteles, artesanales, repostería, dulces">
+    <meta name="author" content="Rosa.Almendarez">
+
+    <title>Inicio | Sweet Collection</title>
+
+    <link rel="icon" href="recursos/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- Encabezado de la página -->
+
+    <header id="inicio">
+        <h1>Sweet Collection</h1>
+        <p>Descubre nuestra pastelería artesanal con postres y pasteles horneados con amor y recetas de la abuela<br> con ingredientes frescos cada día.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="listas.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="galeria.html"><strong>Nosotros</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <main id="Contenido">
+      <article>
+        <h2>Galería</h2>
+
+        <!-- Imagen y sus atributos -->
+        <img
+          src="recursos/image1.jpg"
+          alt="Imagen de nuestros delicioso pie de limón"
+          width="850"
+          height="700">
+
+        <!-- FIGURE: Agrupa un contenido con un pie -->
+        <figure>
+          <img
+            src="recursos/imagen2.jpg"
+            alt="Imagen de nuestros deliciosos queque chocofresa "
+            width="900"
+            height="900">
+          <figcaption>
+            Imagen de nuestros deliciosos queque <strong>chocofresa</strong>
+          </figcaption>
+        </figure>
+
+        <!-- Varios formatos: el navegador elige uno -->
+        <figure>
+          <picture>
+            <source srcset="recursos/imagen3.webp" type="image/webp">
+            <source srcset="recursos/imagen3.jpg" type="image/jpeg">
+            <img
+              src="recursos/imagen3.jpg"
+              alt="Imagen de nuestra deliciosa torta artesanal de melocotón"
+              width="800">
+              <!--height="500-->
+          </picture>
+          <figcaption>
+            Imagen de nuestra deliciosa torta artesanal de melocotón
+          </figcaption>
+        </figure>
+
+        <!-- Audio -->
+        <section id="audio">
+          <h3>Audio de bienvenida</h3>
+          <audio controls>
+            <source src="recursos/audio.mp3" type="audio/mpeg">
+            <source src="recursos/audio.ogg" type="audio/ogg">
+            <p>Tu navegador no soporta el elemento de audio.</p>
+            <a href="recursos/audio.mp3">Descargar el archivo</a>
+          </audio>
+        </section>
+
+        <!-- Video -->
+        <section id="video">
+          <h3>Mini tutorial Capcut</h3>
+
+          <video
+            controls
+            width="800"
+            height="500"
+            poster="recursos/imagen3.jpg"
+            preload="metadata">
+            <source src="recursos/video.mp4" type="video/mp4">
+            <source src="recursos/video.webm" type="video/webm">
+            <track
+              src="recursos/video.vtt"
+              kind="subtitles"
+              srclang="es"
+              label="Español"
+              default>
+            <p>Tu navegador no soporta el elemento de video.</p>
+            <a href="recursos/video.mp4">Descargar el archivo</a>
+          </video>
+        </section>
+      </article>
+
+       <article>
+        <h2>Gráficas vectoriales</h2>
+
+        <!-- SVG LINEA -->
+         <section id="insignia">
+            <h3>Insignia del módulo</h3>
+            <svg width="250" height="250" 
+            viewBox="0 0 200 200" 
+            xmlns="http://www.w3.org/2000/svg">
+
+            <!--Circle SVG-->
+                <circle cx="100" cy="100" r="90" fill="#FFC0CB"
+                stroke="#FF69B4"
+                stroke-width="1.5"/><!--Fil: COLOR DE RELLENO-->
+                <circle cx="100" cy="100" r="72"
+                fill="#FF69B4" 
+                stroke="#1F4E79" 
+                stroke-width="4" /> <!--Stroke: COLOR DEL BORDE-->
+                
+             <!--POLYGON SVG-->
+             <polygon points="100,45 112,80 149,80 119,102 130,137 100,115 70,137 81,102 51,80 88,80"
+                      fill="#E0E0E0"
+                      stroke="#1F4E79"
+                      stroke-width="2"/>
+
+            <!-- TEXTO SVG-->
+            <text x="100" y="150" text-anchor="middle" font-size="14" 
+            fill="#5C4033">
+                Sweet Collection</text> 
+            </svg>
+            <P>Quise crear una insignia para mi sitio web, la cual representa la<br>esencia de mi pastelería artesanal. La insignia está diseñada<br>con colores que evocan dulzura y calidez,<br>que ponemos en cada uno de nuestros productos.</P>
+         </section>
+    </article>
+
+        <p><a href="#inicio">Volver al inicio de la página</a></p>
+        </main>
+
+      <!-- Pie de página -->
+        <footer>    
+            <address>
+                <p><strong><em>Sweet Collection</em></strong></p>
+                <p>Teléfono: +1 (555) 123-4567</p>
+                <p>Email: <a href="mailto:info@sweetcollection.com">info@sweetcollection.com</a></p>
+            </address>
+                <p>Sitio externo:
+                     <a href="https://blog.tipscr.com/" target="_blank" rel="noopener">Blog</a></p>
+            
+            <p><small>&copy; 2024 Sweet Collection. Todos los derechos reservados.</small></p>
+            <p><small>@by Rosa Almendarez</small></p>
+        </footer>   
+</body>
+</html>

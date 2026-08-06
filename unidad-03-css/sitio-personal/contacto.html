@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubre Sweet Collection, tu pastelería artesanal con postres y pasteles horneados con amor y recetas de la abuela con ingredientes frescos cada día."
+    />
+    <meta name="keywords" content="pasteles, artesanales, repostería, dulces" />
+    <meta name="author" content="Rosa.Almendarez" />
+
+    <title>Inicio | Sweet Collection</title>
+
+    <link rel="icon" href="recursos/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+
+  <body>
+    <!-- Encabezado de la página -->
+
+    <header id="inicio">
+      <h1>Sweet Collection</h1>
+      <p>
+        Descubre nuestra pastelería artesanal con postres y pasteles horneados
+        con amor y recetas de la abuela<br />
+        con ingredientes frescos cada día.
+      </p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listas.html">Catálogo</a></li>
+          <li><a href="contacto.html"><strong>Contacto</strong></a></li>
+          <li><a href="galeria.html">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <article>
+        <h2>Pedidos</h2>
+        <p>Complete los datos para realizar su pedido.</p>
+
+        <form action="#" method="post">
+          <!--  GRUPO 1: DATOS PERSONALES -->
+          <fieldset>
+            <legend>Datos personales</legend>
+
+            <p>
+              <label for="nombre">Nombre completo *</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                minlength="3"
+                maxlength="60"
+                placeholder="Rosa Almendarez"
+              />
+            </p>
+
+            <p>
+              <label for="correo">Correo electrónico *</label>
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                required
+                placeholder="rosa.almendarez@ejemplo.com"
+              />
+              <small>Se usará para confirmar el pedido.</small>
+            </p>
+
+            <p>
+              <label for="telefono">Teléfono *</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                required
+                pattern="[0-9]{8}"
+                title="Ocho dígitos, sin espacios ni guiones"
+                placeholder="88887777"
+              />
+            </p>
+
+            <p>
+              <label for="clave">Contraseña de acceso *</label>
+              <input
+                type="password"
+                id="clave"
+                name="clave"
+                required
+                minlength="8"
+              />
+              <small>Mínimo ocho caracteres.</small>
+            </p>
+          </fieldset>
+
+          <!--  GRUPO 2: DETALLES DE LA SOLICITUD  -->
+          <fieldset>
+            <legend>Detalles de la solicitud</legend>
+            <p>
+              <label for="fecha">Fecha de retiro *</label>
+              <input type="date" id="fecha" name="fecha" required />
+            </p>
+
+            <p>
+              <label for="cantidad">Cantidad producto *</label>
+              <input
+                type="number"
+                id="cantidad"
+                name="cantidad"
+                required
+                min="1"
+                max="4"
+                step="1"
+                value="2"
+              />
+              <small>Entre 1 y 4 productos.</small>
+            </p>
+
+            <p>
+              <label for="factura">Factura electrónica</label>
+              <select id="factura" name="factura">
+                <option value="1">Si necesito</option>
+                <option value="2">No necesito</option>
+              </select>
+            </p>
+
+            <!-- GRUPO 3: Modalidad de pago, solo una opción puede seleccionarse -->
+            <fieldset>
+              <legend>Modalidad pago *</legend>
+              <p>
+                <input
+                  type="radio"
+                  id="transferencia"
+                  name="modalidad"
+                  value="transferencia"
+                />
+                <label for="transferencia">Transferencia</label>
+              </p>
+              <p>
+                <input type="radio" id="sinpe" name="modalidad" value="sinpe" />
+                <label for="sinpe">Sinpe móvil</label>
+              </p>
+            </fieldset>
+
+
+            <!-- Como te enteraste de nosotros, puede seleccionar varias opciones -->
+            <fieldset>
+              <legend>Como te enteraste de nosotros</legend>
+              <p>
+                <input
+                  type="checkbox"
+                  id="redes"
+                  name="enteraste"
+                  value="redes"
+                />
+                <label for="redes">Redes sociales</label>
+              </p>
+              <p>
+                <input
+                  type="checkbox"
+                  id="amigo"
+                  name="enteraste"
+                  value="amigo"
+                />
+                <label for="amigo">Por un amigo(a)</label>
+              </p>
+              <p>
+                <input
+                  type="checkbox"
+                  id="conocido"
+                  name="enteraste"
+                  value="conocido"
+                />
+                <label for="conocido">Ya nos conocías</label>
+              </p>
+            </fieldset>
+            
+            <fieldset> 
+            <p>
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios"
+                      rows="4" maxlength="300"
+                      placeholder="Escriba aquí sus comentarios"></textarea>
+            <small>Máximo 300 caracteres.</small>
+            </p>
+            </fieldset>
+            
+          </fieldset>
+
+          <!-- GRUPO 3: CONFIRMACIÓN -->
+          <fieldset>
+            <legend>Confirmación</legend>
+
+            <p>
+              <input type="checkbox" id="acepto" name="acepto" required />
+              <label for="acepto">
+                Acepto que me contacten por los medios indicados *
+              </label>
+            </p>
+          </fieldset>
+
+          <p>
+            <button type="submit">Enviar pedido</button>
+            <button type="reset">Limpiar formulario</button>
+          </p>
+        </form>
+      </article>
+
+      <aside>
+        <h2>Antes de enviar</h2>
+        <p>
+          Revise el <a href="horario.html#calendario">calendario</a> para
+          confirmar la disponibilidad de la fecha elegida.
+        </p>
+      </aside>
+
+      <p><a href="#inicio">Volver al inicio de la página</a></p>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+      <address>
+        <p>
+          <strong><em>Sweet Collection</em></strong>
+        </p>
+        <p>Teléfono: +1 (555) 123-4567</p>
+        <p>
+          Email:
+          <a href="mailto:info@sweetcollection.com">info@sweetcollection.com</a>
+        </p>
+      </address>
+      <p>
+        Sitio externo:
+        <a href="https://blog.tipscr.com/" target="_blank" rel="noopener"
+          >Blog</a
+        >
+      </p>
+
+      <p>
+        <small
+          >&copy; 2024 Sweet Collection. Todos los derechos reservados.</small
+        >
+      </p>
+      <p><small>@by Rosa Almendarez</small></p>
+    </footer>
+  </body>
+</html>
