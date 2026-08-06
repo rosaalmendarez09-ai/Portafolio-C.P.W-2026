@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rosa.Almendarez" />
+    <meta
+      name="description"
+      content="Imagen de la galería con contenido relacionado con HTML5"
+    />
+    <meta
+      name="keywords"
+      content="HTML5, estándar vivo, formatos, W3C, imágenes de laboratorio"
+    />
+    <title>Galería | Imágenes</title>
+  </head>
+
+  <body>
+    <!-- CABECERA (Sesión 6) -->
+    <header id="inicio">
+      <h1>Codificación de páginas web</h1>
+      <p>
+        Sitio de demostración del módulo
+        <abbr title="Código del módulo">CSTI12002</abbr>.
+      </p>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="articulo.html">Artículo</a></li>
+          <li><a href="horarios.html">Horario</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="insignia.html">Insignia</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="Contenido">
+      <article>
+        <h2>Galería</h2>
+
+        <!-- Imagen y sus atributos -->
+        <img
+          src="recursos/S.7_Lab01.jpg"
+          alt="Imagen de la galería de un laboratorio de informatica"
+          width="600"
+          height="400"
+        />
+
+        <!-- FIGURE: Agrupa un contenido con un pie -->
+        <figure>
+          <img
+            src="recursos/S.7_Lab02.jpg"
+            alt="Imagen de la galería de un laboratorio de informatica"
+            width="800"
+            height="500"
+          />
+          <figcaption>
+            Imagen de la galería de un laboratorio de informatica
+          </figcaption>
+        </figure>
+
+        <!-- Varios formatos: el navegador elige uno -->
+
+        <figure>
+          <picture>
+            <source srcset="recursos/S.7_Lab01.webp" type="image/webp" />
+            <source srcset="recursos/S.7_Lab02.jpg" type="image/jpeg" />
+            <img
+              src="recursos/S.7_Lab01.jpg"
+              alt="Imagen de la galería de un laboratorio de informatica"
+              width="800"
+              height="500"
+            />
+          </picture>
+          <figcaption>
+            Imagen de la galería de un laboratorio de informatica
+          </figcaption>
+        </figure>
+
+        <!-- Audio -->
+        <section id="audio">
+          <h3>Audio de bienvenida</h3>
+
+          <audio controls>
+            <source src="recursos/End-of-Line.mp3" type="audio/mpeg" >
+            <source src="recursos/End-of-Line.ogg" type="audio/ogg" >
+            <p>Tu navegador no soporta el elemento de audio.</p>
+            <a href="recursos/End-of-Line.mp3">Descargar el archivo</a>
+          </audio>
+        </section>
+
+        <!-- Video -->
+        <section id="video">
+          <h3>Mini tutorial Capcut</h3>
+
+          <video
+            controls
+            width="800"
+            height="500"
+            poster="recursos/tutorial.jpg"
+            preload="metadata">
+            <source src="recursos/video2.mp4" type="video/mp4" />
+            <source src="recursos/video2.webm" type="video/webm" />
+            <track
+              src="recursos/video2.vtt"
+              kind="subtitles"
+              srclang="es"
+              label="Español"
+              default/>
+            <p>Tu navegador no soporta el elemento de video.</p>
+            <a href="recursos/video2.mp4">Descargar el archivo</a>
+          </video>
+        </section>
+      </article>
+
+      <p><a href="#inicio">Volver al inicio de la página</a></p>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <h2>Contacto</h2>
+      <address>
+        Instituto Nacional de Aprendizaje<br />
+        Núcleo Comercio y Servicios<br />
+        Correo: <a href="mailto:rosa09@ejemplo.com">rosa09@ejemplo.com</a>
+      </address>
+
+      <p>
+        Recurso externo:
+        <a
+          href="https://developer.mozilla.org/es/"
+          target="_blank"
+          rel="noopener"
+        >
+          Documentación MDN Web Docs
+        </a>
+      </p>
+      <p>
+        <small
+          >&copy; 2026 &middot; INA &middot; Todos los derechos
+          reservados</small
+        >
+      </p>
+    </footer>
+  </body>
+</html>
