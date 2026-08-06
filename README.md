@@ -123,10 +123,7 @@ _Portada del sitio personal al cerrar la Unidad 2._
 
 <details markdown="1">
 <summary><b>Unidad 3 · Codificación de hojas de estilo</b> (sesiones 11 a 20)</summary>
-
-| Sesión | Tema                       | Qué aprendí |      Trabajo      |     Captura      |
-| :----: | :------------------------- | :---------- | :---------------: | :--------------: |
-|  S11   | Introducción a CSS         |             | [ver](unidad-03/) | [ver](recursos/) |
+Introducción a CSS,sintaxis y validación           | [ver](unidad-03-css/sitio-personal/index.html) | [ver](recursos/S11.Introduccion-CSS.png) |
 |  S12   | Selectores y pseudo-clases |             | [ver](unidad-03/) | [ver](recursos/) |
 |  S13   | Tipografía y color         |             | [ver](unidad-03/) | [ver](recursos/) |
 |  S14   | Modelo de cajas            |             | [ver](unidad-03/) | [ver](recursos/) |
