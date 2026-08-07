@@ -13,27 +13,7 @@ h1{color:#1f4e79; font-size:32px; text-align:center;}/*Aplicar estilos a a clase
     background-color: #fff3cd; padding: 10 15 10 15;
     /*Aplica como las manillas del reloj: arriba, derecha,abajo,izquierda*/}
 
-/*Aplicar estilos a identificadores o IDs*/
-#inicio {background-color: #1f4e79; padding: 30px; }
 
-
-/*Aplicamos solo a aenlaces dentro del nav*/
-nav a {color: #fff; margin-right: 15px; transition: color 0.3s; /*Cambio suave*/}
-
-/*Pseudo-clase :hover*/
-nav a:hover { color:#f8cbad;  /*al pasar el cursor*/}
-
-/*Pseudo-clase :nth-child: filas cebra en la tabla*/
-tbody tr: :nth-child(even){background-color: #e0d8d8;}
-
-/*Pseudo-elemento ::firts-letter y  ::selection*/
-article p::first-letter {font-size: 32px; font-weight: bold; color: #c55a11;}
-
-::selection {background-color: #1f4e79; color: #fff;}
-
-/*Agregar familia de fuentes traida  de goggle fonts*/
-body { font-family: "Popins", Arial, Helvetica, sans-serif;
-line-height: 1.6;}
 
 
 
