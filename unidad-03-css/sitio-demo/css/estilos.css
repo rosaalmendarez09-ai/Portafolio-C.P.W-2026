@@ -16,7 +16,7 @@ h1{color:#1f4e79;
 
 .destacado{
     background-color: #fff3cd; 
-    padding: 10 15 10 15;
+    padding: 10px 15px 10px 15px;
     /*Aplica como las manillas del reloj: arriba, derecha,abajo,izquierda*/}
 
 /*Pseudo-clase :hover*/

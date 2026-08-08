@@ -22,7 +22,7 @@ body {
 
 .destacado {
   background-color: rgb(224, 187, 213);
-  padding: 20 10 20 10;
+  padding: 20px 10px 20px 10px;
 }
 
 #footer {
@@ -41,5 +41,6 @@ tbody :nth-child(even){
 section h3::first-letter{
   color:rosybrown;
   font-size: 32px;
-  font-weight: bold;;
+  font-weight: bold;
 }
+
