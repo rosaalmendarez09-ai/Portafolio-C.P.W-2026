@@ -34,4 +34,5 @@ nav a:hover {
   color: #d33694;
 }
 
-nav a 
+tbody :nth-child(even){
+background-color: #e0d8d8;}
