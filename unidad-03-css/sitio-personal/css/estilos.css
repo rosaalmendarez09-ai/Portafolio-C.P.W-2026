@@ -35,4 +35,11 @@ nav a:hover {
 }
 
 tbody :nth-child(even){
-background-color: #e0d8d8;}
+background-color: #e0d8d8;
+}
+
+section h3::first-letter{
+  color:rosybrown;
+  font-size: 32px;
+  font-weight: bold;
+}
