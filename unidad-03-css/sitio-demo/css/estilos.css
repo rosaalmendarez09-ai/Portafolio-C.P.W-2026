@@ -5,13 +5,18 @@
 y el relleno, borde en el ancho y alto del elemento predeterminados de todos los elementos y establece el modelo de caja para todos ellos.*/
 
 body {
-    font-family:Arial, sans-serif; color: #241350; background:#cccfd3}
+    font-family:"Popins", Arial, Helvetica, sans-serif; 
+    color: #241350; 
+    background:#cccfd3}
 
 /*esta regla define la fuente y el color del texto en el cuerpo del documento*/
-h1{color:#1f4e79; font-size:32px; text-align:center;}/*Aplicar estilos a a clase*/
+h1{color:#1f4e79; 
+   font-size:32px; 
+   text-align:center;}/*Aplicar estilos a a clase*/
 
 .destacado{
-    background-color: #fff3cd; padding: 10 15 10 15;
+    background-color: #fff3cd; 
+    padding: 10 15 10 15;
     /*Aplica como las manillas del reloj: arriba, derecha,abajo,izquierda*/}
 
 /*Pseudo-clase :hover*/
