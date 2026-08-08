@@ -6,6 +6,7 @@ y el relleno, borde en el ancho y alto del elemento predeterminados de todos los
 
 body {
     font-family:Arial, sans-serif; color: #241350; background:#cccfd3}
+
 /*esta regla define la fuente y el color del texto en el cuerpo del documento*/
 h1{color:#1f4e79; font-size:32px; text-align:center;}/*Aplicar estilos a a clase*/
 
@@ -13,7 +14,26 @@ h1{color:#1f4e79; font-size:32px; text-align:center;}/*Aplicar estilos a a clase
     background-color: #fff3cd; padding: 10 15 10 15;
     /*Aplica como las manillas del reloj: arriba, derecha,abajo,izquierda*/}
 
+/*Pseudo-clase :hover*/
+nav a:hover { 
+    color:#f8cbad;  /*al pasar el cursor*/
+}
 
 
+/*Pseudo-clase :nth-child: filas cebra en la tabla*/
+tbody tr:nth-child(even){
+    background-color: #e0d8d8;
+}
 
 
+/*Pseudo-elemento ::first-letter y ::selection*/
+article p::first-letter{
+    font-size: 32px;
+    font-weight: bold;
+    color: #c55a11;
+}
+
+::selection{
+    background-color: #1f4e79;
+    color: white
+}
