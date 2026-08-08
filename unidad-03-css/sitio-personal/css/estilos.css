@@ -30,6 +30,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   color: rosybrown;
 }
+
 nav a:hover {
   color: #d33694;
 }
@@ -42,5 +43,17 @@ section h3::first-letter{
   color:rosybrown;
   font-size: 32px;
   font-weight: bold;
+}
+
+nav::before{
+  content: "🍰 | 🧁 ";
+  font-size: 2rem;
+  gap: 10px;
+  color: rosybrown;
+}
+
+input:focus{
+  border-color: #d33694;
+  box-shadow:inset 0 0 5px #ff52e5;
 }
 
