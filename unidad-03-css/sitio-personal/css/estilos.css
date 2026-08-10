@@ -38,6 +38,9 @@ header{
   padding: 30px;
   color: #4a2e2b;
 }
+header ul li{
+  list-style-type: none;
+}
 
 footer{
   background-color: #e8c5c8;
@@ -93,7 +96,7 @@ section h3::first-letter{
 }
 
 nav::before{
-  content: "🍰 | 🧁 ";
+  content: " 🍰 | 🧁 ";
   font-size: 2rem;
   gap: 10px;
   color: rosybrown;
