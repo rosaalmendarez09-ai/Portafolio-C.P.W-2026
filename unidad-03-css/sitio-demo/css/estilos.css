@@ -1,10 +1,18 @@
 /*css/estilos.css*/
-
 /*Reset básico*/
-*{box-sizing:border-box; margin:0; padding:0;}/*esta regla elimina los márgenes 
+/*100% del tamaño que el usuario configuró 
+Por omisión son 16px*/
+html{
+    font-size: 100%;
+}
+*{
+    box-sizing:border-box; margin:0; padding:0;
+}/*esta regla elimina los márgenes 
 y el relleno, borde en el ancho y alto del elemento predeterminados de todos los elementos y establece el modelo de caja para todos ellos.*/
 
 body {
+    font-size: 1rem;
+    line-height: 1.5;
     font-family:"Popins", Arial, Helvetica, sans-serif; 
     color: #241350; 
     background:#cccfd3}
