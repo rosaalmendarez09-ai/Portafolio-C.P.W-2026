@@ -5,6 +5,7 @@ Por omisión son 16px*/
 html{
     font-size: 100%;
 }
+
 *{
     box-sizing:border-box; margin:0; padding:0;
 }/*esta regla elimina los márgenes 
@@ -13,15 +14,38 @@ y el relleno, borde en el ancho y alto del elemento predeterminados de todos los
 body {
     font-size: 1rem;
     line-height: 1.5;
-    font-family:"Popins", Arial, Helvetica, sans-serif; 
-    color: #241350; 
-    background:#cccfd3}
+    font-family:" Arial, sans-serif; 
+    color #6583d4; 
+    background:#cccfd3
+}
 
 /*esta regla define la fuente y el color del texto en el cuerpo del documento*/
-h1{color:#1f4e79; 
+h1{color:#f0f2f3; 
    font-size:32px; 
-   text-align:center;}/*Aplicar estilos a a clase*/
+   text-align:center;
+}
+h1{font-size: 2.5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+main p{
+    max-width: 70ch;
+}/*ch es el ancho del caracter cero de la fuente en uso.El valor
+70 marca el rango de lectura cómoda por línea o renglón: más larga, 
+la vista se pierde al cambio de linea*/
 
+/*al pasar el cursor*/
 .destacado{
     background-color: #fff3cd; 
     padding: 10px 15px 10px 15px;
