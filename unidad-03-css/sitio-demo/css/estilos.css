@@ -7,7 +7,9 @@ html{
 }
 
 *{
-    box-sizing:border-box; margin:0; padding:0;
+    box-sizing:border-box; 
+    margin:0; 
+    padding:0;
 }/*esta regla elimina los márgenes 
 y el relleno, borde en el ancho y alto del elemento predeterminados de todos los elementos y establece el modelo de caja para todos ellos.*/
 
@@ -15,8 +17,8 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     font-family:" Arial, sans-serif; 
-    color #2226249F; 
-    background: #f0f6e4;
+    color #333; 
+    background-color: #fcfcfc;
 }
 
 /*esta regla define la fuente y el color del texto en el cuerpo del documento*/
@@ -37,6 +39,21 @@ h3{
 p{
     font-size: 1rem;
     font-weight: 400;
+}
+
+header{
+    background-color: #1f4e79;
+    color: #fff;
+}
+
+footer{
+    background-color: #1f4e79;
+    padding: 20px;
+    margin-top: 32px;
+}
+
+h2,h3{
+    color: #1f4e79;
 }
 main p{
     max-width: 70ch;
@@ -67,6 +84,10 @@ header nav a{
     padding: 10px;/*Aplica como las manillas del reloj: arriba, derecha,abajo,izquierda*/
 }
 
+#inicio{
+    background-color: #1f4e79;
+    padding: 30px;
+}
 /*Pseudo-clase :hover*/
 nav a:hover { 
     color:#f8cbad;  /*al pasar el cursor*/
