@@ -57,6 +57,8 @@ footer{
     padding: 24px;
     border-radius: 8px;
 }
+
+
 h2,h3{
     color: #1f4e79;
 }
@@ -90,7 +92,10 @@ header nav a{
 }
 
 #inicio{
-    background-color: #1f4e79;
+    background-image: url(../recursos/fondo1.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 30px;
 }
 
