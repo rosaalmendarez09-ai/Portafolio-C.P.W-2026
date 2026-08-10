@@ -62,6 +62,7 @@ footer{
 h2,h3{
     color: #1f4e79;
 }
+
 main p{
     max-width: 70ch;
 }/*ch es el ancho del caracter cero de la fuente en uso.El valor
@@ -83,6 +84,10 @@ header nav a{
     letter-spacing: 1px;   
     font-size: 0.9rem;
     text-decoration: none;
+}
+
+header ul li{
+    list-style-type: none;
 }
 
 /*aplicar estilos a clases*/
