@@ -42,16 +42,21 @@ p{
 }
 
 header{
-    background-color: #1f4e79;
+    background-color: #a7c8e7;
     color: #fff;
 }
 
 footer{
-    background-color: #1f4e79;
+    background-color: #7db4e9;
     padding: 20px;
     margin-top: 32px;
 }
 
+.portada-texto {
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 24px;
+    border-radius: 8px;
+}
 h2,h3{
     color: #1f4e79;
 }
@@ -88,6 +93,7 @@ header nav a{
     background-color: #1f4e79;
     padding: 30px;
 }
+
 /*Pseudo-clase :hover*/
 nav a:hover { 
     color:#f8cbad;  /*al pasar el cursor*/
