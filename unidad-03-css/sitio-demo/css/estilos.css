@@ -5,7 +5,6 @@ Por omisión son 16px*/
 html{
     font-size: 100%;
 }
-
 *{
     box-sizing: border-box; 
     margin: 0; 
@@ -13,13 +12,13 @@ html{
 }/*esta regla elimina los márgenes 
 y el relleno, borde en el ancho y alto del elemento predeterminados de todos los elementos y establece el modelo de caja para todos ellos.*/
 
+
 body {
     font-size: 1rem;
     line-height: 1.6;
     font-family:" Arial, sans-serif"; 
     color: #333; 
     background-color: #fcfcfc;
-    
 }
 
 .contenedor{
@@ -67,12 +66,10 @@ footer{
     border-radius: 8px;
 }
 
-
 h2,h3{
     color: #1f4e79;
     margin-bottom: 12px;
 }
-
 
 main p{
     max-width: 70ch;
@@ -83,7 +80,6 @@ main a{
     text-decoration: none;
     border-bottom: 1px solid #1f4e79;
 }
-
 blockquote p{
     font-style: italic;
     color: #555;
@@ -95,10 +91,14 @@ header nav a {
     letter-spacing: 1px;   
     font-size: 0.9rem;
     text-decoration: none;
-    display: inline-block;
     padding: 10px 15px;
 }
-
+header ul li {
+    list-style-type: none;
+}
+header nav li {
+    display: inline-block;
+}/*Coloca las opciones de menu en linea, uno al lado del otro*/
 header nav ul {
     list-style-type: none;
 }/* Quita las viñetas y el subrayado*/
@@ -108,7 +108,6 @@ header nav ul {
     background-color: #fff3cd; 
     padding: 10px 20px;/*Aplica como las manillas del reloj: arriba, derecha,abajo,izquierda*/
 }
-
 #inicio {
     background-image: url(../recursos/fondo1.avif);
     background-size: cover;
@@ -123,9 +122,11 @@ nav a {
     margin-right: 15px;
     transition: color 0.3s;
 }
-
 nav a :hover {
     color: #f8cbad;
+}
+nav li {
+    margin-right: 15px;
 }
 
 
@@ -133,7 +134,6 @@ nav a :hover {
 tbody tr:nth-child(even){
     background-color: #e0d8d8;
 }
-
 
 /*Pseudo-elemento ::first-letter y ::selection*/
 article p::first-letter{
@@ -169,7 +169,6 @@ th, td {
     border: 1px solid #dddddd;
     text-align: left;
 }
-
 thead th { 
     background-color: #1f4e79;
     color: white;
@@ -180,11 +179,9 @@ tfoot td {
     font-style: italic;
     background-color: #f5f7fa;
 }
-
 fieldset{
     padding: 16px;
 }
-
 section {
     margin-bottom: 32px;
 }
@@ -194,7 +191,6 @@ main ul, main ol {
     padding-left: 24px;
     margin-bottom: 16px;
 }
-
 main li { 
     margin-bottom: 6px;
 }
@@ -204,7 +200,6 @@ main li {
     font-weight: 700;
     margin-top: 12px;
 }
-
 #glosario dd {
     margin-left: 20px;
     margin-bottom: 8px;
@@ -224,3 +219,15 @@ caption {
     margin-bottom: 24px;
 }
 
+/*Los cinco valores de position
+static: valor por omisión.
+relative:se desplaza desde su propia posicion, conserva su propia
+posicion y los elementos vecinos no se mueven.
+absolute:Se ubica respecto al ancestro más cercano.
+fixed:Se ubica respecto a la ventana. No se mueve al desplazarse.
+Sticky: Fluye normal hast allegar al humbral, y entonces se pega.*/
+
+/*Patrón para este caso*/
+.figura-destacada {
+
+}
