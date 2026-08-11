@@ -93,7 +93,7 @@ header ul li{
 /*aplicar estilos a clases*/
 .destacado{
     background-color: #fff3cd; 
-    padding: 10px;/*Aplica como las manillas del reloj: arriba, derecha,abajo,izquierda*/
+    padding: 10px 20px;/*Aplica como las manillas del reloj: arriba, derecha,abajo,izquierda*/
 }
 
 #inicio{
@@ -126,4 +126,29 @@ article p::first-letter{
 ::selection{
     background-color: #1f4e79;
     color: white
+}
+
+aside {
+    padding: 20px;
+    border: 2px solid #c55a11;
+    border-radius: 8px ;
+}/*En este caso el padding aplica a los 4 lados a la vez: 
+padding: 10px 20px aplica vertical y horizontal
+padding: 10px 20px 15px 5px aplica a los 4 lados valores distintos
+En el sentido de las manecillas del reloj*/
+
+/*Aplicar lado por lado
+padding-top 10px aplica arriba
+padding-right 10pm10px aplica derecha
+padding-bottom 10px abajo
+padding-left 10px aplica izquierda*/
+
+/*Aplica a la tabla horario.html*/
+
+th, td {
+    padding: 10px;
+}
+
+fieldset{
+    padding: 16px;
 }
