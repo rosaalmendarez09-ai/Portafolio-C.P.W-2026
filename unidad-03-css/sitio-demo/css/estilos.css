@@ -95,9 +95,16 @@ header nav a {
     letter-spacing: 1px;   
     font-size: 0.9rem;
     text-decoration: none;
-    display: inline-block;
     padding: 10px 15px;
 }
+
+header ul li {
+    list-style-type: none;
+}
+
+header nav li {
+    display: inline-block;
+}/*Coloca las opciones de menu en linea, uno al lado del otro*/
 
 header nav ul {
     list-style-type: none;
