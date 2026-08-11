@@ -7,9 +7,9 @@ html{
 }
 
 *{
-    box-sizing:border-box; 
-    margin:0; 
-    padding:0;
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
 }/*esta regla elimina los márgenes 
 y el relleno, borde en el ancho y alto del elemento predeterminados de todos los elementos y establece el modelo de caja para todos ellos.*/
 
@@ -21,8 +21,8 @@ body {
     background-color: #fcfcfc;
 }
 
-main {
-    max-width: 1000px;
+.contenedor{
+    max-width: 1200px;
     margin: 0 auto;
 }/*0 aplica a la parte vertical y horizontal el auto
 reparte el espacio sobrante por igual a ambos lados,
@@ -30,7 +30,7 @@ lo centa en un elemento con ancho indicado*/
 
 /*esta regla define la fuente y el color del texto en el cuerpo del documento*/
 h1{color:#aad6fe;  
-   text-align:center;
+   text-align: center;
 }
 h1{font-size: 2.5rem;
     font-weight: 700;
@@ -89,24 +89,26 @@ blockquote p{
 }
 
 /*Transformación y espacio*/
-header nav a{
-    text-transform:uppercase;
+header nav a {
+    text-transform: uppercase;
     letter-spacing: 1px;   
     font-size: 0.9rem;
     text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
 }
 
-header ul li{
+header nav ul {
     list-style-type: none;
-}
+}/* Quita las viñetas y el subrayado*/
 
 /*aplicar estilos a clases*/
-.destacado{
+.destacado {
     background-color: #fff3cd; 
     padding: 10px 20px;/*Aplica como las manillas del reloj: arriba, derecha,abajo,izquierda*/
 }
 
-#inicio{
+#inicio {
     background-image: url(../recursos/fondo1.avif);
     background-size: cover;
     background-position: center;
@@ -115,7 +117,7 @@ header ul li{
 }
 
 /*Pseudo-clase :hover*/
-nav a:hover { 
+nav a hover { 
     color:#f8cbad;  /*al pasar el cursor*/
 }
 
@@ -157,6 +159,19 @@ padding-left 10px aplica izquierda*/
 
 th, td {
     padding: 10px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+thead th { 
+    background-color: #1f4e79;
+    color: white;
+}/* Encabezados de la tabla*/
+
+tfoot td {
+    padding: 12px;
+    font-style: italic;
+    background-color: #f5f7fa;
 }
 
 fieldset{
@@ -166,3 +181,39 @@ fieldset{
 section{
     margin: bottom 32px;
 }
+
+/* Listas de horario.html*/
+main ul, main ol {
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+
+main li { 
+    margin-bottom: 6px;
+}
+
+/*La lista descriptiva*/
+#glosario dt {
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+#glosario dd {
+    margin-left: 20px;
+    margin-bottom: 8px;
+}/* La sangría de <dd> es lo que hace visible la relación entre el término 
+y su definición o descripción*/
+
+/* La tabla de calendario*/
+table { 
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+caption {
+    padding: 8px;
+    font-weight: 700px;
+    margin-bottom: 24px;
+}
+
