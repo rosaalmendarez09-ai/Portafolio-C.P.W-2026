@@ -15,10 +15,11 @@ y el relleno, borde en el ancho y alto del elemento predeterminados de todos los
 
 body {
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
     font-family:" Arial, sans-serif"; 
     color: #333; 
     background-color: #fcfcfc;
+    
 }
 
 .contenedor{
@@ -117,8 +118,14 @@ header nav ul {
 }
 
 /*Pseudo-clase :hover*/
-nav a hover { 
+nav a { 
     color:#f8cbad;  /*al pasar el cursor*/
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+nav a :hover {
+    color: #f8cbad;
 }
 
 
@@ -178,8 +185,8 @@ fieldset{
     padding: 16px;
 }
 
-section{
-    margin: bottom 32px;
+section {
+    margin-bottom: 32px;
 }
 
 /* Listas de horario.html*/
@@ -213,7 +220,7 @@ table {
 
 caption {
     padding: 8px;
-    font-weight: 700px;
+    font-weight: 700;
     margin-bottom: 24px;
 }
 
