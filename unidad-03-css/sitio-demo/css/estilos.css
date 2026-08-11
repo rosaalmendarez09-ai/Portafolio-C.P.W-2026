@@ -21,6 +21,13 @@ body {
     background-color: #fcfcfc;
 }
 
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}/*0 aplica a la parte vertical y horizontal el auto
+reparte el espacio sobrante por igual a ambos lados,
+lo centa en un elemento con ancho indicado*/
+
 /*esta regla define la fuente y el color del texto en el cuerpo del documento*/
 h1{color:#aad6fe;  
    text-align:center;
@@ -39,6 +46,7 @@ h3{
 p{
     font-size: 1rem;
     font-weight: 400;
+    margin-bottom: 16px;
 }
 
 header{
@@ -61,7 +69,9 @@ footer{
 
 h2,h3{
     color: #1f4e79;
+    margin-bottom: 12px;
 }
+
 
 main p{
     max-width: 70ch;
@@ -151,4 +161,8 @@ th, td {
 
 fieldset{
     padding: 16px;
+}
+
+section{
+    margin: bottom 32px;
 }
