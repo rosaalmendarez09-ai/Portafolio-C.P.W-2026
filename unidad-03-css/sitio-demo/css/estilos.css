@@ -230,8 +230,12 @@ fixed:Se ubica respecto a la ventana. No se mueve al desplazarse.
 Sticky: Fluye normal hast allegar al humbral, y entonces se pega.*/
 
 /*Patrón para este caso*/
-.figure {
+figure {
     border: 1px solid #dddddd;
     border-radius: 6px;
     padding: 12px;
+}
+.figura-destacada {
+    position: relative;/*Posiciona como padre y este no se mueve.Es referencia
+    de hijos absolutos*/
 }
