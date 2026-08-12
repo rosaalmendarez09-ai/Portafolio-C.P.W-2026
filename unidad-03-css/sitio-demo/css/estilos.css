@@ -1,11 +1,11 @@
 /*css/estilos.css*/
-/*Reset básico*/
 /*100% del tamaño que el usuario configuró 
 Por omisión son 16px*/
 html{
     font-size: 100%;
 }
-*{
+
+*{/*Reset básico*/
     box-sizing: border-box; 
     margin: 0; 
     padding: 0;
@@ -87,7 +87,7 @@ blockquote p{
 
 /*Transformación y espacio*/
 header nav a {
-    text-transform: uppercase;
+    text-transform:capitalize;
     letter-spacing: 1px;   
     font-size: 0.9rem;
     text-decoration: none;
@@ -128,7 +128,6 @@ nav a :hover {
 nav li {
     margin-right: 15px;
 }
-
 
 /*Pseudo-clase :nth-child: filas cebra en la tabla*/
 tbody tr:nth-child(even){
@@ -229,5 +228,4 @@ Sticky: Fluye normal hast allegar al humbral, y entonces se pega.*/
 
 /*Patrón para este caso*/
 .figura-destacada {
-
 }

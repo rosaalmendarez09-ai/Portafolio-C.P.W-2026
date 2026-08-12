@@ -1,17 +1,34 @@
+html {
+  font-size: 100%
+}
+
 /*Reset básico*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 } /*esta regla elimina los másgenes*/
 
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #4a2e2b;
+  background-color: #e8c5c8;
+}
+.contenedor { 
+  max-width: 1200px;
+  margin: 0 auto;
+}
 h1 {
   color: #e8c5c8;
+  -webkit-text-stroke: #4a2e2b;
   text-align: center;
   margin-top: 30px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
 }
+
 h1{
   font-size: 2.5rem;
   font-weight: 700;
@@ -31,17 +48,32 @@ p{
   font-weight: 400;
 }
 header{
-  background-image: url(../recursos/fondosp.webp);
+  background-image: url(../recursos/fondosp.jpg);
   background-size: cover;
   background-position:center;
   background-repeat: no-repeat;
   padding: 30px;
-  color: #4a2e2b;
+  color: rgba( 0, 0, 0, 0.35);
+}
+.header { 
+  color: #e8c5c8;
 }
 header ul li{
   list-style-type: none;
 }
 
+header nav a {
+  text-transform: uppercase;
+    letter-spacing: 1px;   
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: black;
+    font-weight: 600;
+}
+header nav li {
+  display: inline-block;
+}
 footer{
   background-color: #e8c5c8;
   padding: 24px;
@@ -64,10 +96,6 @@ main p{
 
 main a{
   text-decoration: dotted;
-}
-body {
-  font-family: "Sekuya", Arial, Helvetica, sans-serif;
-  line-height: 1.6;
 }
 
 .destacado {
@@ -96,7 +124,6 @@ section h3::first-letter{
 }
 
 nav::before{
-  content: " 🍰 | 🧁 ";
   font-size: 2rem;
   gap: 10px;
   color: rosybrown;
@@ -106,4 +133,5 @@ input:focus{
   border-color: #d33694;
   box-shadow:inset 0 0 5px #ff52e5;
 }
+
 
