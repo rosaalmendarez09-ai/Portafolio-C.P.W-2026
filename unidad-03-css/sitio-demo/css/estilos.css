@@ -24,6 +24,7 @@ body {
 .contenedor{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 25px;
 }/*0 aplica a la parte vertical y horizontal el auto
 reparte el espacio sobrante por igual a ambos lados,
 lo centa en un elemento con ancho indicado*/
@@ -83,6 +84,7 @@ main a{
 blockquote p{
     font-style: italic;
     color: #555;
+    border-left: 4px solid #1f4e79;
 }
 
 /*Transformación y espacio*/
@@ -98,6 +100,7 @@ header ul li {
 }
 header nav li {
     display: inline-block;
+    margin-right: 15px;
 }/*Coloca las opciones de menu en linea, uno al lado del otro*/
 header nav ul {
     list-style-type: none;
@@ -227,5 +230,8 @@ fixed:Se ubica respecto a la ventana. No se mueve al desplazarse.
 Sticky: Fluye normal hast allegar al humbral, y entonces se pega.*/
 
 /*Patrón para este caso*/
-.figura-destacada {
+.figure {
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 12px;
 }
