@@ -19,6 +19,7 @@ body {
     font-family:" Arial, sans-serif"; 
     color: #333; 
     background-color: #fcfcfc;
+    padding-top: 180px;
 }
 
 .contenedor{
@@ -112,12 +113,22 @@ header nav ul {
     padding: 10px 20px;/*Aplica como las manillas del reloj: arriba, derecha,abajo,izquierda*/
 }
 #inicio {
+    position: fixed;/*Vista fija con respecto a la ventana.Cabecera queda fija arriba*/
+    top: 0;
+    left: 0;
+    width: 100%;
     background-image: url(../recursos/fondo1.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 30px;
+    z-index: 100;/*cuando mayor es el número más al frente va a estar*/
 }
+
+/*#inicio {
+    position: sticky;
+    top:0;
+} *//*Fluye normal y se pega al llegar arriba o limite de su contenedor*/
 
 /*Pseudo-clase :hover*/
 nav a { 
@@ -230,8 +241,30 @@ fixed:Se ubica respecto a la ventana. No se mueve al desplazarse.
 Sticky: Fluye normal hast allegar al humbral, y entonces se pega.*/
 
 /*Patrón para este caso*/
-.figure {
+figure {
     border: 1px solid #dddddd;
     border-radius: 6px;
     padding: 12px;
 }
+.figura-destacada {
+    position: relative;/*Posiciona como padre y este no se mueve.Es referencia
+    de hijos absolutos*/
+}
+.etiqueta {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #c55a11;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    z-index: 10;
+}
+
+/* z-index SOLO funciona en elementos con positions declarado
+si el es static no funciona.
+escala de valores de z-index 10
+para elementos posicionados dentro de contenido.
+100 la cabecera fija.
+1000 ventanas emergentes y capas superpuestas
+9999 noo hace falta usarlo casi nunca porque no deja margen a otro valos por encima */
