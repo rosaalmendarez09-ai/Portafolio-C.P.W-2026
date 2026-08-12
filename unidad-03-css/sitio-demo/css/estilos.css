@@ -239,3 +239,12 @@ figure {
     position: relative;/*Posiciona como padre y este no se mueve.Es referencia
     de hijos absolutos*/
 }
+.etiqueta {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #c55a11;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
