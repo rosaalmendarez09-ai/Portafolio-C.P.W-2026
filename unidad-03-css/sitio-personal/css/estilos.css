@@ -24,7 +24,7 @@ body {
 .contenedor { 
   max-width: 1200px;
   margin: 0 auto;
-  padding: 25px;
+  padding: 30px;
 }
 
 h1 {
@@ -38,16 +38,16 @@ h1 {
 }
 
 h2{
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 h3{
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 p{
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   margin-bottom: 16px;
 }/* Separa los párrafos */
@@ -59,17 +59,18 @@ header{
   background-repeat: no-repeat;
   padding: 30px;
   color: rgba( 0, 0, 0, 0.35);
-}
-.header { 
   color: #e8c5c8;
 }
-header ul li{
-  list-style-type: none;
-}
+
+header nav ul {
+    list-style-type: none;
+    text-align: right;
+    text-align: ;
+}/* Quita las viñetas y el subrayado*/
 
 header nav a {
-  text-transform: uppercase;
-    letter-spacing: 1px;   
+    text-transform: uppercase;
+    letter-spacing: 3px;   
     font-size: 0.9rem;
     text-decoration: none;
     padding: 10px 15px;
@@ -79,11 +80,12 @@ header nav a {
 header nav li {
   display: inline-block;
 }
+
 footer{
   background-color: #e8c5c8;
   padding: 20px;
   margin-top: 32px;
-  text-align: center;
+  text-align:center;
 }
 
 .portada-texto{
@@ -102,7 +104,7 @@ main p{
 }
 
 main a{
-  text-decoration: dotted;
+  text-decoration: none;
 }
 
 .destacado {
@@ -120,8 +122,31 @@ nav a:hover {
   color: #d33694;
 }
 
-tbody :nth-child(even){
-  background-color: #e0d8d8;
+table { 
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #e8c5c8;
+    text-align: left;
+}
+
+thead th { 
+    background-color: rosybrown;
+    color: #4a2e2b;
+}
+
+tfoot td {
+    padding: 12px;
+    font-style: italic;
+    background-color: rgb(219, 177, 177);
+}
+
+fieldset{
+    padding: 16px;
 }
 
 section h3::first-letter{
