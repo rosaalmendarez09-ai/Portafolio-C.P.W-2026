@@ -19,6 +19,7 @@ body {
     font-family:" Arial, sans-serif"; 
     color: #333; 
     background-color: #fcfcfc;
+    padding-top: 180px;
 }
 
 .contenedor{
@@ -112,12 +113,21 @@ header nav ul {
     padding: 10px 20px;/*Aplica como las manillas del reloj: arriba, derecha,abajo,izquierda*/
 }
 #inicio {
+    position: fixed;/*Vista fija con respecto a la ventana.Cabecera queda fija arriba*/
+    top: 0;
+    left: 0;
+    width: 100%;
     background-image: url(../recursos/fondo1.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 30px;
 }
+
+/*#inicio {
+    position: sticky;
+    top:0;
+} *//*Fluye normal y se pega al llegar arriba o limite de su contenedor*/
 
 /*Pseudo-clase :hover*/
 nav a { 
