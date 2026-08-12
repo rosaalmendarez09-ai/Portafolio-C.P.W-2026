@@ -15,7 +15,12 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #4a2e2b;
   background-color: #e8c5c8;
+  text-align: center;
 }
+#contenido-principal {
+  text-align: left;
+}
+
 .contenedor { 
   max-width: 1200px;
   margin: 0 auto;
@@ -26,7 +31,7 @@ h1 {
   text-align: center;
   margin-top: 30px;
   font-family: 'Courier New', Courier, monospace;
-  text-transform: uppercase;
+  text-transform:uppercase;
 }
 
 h1{
@@ -37,6 +42,7 @@ h1{
 h2{
   font-size: 2rem;
   font-weight: 600;
+  padding: 20px;
 }
 h3{
   font-size: 1.5rem;
