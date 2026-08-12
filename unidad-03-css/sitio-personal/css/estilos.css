@@ -15,7 +15,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #4a2e2b;
   background-color: #e8c5c8;
-  text-align: center;
+  padding-top: 180px;
 }
 #contenido-principal {
   text-align: left;
@@ -24,17 +24,15 @@ body {
 .contenedor { 
   max-width: 1200px;
   margin: 0 auto;
+  padding: 25px;
 }
+
 h1 {
   color: #e8c5c8;
-  -webkit-text-stroke: #4a2e2b;
   text-align: center;
   margin-top: 30px;
   font-family: 'Courier New', Courier, monospace;
   text-transform:uppercase;
-}
-
-h1{
   font-size: 2.5rem;
   font-weight: 700;
 }
@@ -42,7 +40,6 @@ h1{
 h2{
   font-size: 2rem;
   font-weight: 600;
-  padding: 20px;
 }
 h3{
   font-size: 1.5rem;
@@ -52,7 +49,9 @@ h3{
 p{
   font-size: 1rem;
   font-weight: 400;
-}
+  margin-bottom: 16px;
+}/* Separa los párrafos */
+
 header{
   background-image: url(../recursos/fondosp.jpg);
   background-size: cover;
@@ -82,8 +81,9 @@ header nav li {
 }
 footer{
   background-color: #e8c5c8;
-  padding: 24px;
+  padding: 20px;
   margin-top: 32px;
+  text-align: center;
 }
 
 .portada-texto{
@@ -92,8 +92,9 @@ footer{
   border-radius:10px;
 }
 
-h2,h3{
+h2, h3{
   color: #4a2e2b;
+  margin-bottom: 12px
 }
 
 main p{
@@ -138,6 +139,12 @@ nav::before{
 input:focus{
   border-color: #d33694;
   box-shadow:inset 0 0 5px #ff52e5;
+}
+
+aside{
+  padding: 20px;
+  border: 2px solid rosybrown;
+  border-radius: 8px;
 }
 
 
