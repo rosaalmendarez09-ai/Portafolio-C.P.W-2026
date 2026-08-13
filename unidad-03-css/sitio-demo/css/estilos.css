@@ -103,8 +103,16 @@ header nav a {
 
 header nav ul {
     display: flex; /*Activa flexbox y coloca en fila horizontal los elementos por defecto*/
-    list-style-type: none;
-}/* Quita las viñetas y el subrayado*/
+    list-style-type: none; /* Quita las viñetas y el subrayado*/
+    gap: 15px; /*Separación uniforme entre elementos*/
+    /*justify-content: flex-start; Coloca elementos al inicio de la fila
+    justify-content: flex-star los coloca al inicio
+    justify-content: flex-end los coloca al final
+    justify-content: center los coloca al centro
+    justify-content: space between coloca los extremos pegasdos
+    justify-content: space-around espacio alrededor de cada uno*/
+    justify-content: space-evenly; todos los espacios iguales*/
+}
 
 /*aplicar estilos a clases*/
 .destacado {
@@ -112,6 +120,9 @@ header nav ul {
     padding: 10px 20px;/*Aplica como las manillas del reloj: arriba, derecha,abajo,izquierda*/
 }
 #inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;/*Vista fija con respecto a la ventana.Cabecera queda fija arriba*/
     top: 0;
     left: 0;
@@ -120,7 +131,7 @@ header nav ul {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 30px;
+    padding: 12px 20px;
     z-index: 100;/*cuando mayor es el número más al frente va a estar*/
 }
 
