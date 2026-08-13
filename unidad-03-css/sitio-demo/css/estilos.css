@@ -96,12 +96,13 @@ header nav a {
     padding: 10px 15px;
 }
 
-header nav li {
-    display: inline-block;
+/*header nav li{ 
+    /*display: inline-block;
     margin-right: 15px;
 }/*Coloca las opciones de menu en linea, uno al lado del otro*/
 
 header nav ul {
+    display: flex; /*Activa flexbox y coloca en fila horizontal los elementos por defecto*/
     list-style-type: none;
 }/* Quita las viñetas y el subrayado*/
 
