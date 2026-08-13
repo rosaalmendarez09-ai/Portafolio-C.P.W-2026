@@ -1,5 +1,5 @@
 html {
-  font-size: 100%;
+  font-size: 16px;
 }
 
 /*Reset básico*/
@@ -15,23 +15,13 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #4a2e2b;
   background-color: #e8c5c8;
-  padding-top: 210px;/*Crea distancia entre el texto y el header*/
-}
-
-#contenido-principal {
-  text-align: left;
+  padding-top: 200px;/*Crea distancia entre el texto y el header*/
 }
 
 .contenedor {
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
-}
-
-blockquote p{
-    font-style: italic;
-    color: #555;
-    border-left: 4px solid #d33694;
 }
 
 h1 {
@@ -69,7 +59,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   padding: 30px;
-  color: rgba(0, 0, 0, 0.35);
+  color: rgba(0, 0, 0, 0.5);
   color: #e8c5c8;
   z-index: 100;
 }
@@ -77,7 +67,6 @@ header {
 header nav ul {
   list-style-type: none;
   text-align: right;
-  text-align:;
 } /* Quita las viñetas y el subrayado*/
 
 header nav a {
@@ -90,9 +79,19 @@ header nav a {
   font-weight: 600;
 }
 header nav li {
-  display: inline-block;
+  display: inline-block; /*Acomoda menú en linea*/
+  background-color: #e8c5c8; /*Crea un fondo al texto*/ 
+  border-radius: 8px;
+}
+nav a:hover {
+  color: #d33694;
 }
 
+blockquote p{
+    font-style: italic;
+    color: #555;
+    border-left: 2px solid #d33694; /*Crea una línea de color*/
+}
 footer {
   background-color: #e8c5c8;
   padding: 20px;
@@ -102,7 +101,7 @@ footer {
 
 .portada-texto {
   background-color: rgb(0, 0, 0, 0.35);
-  padding: 24px;
+  padding: 20px;
   border-radius: 10px;
 }
 
@@ -110,10 +109,11 @@ h2,
 h3 {
   color: #4a2e2b;
   margin-bottom: 12px;
+  margin-left: 20px;
 }
 
 main p {
-  max-width: 60ch;
+  max-width: 70ch;
 }
 
 main a {
@@ -121,7 +121,7 @@ main a {
 }
 
 main ul, main ol {
-    padding-left: 24px;
+    padding-left: 30px;
     margin-bottom: 16px;
 }
 main li { 
@@ -137,10 +137,7 @@ main li {
   font-size: small;
   font-family: "Times New Roman", Times, serif;
   color: rosybrown;
-}
-
-nav a:hover {
-  color: #d33694;
+  padding: 20px;
 }
 
 table {
@@ -149,8 +146,7 @@ table {
   margin-bottom: 24px;
 }
 
-th,
-td {
+th,td {
   padding: 10px;
   border: 1px solid #e8c5c8;
   text-align: left;
@@ -161,6 +157,10 @@ thead th {
   color: #4a2e2b;
 }
 
+tbody tr:nth-child(even){
+    background-color: #ecd3ec;
+}
+
 tfoot td {
   padding: 12px;
   font-style: italic;
@@ -168,7 +168,7 @@ tfoot td {
 }
 
 fieldset {
-  padding: 16px;
+  padding: 15px;
 }
 
 section h3::first-letter {
@@ -192,16 +192,17 @@ input:focus {
 aside {
   padding: 20px;
   border: 2px solid rosybrown;
-  border-radius: 8px;
+  border-radius: 0px 30px ;
 }
 
 .Irresistible-torta { 
    position: relative;
 }
 
-.etiqueta {
+
+.etiqueta {  /*Etiqueta a la par de imagen*/
     position: absolute;
-    top: 1px;
+    top: 20px;
     right: 100px;
     background-color: #d33694;
     color: #4a2e2b;
@@ -210,9 +211,12 @@ aside {
     z-index: 10;
     padding: 10px;
 }
-body{
 
-}
+::selection{ /*Al seleccionar el texto, se marca con café
+ y la tipografía cambia a blanco*/
+    background-color: rosybrown;
+    color: #fff
+ }  
 
 #personalizados dt{
     font-weight: 700;
@@ -233,5 +237,13 @@ figure {
 caption {
     padding: 8px;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+}
+
+button [type="submit"] {
+  background-color: rosybrown;
+  color: #4a2e2b;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 20px 0px 20px 0px;
 }
