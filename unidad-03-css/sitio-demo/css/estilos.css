@@ -96,13 +96,12 @@ header nav a {
     text-decoration: none;
     padding: 10px 15px;
 }
-header ul li {
-    list-style-type: none;
-}
+
 header nav li {
     display: inline-block;
     margin-right: 15px;
 }/*Coloca las opciones de menu en linea, uno al lado del otro*/
+
 header nav ul {
     list-style-type: none;
 }/* Quita las viñetas y el subrayado*/
@@ -223,12 +222,6 @@ y su definición o descripción*/
 table { 
     border-collapse: collapse;
     width: 100%;
-    margin-bottom: 24px;
-}
-
-caption {
-    padding: 8px;
-    font-weight: 700;
     margin-bottom: 24px;
 }
 
