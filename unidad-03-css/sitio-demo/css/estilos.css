@@ -287,15 +287,21 @@ para elementos posicionados dentro de contenido.
 .fila-tarjetas {
     display: flex;
     gap: 20px;
-    flex: 2;
+    flex: 1;
+    /*padding: 20px;
     border: 1px solid#ddd;
     border-radius: 8px;
-    flex-grow: 1; /*Al crecer si sobra espacio acomoda si está en o no crece*/
-    flex-shrink: 1; /*Cuando está en 0 no encoge, si tiene un 1 y sobra espacio se va a encoger*/
-    flex-basis: 0;
+    flex-grow: 1; Al crecer si sobra espacio acomoda si está en o no crece
+    flex-shrink: 1; /*Cuando está en 0 no encoge, si tiene un 1 y sobra espacio se va a encoger
+    flex-basis: 0;*/
+    flex-wrap: wrap-reverse; /*wrap salta hacia abajo; reversed salta arriba desde abajo y nowrap no salta*/
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 .tarjeta {
     display: flex;
     flex: 1;
+    gap: 20px;
+    flex-wrap: wrap;
 }
