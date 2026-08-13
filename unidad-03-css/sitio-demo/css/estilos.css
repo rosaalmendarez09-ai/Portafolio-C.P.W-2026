@@ -16,7 +16,7 @@ y el relleno, borde en el ancho y alto del elemento predeterminados de todos los
 body {
     font-size: 1rem;
     line-height: 1.6;
-    font-family:" Arial, sans-serif"; 
+    font-family: Arial, sans-serif; 
     color: #333; 
     background-color: #fcfcfc;
     padding-top: 180px;
@@ -33,9 +33,8 @@ lo centa en un elemento con ancho indicado*/
 /*esta regla define la fuente y el color del texto en el cuerpo del documento*/
 h1{color:#aad6fe;  
    text-align: center;
-}
-h1{font-size: 2.5rem;
-    font-weight: 700;
+   font-size: 2.5rem;
+   font-weight: 700;
 }
 h2{
     font-size: 2rem;
@@ -135,8 +134,8 @@ nav a {
     margin-right: 15px;
     transition: color 0.3s;
 }
-nav a :hover {
-    color: #f8cbad;
+nav a:hover {
+    color: #fbfaf9;
 }
 nav li {
     margin-right: 15px;
