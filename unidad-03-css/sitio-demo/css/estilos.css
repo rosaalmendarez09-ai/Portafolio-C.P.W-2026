@@ -87,7 +87,7 @@ blockquote p{
     border-left: 4px solid #1f4e79;
 }
 header nav {
-   /* align-self: center; anula a align items para el elemento específico*/
+    align-self: center; /*anula a align items para el elemento específico*/
 }
 
 /*Transformación y espacio*/
@@ -282,4 +282,20 @@ para elementos posicionados dentro de contenido.
     display:flex;
     justify-content: center; /*Centrado horizontal*/
     align-items: center; /*Centrado vertical*/
+}
+
+.fila-tarjetas {
+    display: flex;
+    gap: 20px;
+    flex: 2;
+    border: 1px solid#ddd;
+    border-radius: 8px;
+    flex-grow: 1; /*Al crecer si sobra espacio acomoda si está en o no crece*/
+    flex-shrink: 1; /*Cuando está en 0 no encoge, si tiene un 1 y sobra espacio se va a encoger*/
+    flex-basis: 0;
+}
+
+.tarjeta {
+    display: flex;
+    flex: 1;
 }
