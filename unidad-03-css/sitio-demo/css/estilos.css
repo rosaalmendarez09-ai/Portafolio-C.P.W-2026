@@ -225,12 +225,6 @@ table {
     margin-bottom: 24px;
 }
 
-caption {
-    padding: 8px;
-    font-weight: 700;
-    margin-bottom: 24px;
-}
-
 /*Los cinco valores de position
 static: valor por omisión.
 relative:se desplaza desde su propia posicion, conserva su propia

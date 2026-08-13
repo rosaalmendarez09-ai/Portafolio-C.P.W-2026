@@ -1,5 +1,5 @@
 html {
-  font-size: 100%
+  font-size: 100%;
 }
 
 /*Reset básico*/
@@ -15,96 +15,117 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #4a2e2b;
   background-color: #e8c5c8;
-  padding-top: 180px;
+  padding-top: 210px;/*Crea distancia entre el texto y el header*/
 }
+
 #contenido-principal {
   text-align: left;
 }
 
-.contenedor { 
+.contenedor {
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
+}
+
+blockquote p{
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #d33694;
 }
 
 h1 {
   color: #e8c5c8;
   text-align: center;
   margin-top: 30px;
-  font-family: 'Courier New', Courier, monospace;
-  text-transform:uppercase;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
   font-size: 2.5rem;
   font-weight: 700;
 }
 
-h2{
+h2 {
   font-size: 1.5rem;
   font-weight: 600;
 }
-h3{
+h3 {
   font-size: 1rem;
   font-weight: 500;
 }
 
-p{
+p {
   font-size: 0.9rem;
   font-weight: 400;
   margin-bottom: 16px;
-}/* Separa los párrafos */
+} /* Separa los párrafos */
 
-header{
+header {
+  position: fixed;/*Vista fija con respecto a la ventana.Cabecera queda fija arriba*/
+  top: 0;
+  left: 0;
+  width: 100%;
   background-image: url(../recursos/fondosp.jpg);
   background-size: cover;
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
   padding: 30px;
-  color: rgba( 0, 0, 0, 0.35);
+  color: rgba(0, 0, 0, 0.35);
   color: #e8c5c8;
+  z-index: 100;
 }
 
 header nav ul {
-    list-style-type: none;
-    text-align: right;
-    text-align: ;
-}/* Quita las viñetas y el subrayado*/
+  list-style-type: none;
+  text-align: right;
+  text-align:;
+} /* Quita las viñetas y el subrayado*/
 
 header nav a {
-    text-transform: uppercase;
-    letter-spacing: 3px;   
-    font-size: 0.9rem;
-    text-decoration: none;
-    padding: 10px 15px;
-    color: black;
-    font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: black;
+  font-weight: 600;
 }
 header nav li {
   display: inline-block;
 }
 
-footer{
+footer {
   background-color: #e8c5c8;
   padding: 20px;
   margin-top: 32px;
-  text-align:center;
+  text-align: center;
 }
 
-.portada-texto{
-  background-color: rgb(0,0,0,0.35);
+.portada-texto {
+  background-color: rgb(0, 0, 0, 0.35);
   padding: 24px;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
-h2, h3{
+h2,
+h3 {
   color: #4a2e2b;
-  margin-bottom: 12px
+  margin-bottom: 12px;
 }
 
-main p{
+main p {
   max-width: 60ch;
 }
 
-main a{
+main a {
   text-decoration: none;
+}
+
+main ul, main ol {
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+main li { 
+    margin-bottom: 6px;
 }
 
 .destacado {
@@ -122,54 +143,95 @@ nav a:hover {
   color: #d33694;
 }
 
-table { 
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 24px;
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 24px;
 }
 
-th, td {
-    padding: 10px;
-    border: 1px solid #e8c5c8;
-    text-align: left;
+th,
+td {
+  padding: 10px;
+  border: 1px solid #e8c5c8;
+  text-align: left;
 }
 
-thead th { 
-    background-color: rosybrown;
-    color: #4a2e2b;
+thead th {
+  background-color: rosybrown;
+  color: #4a2e2b;
 }
 
 tfoot td {
-    padding: 12px;
-    font-style: italic;
-    background-color: rgb(219, 177, 177);
+  padding: 12px;
+  font-style: italic;
+  background-color: rgb(219, 177, 177);
 }
 
-fieldset{
-    padding: 16px;
+fieldset {
+  padding: 16px;
 }
 
-section h3::first-letter{
-  color:#4a2e2b;
+section h3::first-letter {
+  color: #4a2e2b;
   font-size: 32px;
   font-weight: bold;
+  margin-bottom: 33px;
 }
 
-nav::before{
+nav::before {
   font-size: 2rem;
   gap: 10px;
   color: rosybrown;
 }
 
-input:focus{
+input:focus {
   border-color: #d33694;
-  box-shadow:inset 0 0 5px #ff52e5;
+  box-shadow: inset 0 0 5px #ff52e5;
 }
 
-aside{
+aside {
   padding: 20px;
   border: 2px solid rosybrown;
   border-radius: 8px;
 }
 
+.Irresistible-torta { 
+   position: relative;
+}
 
+.etiqueta {
+    position: absolute;
+    top: 1px;
+    right: 100px;
+    background-color: #d33694;
+    color: #4a2e2b;
+    border-radius: 0px 10px 0px 10px;
+    font-size: 0.875rem;
+    z-index: 10;
+    padding: 10px;
+}
+body{
+
+}
+
+#personalizados dt{
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+#personalizados dd {
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+figure {
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+caption {
+    padding: 8px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
