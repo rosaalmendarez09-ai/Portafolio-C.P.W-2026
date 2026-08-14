@@ -351,3 +351,13 @@ para elementos posicionados dentro de contenido.
 #contenido > article {grid-area:principal;}
 #contenido >aside {grid-area: lateral;}
 grid-template-area: 'indice principal';
+
+/* Que las imagenes no se deformen*/
+.galeria-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /*Recorta por el centro en vez de deformar*/
+    border-radius: 6px;
+}
+
+
