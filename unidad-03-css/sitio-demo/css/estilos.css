@@ -19,7 +19,7 @@ body {
     font-family: Arial, sans-serif; 
     color: #333; 
     background-color: #fcfcfc;
-    padding-top: 100px;
+    padding-top: 130px;
 }
 
 .contenedor{
@@ -119,7 +119,7 @@ header nav ul {
     justify-content: center los coloca al centro
     justify-content: space between coloca los extremos pegasdos
     justify-content: space-around espacio alrededor de cada uno*/
-    justify-content: space-evenly; todos los espacios iguales*/
+    justify-content: space-evenly; /*todos los espacios iguales*/
 }
 
 /*aplicar estilos a clases*/
@@ -154,12 +154,12 @@ header nav ul {
 
 /*Pseudo-clase :hover*/
 nav a { 
-    color:#f8cbad;  /*al pasar el cursor*/
+    color: #fff;  /*al pasar el cursor*/
     margin-right: 15px;
     transition: color 0.3s;
 }
 nav a:hover {
-    color: #fbfaf9;
+  color: #24cbde;
 }
 nav li {
     margin-right: 15px;
@@ -174,7 +174,7 @@ tbody tr:nth-child(even){
 article p::first-letter{
     font-size: 32px;
     font-weight: bold;
-    color: #c55a11;
+    color: #1f4e79;
 }
 
 ::selection{
@@ -308,5 +308,5 @@ para elementos posicionados dentro de contenido.
     display: flex;
     flex: 1;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-grow: wrap;
 }

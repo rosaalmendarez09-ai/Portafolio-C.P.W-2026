@@ -123,12 +123,13 @@ _Portada del sitio personal al cerrar la Unidad 2._
 
 <details markdown="1">
 <summary><b>Unidad 3 · Codificación de hojas de estilo</b> (sesiones 11 a 20)</summary>
+
 Introducción a CSS,sintaxis y validación           | [ver](unidad-03-css/sitio-personal/index.html) | [ver](recursos/S11.Introduccion-CSS.png) |
 |  S12   | Selectores y pseudo-clases |Práctica selectores,pseudo-clases,pseudo-elementos e introducción a tipografía | [ver](unidad-03-css/sitio-demo/index.html) | [ver](recursos/S12.Selectores.png) |
 |  S13   | Tipografía y color         |Tipografía,color,fondo           | [ver](unidad-03-css/sitio-demo/index.html) | [ver](recursos/S.13-Tipografia-color-fondo.png) |
 |  S14   | Modelo de cajas            |Trabajamos padding,margin y box-sizing| [ver](unidad-03-css/sitio-demo/index.html) | [ver](recursos/S14.Modelo-cajas) |
 |  S15   | Display y posicionamiento  |Display y posicionamiento(static,relative,absolute y fixed/sticky)| [ver](unidad-03-css/sitio-demo/galeria.html) | [ver](recursos/S15.Posicionamiento.png) |
-|  S16   | Flexbox                    |             | [ver](unidad-03/) | [ver](recursos/) |
+|  S16   | Flexbox                    |Flex,,wrap,gap | [ver](unidad-03-css/sitio-demo/galeria.html) | [ver](recursos/S16.Flexbox.png) |
 |  S17   | CSS Grid                   |             | [ver](unidad-03/) | [ver](recursos/) |
 |  S18   | Componentes estilizados    |             | [ver](unidad-03/) | [ver](recursos/) |
 |  S19   | Animaciones y filtros      |             | [ver](unidad-03/) | [ver](recursos/) |
