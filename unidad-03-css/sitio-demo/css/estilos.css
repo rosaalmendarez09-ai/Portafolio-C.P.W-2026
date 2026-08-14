@@ -319,3 +319,20 @@ para elementos posicionados dentro de contenido.
     grid-template-columns: 2fr 1fr 1fr;
     gap: 20px;
 }
+
+
+#contenido {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 24;
+    grid-template-areas: 'indice principal' 'indice lateral';}
+    /*css dibuja la estructura, cada cadena de texto es una fila.
+    cada palabra dentro es una celda
+    repetir un nombre hace que una zona abarque varias celdas
+    aqui el indice ocupa dos filas de la primera columna*/
+    /*Asignar cada elemento a su área*/
+
+#contenido > nav {grid-area: indice;}
+#contenido > article {grid-area:principal;}
+#contenido >aside {grid-area: lateral;}
+grid-template-area: 'indice principal';
