@@ -45,9 +45,44 @@
     <main id="Contenido">
       <article>
         <h2>Galería</h2>
-
       <div class="tarjeta">
         <!-- Imagen y sus atributos -->
+        <figure>
+          <img
+          src="recursos/S.7_Lab01.jpg"
+          alt="Imagen de la galería de un laboratorio de informatica"
+          width="400"
+          height="300"/>
+        </figure>
+
+        <!-- FIGURE: Agrupa un contenido con un pie -->
+         <figure>
+            <img
+            src="recursos/S.7_Lab02.jpg"
+            alt="Imagen de la galería de un laboratorio de informatica"
+            width="400"
+            height="300"/>
+          <figcaption>
+            Imagen de la galería de un laboratorio de informatica
+          </figcaption>
+         </figure>
+      
+
+        <!-- Varios formatos: el navegador elige uno -->
+
+        <figure class="figura-destacada">
+          <picture>
+            <source srcset="recursos/S.7_Lab01.webp" type="image/webp" />
+            <source srcset="recursos/S.7_Lab02.jpg" type="image/jpeg" />
+            <img
+              src="recursos/S.7_Lab01.jpg"
+              alt="Imagen de la galería de un laboratorio de informatica"
+              width="400"
+              height="300"/>
+          </picture>
+          <span class="etiqueta">Destacada</span>
+          <figcaption>Imagen de la galería de un laboratorio de informatica</figcaption>
+        </figure>
         <figure>
           <img
           src="recursos/S.7_Lab01.jpg"
