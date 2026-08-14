@@ -130,7 +130,7 @@ Introducción a CSS,sintaxis y validación           | [ver](unidad-03-css/sitio
 |  S14   | Modelo de cajas            |Trabajamos padding,margin y box-sizing| [ver](unidad-03-css/sitio-demo/index.html) | [ver](recursos/S14.Modelo-cajas) |
 |  S15   | Display y posicionamiento  |Display y posicionamiento(static,relative,absolute y fixed/sticky)| [ver](unidad-03-css/sitio-demo/galeria.html) | [ver](recursos/S15.Posicionamiento.png) |
 |  S16   | Flexbox                    |Flex,,wrap,gap | [ver](unidad-03-css/sitio-demo/galeria.html) | [ver](recursos/S16.Flexbox.png) |
-|  S17   | CSS Grid                   |             | [ver](unidad-03/) | [ver](recursos/) |
+|  S17   | CSS Grid                   |Trabajamos con grid| [ver](unidad-03-css/sitio-demo/galeria.html) | [ver](recursos/S.17.grid.png) |
 |  S18   | Componentes estilizados    |             | [ver](unidad-03/) | [ver](recursos/) |
 |  S19   | Animaciones y filtros      |             | [ver](unidad-03/) | [ver](recursos/) |
 |  S20   | SCSS y repaso              |             | [ver](unidad-03/) | [ver](recursos/) |
