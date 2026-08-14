@@ -325,10 +325,10 @@ para elementos posicionados dentro de contenido.
 }
 
 /*Forma abreviada con span*/
-.galeria-grid figure: :first-of-type {
-    grid-column: span2; /*ocupa dos columnas, desde 
+.galeria-grid figure:first-of-type {
+    grid-column: span2;} /*ocupa dos columnas, desde 
     donde lo toque.Más legible y no depende de una posición*/
-}
+
 
 /*Con filas*/
 
@@ -359,5 +359,9 @@ grid-template-area: 'indice principal';
     object-fit: cover; /*Recorta por el centro en vez de deformar*/
     border-radius: 6px;
 }
-
+.tarjeta2 {
+  display: grid;
+  grid-template-columns: repeat(4px, 1fr);
+  gap: 100px;
+}
 
