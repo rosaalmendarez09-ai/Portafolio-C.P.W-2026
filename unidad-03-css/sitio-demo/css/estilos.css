@@ -314,6 +314,8 @@ para elementos posicionados dentro de contenido.
 .galeria-grid {
     display: grid; /*Activa grid al igual que flexbox, se declara en el contenedor*/
     /*grid-template-columns: 1fr 1fr 1fr;*/
-    grid-template-columns: repeat(3,1fr);
+    /*grid-template-columns: repeat(3,1fr);*/
+    /*grid-template-columns: 2fr 1fr;La primera queda doble que las otras*/
+    grid-template-columns: 2fr 1fr 1fr;
     gap: 20px;
 }
