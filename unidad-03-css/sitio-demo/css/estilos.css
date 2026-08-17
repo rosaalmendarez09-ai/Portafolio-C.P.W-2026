@@ -295,9 +295,11 @@ Sticky: Fluye normal hast allegar al humbral, y entonces se pega.*/
 
 /*Patrón para este caso*/
 figure {
+    background: white;
   border: 1px solid #dddddd;
   border-radius: 6px;
   padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 .figura-destacada {
   position: relative; /*Posiciona como padre y este no se mueve.Es referencia
@@ -462,9 +464,7 @@ form small {
 } /*Los <small> acompañan a los campos con los textos "mínimo 8 caracteres.Entre 1 y 8 sesiones, etc*/
 
 /*Estilizar el botón con los estados*/
-
-.boton,
-.boton-secundario {
+.boton, .boton-secundario {
   background-color: #c55a11;
   color: white;
   padding: 12px 24px;
@@ -475,24 +475,33 @@ form small {
   font-weight: 600;
   cursor: pointer; /*La mano indica elemento pulsable*/
 }
-
 /*Estads: 1 hover*/
 .boton:hover {
   background-color: #a8490e;
 }
-
 /*Estads: 2 active: Aún más oscuro mientras se pulsa*/
 .boton:active {
   background-color: #8a3b4b;
 }
-
 /*Estads: 3 active*/
 .boton:focus {
   outline: 2px solid #f5c518;
   outline-offset: 2px;
 }
-
 /* Variante secundaria*/
 .boton-secundario {
-  background-color: #4b5563;
+  background-color: #6b7280;
+}
+.boton-secundario:hover {
+    background-color: #4d5563;
+}
+/*Tarjetas con sombra*/
+.tarjeta {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+   0: Desplazamiento horizontal 4px: desplazamineto vertical 
+   12px: desenfoque entre mayor es más difusa. Rgba: color con transparencia*/
 }
