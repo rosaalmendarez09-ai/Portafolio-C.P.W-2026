@@ -438,3 +438,19 @@ form textarea:focus {
 guía para el usuario*/
 
 /*Los estados de validación*/
+form input:invalid:not(:placeholder-shown){
+    border-color: #c0392b;}
+
+form input:valid:not(placeholder-show){
+        border-color: #2e7d32;
+    }/*Apoy ala validación html en los required, type, patterns, minlength, etc, 
+    colocando un halo de color según si el dato es correcto o no*/
+
+/*Para los mensajes de ayuda*/
+form small {
+    display: block;
+    margin-top: -04px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color: #6b7280;
+}/*Los <small> acompañan a los campos con los textos*/
