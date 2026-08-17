@@ -26,10 +26,8 @@
   <body>
     <header id="inicio">
       <h1>Contacto</h1>
-      <!--<p>
-        Sitio de demostración del módulo
-        <abbr title="Código del módulo">CSTI12002</abbr>.
-      </p>-->
+      <!--<p>Sitio de demostración del módulo
+        <abbr title="Código del módulo">CSTI12002</abbr>.</p>-->
 
       <nav>
         <ul>
@@ -46,7 +44,6 @@
     <main id="contenido">
       <article>
         <h2>Formulario de matrícula</h2>
-
         <p>
           Complete los datos para inscribirse en una sesión de refuerzo. Los
           campos marcados con asterisco (*) son obligatorios.
@@ -56,7 +53,6 @@
           <!--  GRUPO 1: DATOS PERSONALES -->
           <fieldset>
             <legend>Datos personales</legend>
-
             <p>
               <label for="nombre">Nombre completo *</label>
               <input
@@ -79,8 +75,7 @@
                 required
                 pattern="[0-9]{9}"
                 title="Nueve dígitos, sin guiones ni espacios"
-                placeholder="112345678"
-              />
+                placeholder="112345678"/>
             </p>
 
             <p>
@@ -90,8 +85,7 @@
                 id="correo"
                 name="correo"
                 required
-                placeholder="persona@ejemplo.com"
-              />
+                placeholder="persona@ejemplo.com"/>
               <small>Se usará para confirmar la matrícula.</small>
             </p>
 
@@ -104,8 +98,7 @@
                 required
                 pattern="[0-9]{8}"
                 title="Ocho dígitos, sin espacios ni guiones"
-                placeholder="88887777"
-              />
+                placeholder="88887777"/>
             </p>
 
             <p>
@@ -115,8 +108,7 @@
                 id="clave"
                 name="clave"
                 required
-                minlength="8"
-              />
+                minlength="8"/>
               <small>Mínimo ocho caracteres.</small>
             </p>
           </fieldset>
@@ -124,7 +116,6 @@
           <!--  GRUPO 2: DETALLES DE LA MATRÍCULA  -->
           <fieldset>
             <legend>Detalles de la matrícula</legend>
-
             <p>
               <label for="fecha">Fecha preferida *</label>
               <input type="date" id="fecha" name="fecha" required />
@@ -140,8 +131,7 @@
                 min="1"
                 max="8"
                 step="1"
-                value="2"
-              />
+                value="2"/>
               <small>Entre 1 y 8 sesiones.</small>
             </p>
 
@@ -225,9 +215,9 @@
             </p>
           </fieldset>
 
-          <p>
-            <button type="submit">Enviar matrícula</button>
-            <button type="reset">Limpiar formulario</button>
+          <p class="grupo-botones">
+            <button type="submit" clase="boton" >Enviar matrícula</button>
+            <button class="boton-secundario" type="reset">Limpiar formulario</button>
           </p>
         </form>
       </article>

@@ -1,69 +1,70 @@
 /*css/estilos.css*/
 /*100% del tamaño que el usuario configuró 
 Por omisión son 16px*/
-html{
-    font-size: 100%;
+html {
+  font-size: 100%;
 }
 
-*{/*Reset básico*/
-    box-sizing: border-box; 
-    margin: 0; 
-    padding: 0;
-}/*esta regla elimina los márgenes 
+* {
+  /*Reset básico*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} /*esta regla elimina los márgenes 
 y el relleno, borde en el ancho y alto del elemento predeterminados de todos los elementos y establece el modelo de caja para todos ellos.*/
 
-
 body {
-    font-size: 1rem;
-    line-height: 1.6;
-    font-family: Arial, sans-serif; 
-    color: #333; 
-    background-color: #fcfcfc;
-    padding-top: 130px;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fcfcfc;
+  padding-top: 130px;
 }
 
-.contenedor{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 25px;
-}/*0 aplica a la parte vertical y horizontal el auto
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+} /*0 aplica a la parte vertical y horizontal el auto
 reparte el espacio sobrante por igual a ambos lados,
 lo centa en un elemento con ancho indicado*/
 
 /*esta regla define la fuente y el color del texto en el cuerpo del documento*/
-h1{color:#aad6fe;  
-   text-align: center;
-   font-size: 2.5rem;
-   font-weight: 700;
+h1 {
+  color: #aad6fe;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
-h2{
-    font-size: 2rem;
-    font-weight: 700;
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
 }
-h3{
-    font-size: 1.5rem;
-    font-weight: 600;
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
-p{
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 16px;
-}
-
-header{
-    background-color: #a7c8e7;
-    color: #fff;
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 16px;
 }
 
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    background-color: #dce6f1;
-    padding: 20px;
-    margin-top: 32px;
+header {
+  background-color: #a7c8e7;
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background-color: #dce6f1;
+  padding: 20px;
+  margin-top: 32px;
 }
 
 /*.portada-texto {
@@ -72,36 +73,37 @@ footer{
     border-radius: 8px;
 }*/
 
-h2,h3{
-    color: #1f4e79;
-    margin-bottom: 12px;
+h2,
+h3 {
+  color: #1f4e79;
+  margin-bottom: 12px;
 }
 
-main p{
-    max-width: 70ch;
-}/*ch es el ancho del caracter cero de la fuente en uso.El valor
+main p {
+  max-width: 70ch;
+} /*ch es el ancho del caracter cero de la fuente en uso.El valor
 70 marca el rango de lectura cómoda por línea o renglón: más larga, 
 la vista se pierde al cambio de linea*/
-main a{
-    text-decoration: none;
-    border-bottom: 1px solid #1f4e79;
+main a {
+  text-decoration: none;
+  border-bottom: 1px solid #1f4e79;
 }
-blockquote p{
-    font-style: italic;
-    color: #555;
-    border-left: 4px solid #1f4e79;
+blockquote p {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #1f4e79;
 }
 header nav {
-    align-self: center; /*anula a align items para el elemento específico*/
+  align-self: center; /*anula a align items para el elemento específico*/
 }
 
 /*Transformación y espacio*/
 header nav a {
-    text-transform:capitalize;
-    letter-spacing: 1px;   
-    font-size: 0.9rem;
-    text-decoration: none;
-    padding: 10px 15px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 10px 15px;
 }
 
 /*header nav li{ 
@@ -110,83 +112,87 @@ header nav a {
 }/*Coloca las opciones de menu en linea, uno al lado del otro*/
 
 header nav ul {
-    display: flex; /*Activa flexbox y coloca en fila horizontal los elementos por defecto*/
-    list-style-type: none; /* Quita las viñetas y el subrayado*/
-    gap: 15px; /*Separación uniforme entre elementos*/
-    /*justify-content: flex-start; Coloca elementos al inicio de la fila
+  display: flex; /*Activa flexbox y coloca en fila horizontal los elementos por defecto*/
+  list-style-type: none; /* Quita las viñetas y el subrayado*/
+  gap: 15px; /*Separación uniforme entre elementos*/
+  /*justify-content: flex-start; Coloca elementos al inicio de la fila
     justify-content: flex-star los coloca al inicio
     justify-content: flex-end los coloca al final
     justify-content: center los coloca al centro
     justify-content: space between coloca los extremos pegasdos
     justify-content: space-around espacio alrededor de cada uno*/
-    justify-content: space-evenly; /*todos los espacios iguales*/
+  justify-content: space-evenly; /*todos los espacios iguales*/
 }
 
 /*aplicar estilos a clases*/
 .destacado {
-    background-color: #fff3cd; 
-    padding: 10px 20px;/*Aplica como las manillas del reloj: arriba, derecha,abajo,izquierda*/
+  background-color: #fff3cd;
+  padding: 10px 20px; /*Aplica como las manillas del reloj: arriba, derecha,abajo,izquierda*/
 }
 #inicio {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline; 
-    /*align-items: flex-start; Acomoda arriba*/
-    /*align-items: center; acomoda al centro*/
-    /*align-items: flex-end; acomoda abajo*/
-    /*alinea por linea base del texto*/
-    position: fixed;/*Vista fija con respecto a la ventana.Cabecera queda fija arriba*/
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-image: url(../recursos/fondo1.avif);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 12px 20px;
-    z-index: 100;/*cuando mayor es el número más al frente va a estar*/
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  /*align-items: flex-start; Acomoda arriba*/
+  /*align-items: center; acomoda al centro*/
+  /*align-items: flex-end; acomoda abajo*/
+  /*alinea por linea base del texto*/
+  position: fixed; /*Vista fija con respecto a la ventana.Cabecera queda fija arriba*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url(../recursos/fondo1.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 12px 20px;
+  z-index: 100; /*cuando mayor es el número más al frente va a estar*/
 }
 
 /*#inicio {
     position: sticky;
     top:0;
-} *//*Fluye normal y se pega al llegar arriba o limite de su contenedor*/
+} */ /*Fluye normal y se pega al llegar arriba o limite de su contenedor*/
 
 /*Pseudo-clase :hover*/
-nav a { 
-    color: #fff;  /*al pasar el cursor*/
-    margin-right: 15px;
-    transition: color 0.3s;
+nav a {
+  color: #fff; /*al pasar el cursor*/
+  margin-right: 15px;
+  transition: color 0.3s;
 }
 nav a:hover {
   color: #24cbde;
 }
 nav li {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 /*Pseudo-clase :nth-child: filas cebra en la tabla*/
-tbody tr:nth-child(even){
-    background-color: #e0d8d8;
+tbody tr :nth-child(even) {
+  background-color: #d7c5c5;
 }
+
+tbody tr:hover {
+  background-color: #e3eef9;
+} /*La novedad es realtar la fila debajo del cursos*/
 
 /*Pseudo-elemento ::first-letter y ::selection*/
-article p::first-letter{
-    font-size: 32px;
-    font-weight: bold;
-    color: #1f4e79;
+article p::first-letter {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1f4e79;
 }
 
-::selection{
-    background-color: #1f4e79;
-    color: white
+::selection {
+  background-color: #1f4e79;
+  color: white;
 }
 
 aside {
-    padding: 20px;
-    border: 2px solid #c55a11;
-    border-radius: 8px ;
-}/*En este caso el padding aplica a los 4 lados a la vez: 
+  padding: 20px;
+  border: 2px solid #c55a11;
+  border-radius: 8px;
+} /*En este caso el padding aplica a los 4 lados a la vez: 
 padding: 10px 20px aplica vertical y horizontal
 padding: 10px 20px 15px 5px aplica a los 4 lados valores distintos
 En el sentido de las manecillas del reloj*/
@@ -199,55 +205,86 @@ padding-left 10px aplica izquierda*/
 
 /*Aplica a la tabla horario.html*/
 
-th, td {
-    padding: 10px;
-    border: 1px solid #dddddd;
-    text-align: left;
+caption {
+  padding: 8px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: left;
+  color: #6b7280;
 }
-thead th { 
-    background-color: #1f4e79;
-    color: white;
-}/* Encabezados de la tabla*/
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+thead th {
+  /* Encabezados de la tabla*/
+  background-color: #1f4e79;
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
 tfoot td {
-    padding: 12px;
-    font-style: italic;
-    background-color: #f5f7fa;
+  padding: 12px;
+  font-style: italic;
+  background-color: #f5f7fa;
+  border-top: 2px solid #1f4e79;
 }
-fieldset{
-    padding: 16px;
+
+fieldset {
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
+
+legend {
+  padding: 0 8px;
+  font-weight: 700;
+  color: #1f4e79;
+}
+
+form label {
+  display: block; /*Display block: pone la etiqueta sobre el campo funciona mejor en pantallas angostas*/
+  margin-bottom: 5px; /*espacio entre nombre y label*/
+  font-weight: 600;
+}
+
 section {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 /* Listas de horario.html*/
-main ul, main ol {
-    padding-left: 24px;
-    margin-bottom: 16px;
+main ul,
+main ol {
+  padding-left: 24px;
+  margin-bottom: 16px;
 }
-main li { 
-    margin-bottom: 6px;
+main li {
+  margin-bottom: 6px;
 }
 
 /*La lista descriptiva*/
 #glosario dt {
-    font-weight: 700;
-    margin-top: 12px;
+  font-weight: 700;
+  margin-top: 12px;
 }
 #glosario dd {
-    margin-left: 20px;
-    margin-bottom: 8px;
-}/* La sangría de <dd> es lo que hace visible la relación entre el término 
+  margin-left: 20px;
+  margin-bottom: 8px;
+} /* La sangría de <dd> es lo que hace visible la relación entre el término 
 y su definición o descripción*/
 
 /* La tabla de calendario*/
-table { 
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 24px;
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 24px;
 }
-
 /*Los cinco valores de position
 static: valor por omisión.
 relative:se desplaza desde su propia posicion, conserva su propia
@@ -258,23 +295,25 @@ Sticky: Fluye normal hast allegar al humbral, y entonces se pega.*/
 
 /*Patrón para este caso*/
 figure {
-    border: 1px solid #dddddd;
-    border-radius: 6px;
-    padding: 12px;
+    background: white;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 .figura-destacada {
-    position: relative;/*Posiciona como padre y este no se mueve.Es referencia
+  position: relative; /*Posiciona como padre y este no se mueve.Es referencia
     de hijos absolutos*/
 }
 .etiqueta {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: #c55a11;
-    color: white;
-    border-radius: 4px;
-    font-size: 0.875rem;
-    z-index: 10;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #c55a11;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  z-index: 10;
 } /* z-index SOLO funciona en elementos con positions declarado
 si el es static no funciona.
 escala de valores de z-index 10
@@ -284,24 +323,24 @@ para elementos posicionados dentro de contenido.
 9999 noo hace falta usarlo casi nunca porque no deja margen a otro valos por encima */
 
 .centrado {
-    display:flex;
-    justify-content: center; /*Centrado horizontal*/
-    align-items: center; /*Centrado vertical*/
+  display: flex;
+  justify-content: center; /*Centrado horizontal*/
+  align-items: center; /*Centrado vertical*/
 }
 
 .fila-tarjetas {
-    display: flex;
-    gap: 20px;
-    flex: 1;
-    /*padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  /*padding: 20px;
     border: 1px solid#ddd;
     border-radius: 8px;
     flex-grow: 1; Al crecer si sobra espacio acomoda si está en o no crece
     flex-shrink: 1; /*Cuando está en 0 no encoge, si tiene un 1 y sobra espacio se va a encoger
     flex-basis: 0;*/
-    flex-wrap: wrap-reverse; /*wrap salta hacia abajo; reversed salta arriba desde abajo y nowrap no salta*/
-    border: 1px solid #ddd;
-    border-radius: 8px;
+  flex-wrap: wrap-reverse; /*wrap salta hacia abajo; reversed salta arriba desde abajo y nowrap no salta*/
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 /*.tarjeta {
@@ -312,52 +351,53 @@ para elementos posicionados dentro de contenido.
 }*/
 
 .galeria-grid {
-    display: grid; /*Activa grid al igual que flexbox, se declara en el contenedor*/
-    /*grid-template-columns: 1fr 1fr 1fr;*/
-    /*grid-template-columns: repeat(3,1fr);*/
-    /*grid-template-columns: 2fr 1fr;La primera queda doble que las otras*/
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 20px;
+  display: grid; /*Activa grid al igual que flexbox, se declara en el contenedor*/
+  /*grid-template-columns: 1fr 1fr 1fr;*/
+  /*grid-template-columns: repeat(3,1fr);*/
+  /*grid-template-columns: 2fr 1fr;La primera queda doble que las otras*/
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
 }
 .galeria-grid figure:first-of-type {
-    grid-column: 1 / 3; /*Desde la línea 1 a la línea 3, abarca la columna 1 y 2
+  grid-column: 1 / 3; /*Desde la línea 1 a la línea 3, abarca la columna 1 y 2
     El segundo número es la linea donde termina no la última columna que ocupa*/
 }
 
 /*Forma abreviada con span*/
 .galeria-grid figure:first-of-type {
-    grid-column: span2;} /*ocupa dos columnas, desde 
+  grid-column: span2;
+} /*ocupa dos columnas, desde 
     donde lo toque.Más legible y no depende de una posición*/
-
 
 /*Con filas*/
 
 .destacada {
-    grid-row: span 2; /*Abarcaría dos filas*/
+  grid-row: span 2; /*Abarcaría dos filas*/
 }
 
 #contenido {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 24;
-    grid-template-areas: 'indice principal' 'indice lateral';}
-    /*css dibuja la estructura, cada cadena de texto es una fila.
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+/*grid-template-areas: 'indice principal' 'indice lateral';}
+    css dibuja la estructura, cada cadena de texto es una fila.
     cada palabra dentro es una celda
     repetir un nombre hace que una zona abarque varias celdas
-    aqui el indice ocupa dos filas de la primera columna*/
-    /*Asignar cada elemento a su área*/
+    aqui el indice ocupa dos filas de la primera columna
+    Asignar cada elemento a su área*/
 
-#contenido > nav {grid-area: indice;}
+/*#contenido > nav {grid-area: indice;}
 #contenido > article {grid-area:principal;}
 #contenido >aside {grid-area: lateral;}
-grid-template-area: 'indice principal';
+grid-template-areas: 'indice principal';}*/
 
 /* Que las imagenes no se deformen*/
 .galeria-grid img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover; /*Recorta por el centro en vez de deformar*/
-    border-radius: 6px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /*Recorta por el centro en vez de deformar*/
+  border-radius: 6px;
 }
 .tarjeta2 {
   display: grid;
@@ -365,3 +405,108 @@ grid-template-area: 'indice principal';
   gap: 100px;
 }
 
+form input [type= "text"],
+form input [type= "email"],
+form input [type= "password"],
+form input [type= "number"],
+form input [type= "date"],
+form select, /* Le da una forma más estética al selector de opciones*/
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-family: inherit; /*Loa campos de los formularios no hereda la fuente del body por omisión,
+    para que adquiera la fuente que tenemos seleccionada se debe poner inherit*/
+}
+
+/*Casillas por separado*/
+form input[type="radio"],
+form input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+  margin-bottom: 0;
+}
+
+form input [type="radio"] + label form input [type="checkbox"] + label {
+  display: inline;
+  font-weight: 400;
+} /*El selector + alcanza la etiqueta y display: inline los coloca una al lado del otro*/
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #1f4e79;
+  box-shadow: 0 0 0 3px rgba(31, 78, 121, 0.15);
+} /* El halo azul alrededor del campo azul. El focus es una 
+guía para el usuario*/
+
+/*Los estados de validación*/
+form input:invalid:not(:placeholder-shown) {
+  border-color: #c0392b;
+}
+
+form input:valid:not(placeholder-show) {
+  border-color: #2e7d32;
+} /*Apoy ala validación html en los required, type, patterns, minlength, etc, 
+    colocando un halo de color según si el dato es correcto o no*/
+
+/*Para los mensajes de ayuda*/
+form small {
+  display: block;
+  margin-top: -04px;
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+  color: #6b7280;
+} /*Los <small> acompañan a los campos con los textos "mínimo 8 caracteres.Entre 1 y 8 sesiones, etc*/
+
+/*Estilizar el botón con los estados*/
+.boton, .boton-secundario {
+  background-color: #c55a11;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer; /*La mano indica elemento pulsable*/
+}
+/*Estads: 1 hover*/
+.boton:hover {
+  background-color: #a8490e;
+}
+/*Estads: 2 active: Aún más oscuro mientras se pulsa*/
+.boton:active {
+  background-color: #8a3b4b;
+}
+/*Estads: 3 active*/
+.boton:focus {
+  outline: 2px solid #f5c518;
+  outline-offset: 2px;
+}
+/* Variante secundaria*/
+.boton-secundario {
+  background-color: #6b7280;
+}
+.boton-secundario:hover {
+    background-color: #4d5563;
+}
+/*Tarjetas con sombra*/
+.tarjeta {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+   0: Desplazamiento horizontal 4px: desplazamineto vertical 
+   12px: desenfoque entre mayor es más difusa. Rgba: color con transparencia*/
+}
+
+.tarjeta figure:hover {
+    transform: translateY(-10px); /*Valor negativo va hacia arriba*/
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15)
+}
