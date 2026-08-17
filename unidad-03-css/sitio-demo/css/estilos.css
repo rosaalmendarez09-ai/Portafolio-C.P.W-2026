@@ -166,9 +166,13 @@ nav li {
 }
 
 /*Pseudo-clase :nth-child: filas cebra en la tabla*/
-tbody tr:nth-child(even){
-    background-color: #e0d8d8;
+tbody tr :nth-child(even){
+    background-color: #d7c5c5;
 }
+
+tbody tr:hover {
+    background-color: #e3eef9;
+}/*La novedad es realtar la fila debajo del cursos*/
 
 /*Pseudo-elemento ::first-letter y ::selection*/
 article p::first-letter{
@@ -199,20 +203,32 @@ padding-left 10px aplica izquierda*/
 
 /*Aplica a la tabla horario.html*/
 
+caption {
+    padding: 8px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: left;
+    color: #6b7280;
+}
+
 th, td {
     padding: 10px;
     border: 1px solid #dddddd;
     text-align: left;
 }
-thead th { 
+thead th { /* Encabezados de la tabla*/
     background-color: #1f4e79;
     color: white;
-}/* Encabezados de la tabla*/
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
 tfoot td {
     padding: 12px;
     font-style: italic;
     background-color: #f5f7fa;
+    border-top: 2px solid #1f4e79;
 }
 fieldset{
     padding: 16px;
@@ -265,6 +281,7 @@ figure {
 .figura-destacada {
     position: relative;/*Posiciona como padre y este no se mueve.Es referencia
     de hijos absolutos*/
+
 }
 .etiqueta {
     position: absolute;
