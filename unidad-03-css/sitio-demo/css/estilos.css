@@ -377,8 +377,8 @@ para elementos posicionados dentro de contenido.
 
 #contenido {
   display: grid;
-  grid-template-columns: repeat(3 1fr);
-  gap: 24;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 /*grid-template-areas: 'indice principal' 'indice lateral';}
     css dibuja la estructura, cada cadena de texto es una fila.
@@ -504,4 +504,9 @@ form small {
    /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
    0: Desplazamiento horizontal 4px: desplazamineto vertical 
    12px: desenfoque entre mayor es más difusa. Rgba: color con transparencia*/
+}
+
+.tarjeta figure:hover {
+    transform: translateY(-10px); /*Valor negativo va hacia arriba*/
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15)
 }
