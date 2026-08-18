@@ -497,10 +497,10 @@ form small {
 .boton-secundario:hover {
     background-color: #4d5563;
 }
+
 .boton {
    transition: background-color 0.3s ease;
    }
-
 
 /*Tarjetas con sombra*/
 .tarjeta {
@@ -514,6 +514,12 @@ form small {
 }
 
 .tarjeta figure:hover {
-    transform: translateY(-10px); /*Valor negativo va hacia arriba*/
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15)
+    transform: translateY(-10px); /*Valor negativo va hacia arriba;positivo hacia abajo(brinco en las tarjetas)*/
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);/*Escalar 0.1 = del tamaño original*/
+    transform: scale(1.1, 0.9);/*Aplica el primer valor a X y Y por separado*/
+    transform: translateY(-5px);/*Desplazar .negativo=Hacia arriba*/
+    transform: rotate(5deg);/*Girar .grados*/
+    transform: skew(10deg);/*inclinar . grados*/
+    transform: translate(-5px) scale(1.03);
 }
