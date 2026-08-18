@@ -19,6 +19,7 @@ body {
 }
 
 .contenedor {
+  text-align: left;
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
@@ -59,14 +60,15 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   padding: 30px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.8);
   color: #e8c5c8;
   z-index: 100;
 }
 
 header nav ul {
+  display: flex;
   list-style-type: none;
-  text-align: right;
+  justify-content: space-evenly;
 } /* Quita las viñetas y el subrayado*/
 
 header nav a {
@@ -80,14 +82,14 @@ header nav a {
 }
 header nav li {
   display: inline-block; /*Acomoda menú en linea*/
-  background-color: #e8c5c8; /*Crea un fondo al texto*/ 
+  background-color: rgba(0, 0, 0, 0.1); /*Crea un fondo al texto*/ 
   border-radius: 8px;
 }
 nav a:hover {
   color: #d33694;
 }
 
-blockquote p{
+blockquote {
     font-style: italic;
     color: #555;
     border-left: 2px solid #d33694; /*Crea una línea de color*/
@@ -247,3 +249,8 @@ button [type="submit"] {
   margin-top: 5px;
   border-radius: 20px 0px 20px 0px;
 }
+form input [type="text"]
+form input [type="email"]
+form input [type="number"]
+form input [type="password"]
+form input [type="date"]
