@@ -307,6 +307,12 @@ figure {
   position: relative; /*Posiciona como padre y este no se mueve.Es referencia
     de hijos absolutos*/
 }
+
+.figura-destacada:hover .etiqueta {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+
 .etiqueta {
   position: absolute;
   top: 20px;
