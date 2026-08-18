@@ -560,3 +560,17 @@ too{
     /*animation-iteration-count: 5;
     animation-direction: alternate;*/
   }
+
+  /*Aplicación de filtros*/
+  .galeria-grid img:hover {
+    filter: grayscale(100%);
+    filter: blur(2px);
+  /* filter: brightness(1.2);
+    filter: contrast(1.5);
+    filter: saturate(2);
+    filter: sepia(60%);
+    filter: invert(90%);
+    filter: opacity(20%);
+    filter: grayscale(100%) brightness(1.1);*/
+  }
+
