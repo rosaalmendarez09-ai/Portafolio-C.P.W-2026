@@ -99,11 +99,18 @@ header nav {
 
 /*Transformación y espacio*/
 header nav a {
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 0.9rem;
   text-decoration: none;
   padding: 10px 15px;
+  color: #fff; /*al pasar el cursor*/
+  margin-right: 15px;
+  transition: color 0.3s; /*cambio suave*/
+  /* ease: arranca lento y acelera y frena, omisiòn
+     linear:velocidad constante
+     ease-in: sale lento
+     ease-out: easeint-out:lento en los dos extremo*/
 }
 
 /*header nav li{ 
@@ -155,11 +162,6 @@ header nav ul {
 } */ /*Fluye normal y se pega al llegar arriba o limite de su contenedor*/
 
 /*Pseudo-clase :hover*/
-nav a {
-  color: #fff; /*al pasar el cursor*/
-  margin-right: 15px;
-  transition: color 0.3s;
-}
 nav a:hover {
   color: #24cbde;
 }
@@ -495,6 +497,11 @@ form small {
 .boton-secundario:hover {
     background-color: #4d5563;
 }
+.boton {
+   transition: background-color 0.3s ease;
+   }
+
+
 /*Tarjetas con sombra*/
 .tarjeta {
     background: white;
