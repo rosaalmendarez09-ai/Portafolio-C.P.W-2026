@@ -131,8 +131,8 @@ Introducción a CSS,sintaxis y validación           | [ver](unidad-03-css/sitio
 |  S15   | Display y posicionamiento  |Display y posicionamiento(static,relative,absolute y fixed/sticky)| [ver](unidad-03-css/sitio-demo/galeria.html) | [ver](recursos/S15.Posicionamiento.png) |
 |  S16   | Flexbox                    |Flex,,wrap,gap | [ver](unidad-03-css/sitio-demo/galeria.html) | [ver](recursos/S16.Flexbox.png) |
 |  S17   | CSS Grid                   |Trabajamos con grid| [ver](unidad-03-css/sitio-demo/galeria.html) | [ver](recursos/S.17.grid.png) |
-|  S18   | Componentes estilizados    |             | [ver](unidad-03/) | [ver](recursos/) |
-|  S19   | Animaciones y filtros      |             | [ver](unidad-03/) | [ver](recursos/) |
+|  S18   | Componentes estilizados    |Agregamos tarjetas con interactividad, estilizamos formularios y tablas | [ver](unidad-03-css/sitio-demo/registro.html) | [ver](recursos/S.18-Tarjetas-tablas-formularios.png) |
+|  S19   | Animaciones y filtros      |Trabajamos animaciones,transiciones,transformaciones y filtros | [ver](unidad-03-css/sitio-demo/galeria.html) | [ver](recursos/S.19-Animaciones-filtros.png) |
 |  S20   | SCSS y repaso              |             | [ver](unidad-03/) | [ver](recursos/) |
 
 </details>
