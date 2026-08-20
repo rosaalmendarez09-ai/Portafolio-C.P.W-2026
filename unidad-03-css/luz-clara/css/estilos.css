@@ -36,3 +36,17 @@ Se declara dentro :rot, que representa el elemneto html y es el ancestro de todo
 --transicion: 0.25s ease;
 --ancho-max: 120rem; /*1200px*/
 }
+
+/*RESET Y BASE TIPOGRÁFICA*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*La línea más importante del reset porque sin ella, si a un caja le damos un width: 300px y además 
+    un padding: 20px y border: 2px, la caja en realidad mide: 300+20+20+2+2= 344px con esta linea el relleno y el borde se descuentan hacia adentro*/
+}
+/*LA BASE DEL TAMAÑO. La técnica del 62.5%*/
+html {
+    font-size: 62.5%; /*por omisión el navegador usa 16px para el tamaño base, el 62.5 de 16 es exactamente 10, Tiene que ver con
+    accesibilidad y la parte responsive*/
+    scroll-behavior: smooth; /*Saltos suaves al usar navegación con anclas*/
+}
