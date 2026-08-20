@@ -3,7 +3,6 @@
 /*VARIABLES Y CONFIGURACIÓN*/
 /*Una VARIABLE guarda un valor con un nombre, para poder
 reutilizarlo.
-
 Se declara dentro :rot, que representa el elemneto html y es el ancestro de todos*/
 
 :root {
@@ -17,4 +16,23 @@ Se declara dentro :rot, que representa el elemneto html y es el ancestro de todo
     --color-fondo-alt: #f0eee9; /*Para alternas fondos secciones*/
     --color-linea: #dddad3; /*Bordes y separadores*/
     --color-blanco: #ffffff; /*Blanco puro*/
+
+    /*TIPOGRAFÍA*/
+--fuente-titulo: Georgia, 'Times New Roman', serif;
+--fuente-texto: 'Segoe UI',Arial, sans-serif;
+
+/*ESPACIADO. conversión 1rem = 10px*/
+--esp-xs: 0.8rem;/*8px*/
+--esp-sm: 1.6rem;/*16px*/
+--esp-md: 2.4rem;/*24px*/
+--esp-lg: 4rem;/*40px*/
+--esp-xl: 8rem;/*80px*/
+
+/*OTROS ELEMENTOS*/
+--radio: 0.6rem; /*6px*/
+--sombra-1: 0 0.2rem 0.6rem rgba(0, 0, 0, .06); /*apenas separado*/
+--sombra-2: 0 0.4rem 1.2rem rgba(0, 0, 0, .10); /*tarjetas*/
+--sombra-3: 0 0.8rem 2.0rem rgba(0, 0, 0, .16); /*elementos elevados*/
+--transicion: 0.25s ease;
+--ancho-max: 120rem; /*1200px*/
 }
