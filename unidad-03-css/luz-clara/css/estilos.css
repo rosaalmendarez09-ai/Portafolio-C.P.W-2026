@@ -57,3 +57,42 @@ body {
     color: var(--color-tinta);
     background-color: var(--color-fondo);
 }
+
+/*JERARQUÍA DE TÍTULO*/
+h1, h2, h3 {
+    font-family: var(--fuente-titulo);
+    line-height: 1.2;
+    color: var(--color-marca);
+}
+h1 {font-size: 4.8rem;}
+h2 {font-size: 3.2rem;}
+h3 {font-size: 2.0rem;}
+
+p{
+    margin-bottom: var(--esp-sm);
+}
+
+a {
+    color: var(--color-acento);
+    text-decoration: none;/*elimina líneas de los enlaces y viñetas*/
+}
+
+img {/*Evitan problema de desborde*/
+    max-width: 100%;
+    height: auto;/*ancho*/
+    display: block;/*Eliminan ciertos márgenes que las computadoras dan por defecto*/
+}
+
+/*CONTENEDORES Y SECCIONES*/
+.seccion {
+    max-width: var(--ancho-max);/*Toma todo el ancho disponible*/
+    margin-left: auto;
+    margin-right: auto;/*Centra el bloque, repartiendo el espacio sobrante por igual*/
+    padding: var(--esp-xl) var(--esp-md);/*cuando son valores: afecta arriba y abajo
+     y los otros dos izquierda y derecha*/
+}
+
+.seccion-alterna {
+    background-color: var(--color-fondo-alt);
+    max-width: none;/*Se anula el ancho máximo para que el fondo ocupe todo el ancho de la pantalla*/
+}
