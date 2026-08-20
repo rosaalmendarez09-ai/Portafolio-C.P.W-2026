@@ -1,0 +1,20 @@
+/*ESTUDIO LUZ CLARA*/
+
+/*VARIABLES Y CONFIGURACIÓN*/
+/*Una VARIABLE guarda un valor con un nombre, para poder
+reutilizarlo.
+
+Se declara dentro :rot, que representa el elemneto html y es el ancestro de todos*/
+
+:root {
+    /*Paleta de colores*/
+    --color-tinta: #1a1a1a; /*Texto principal. casi negro*/
+    --color-suave: #6b6b6b; /*Texto secundario y pies de foto*/
+    --color-marca: #2c3e50; /*El azul del estudio*/
+    --color-acento: #c87941; /*Terracota de los botones*/
+    --color-acento-osc: #a45f2e; /*Terracota oscuro*/
+    --color-fondo: #fafaf8; /*Blanco roto*/
+    --color-fondo-alt: #f0eee9; /*Para alternas fondos secciones*/
+    --color-linea: #dddad3; /*Bordes y separadores*/
+    --color-blanco: #ffffff; /*Blanco puro*/
+}
