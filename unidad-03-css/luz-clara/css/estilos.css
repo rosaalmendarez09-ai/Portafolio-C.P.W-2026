@@ -50,3 +50,10 @@ html {
     accesibilidad y la parte responsive*/
     scroll-behavior: smooth; /*Saltos suaves al usar navegación con anclas*/
 }
+body {
+    font-size: 1.6rem;/*si no se agrega esta línea, el texto no toma el valor de los 16px base y quedaría un texto casi ilegible*/
+    font-family: var(--fuente-texto);
+    line-height: 1.6;/*Aumenta el tamaño de la fuente que tiene*/
+    color: var(--color-tinta);
+    background-color: var(--color-fondo);
+}
