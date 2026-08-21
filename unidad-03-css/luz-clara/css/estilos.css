@@ -199,7 +199,7 @@ img {/*Evitan problema de desborde*/
     permite navegar el sitio con el teclado*/
 }
 
-.menu-enlace-activo {
+.menu-enlace activo {
     color: var(--color-acento);/*Dos clases del mismo elemento, Significa que marca la página que esta activa*/
 }
 
@@ -235,4 +235,46 @@ img {/*Evitan problema de desborde*/
     color: var(--color-blanco);
     font-size: 1.8rem;
     margin-bottom: var(--esp-md);
+}
+
+/*SERVICIOS - FLEXBOX*/
+.fila-servicios {
+    display: flex;
+    gap: var(--esp-md);
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    flex: 1 1 30rem;  /* 1 flex-grow: si sobra espacio crece. flex-shrink: si falta espacio se encoje. 30rem flex-basis: parte de un tamaño base de 300px */
+    background-color: var(--color-blanco);
+    padding: var(--esp-md);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transicion), box-shadow var(--transicion);
+}
+
+.tarjeta-icono {
+    color: var(--color-acento);
+    margin: 0 auto;
+}
+
+.tarjeta-titulo {
+    margin-bottom: var(--esp-xs);
+}
+
+.tarjeta-texto {
+    color: var(--color-suave);
+    flex-grow: 1;/*El grow en 1 hace que el párrafo absorba todo el espacio vertical sobrante de la tarjeta*/
+}
+
+.tarjeta-precio {
+    font-weight: 700;
+    color: var(--color-marca);
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    padding-top: var(--esp-sm);
+    color: 0.1rem solid var(--color-linea);
 }
