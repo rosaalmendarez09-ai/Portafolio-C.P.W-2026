@@ -140,3 +140,65 @@ img {/*Evitan problema de desborde*/
     margin: var(--esp-md);
     margin-bottom: var(--esp-xs);
 }
+
+/*CABECERA Y MENÚ*/
+
+.cabecera {
+    display: flex;/*Activa flexbox*/
+    justify-content: space-between;/*Coloca el primer elemento al inicio y el segundo al final*/
+    align-items: center;
+    padding: var(--esp-sm) var(--esp-md);
+    border-bottom: 0.1rem solid var(--color-linea);
+    position: sticky;
+    top: 0;
+    z-index: 100;/*Funciona con stiky, relative y absolute*/
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--esp-xs);
+    color: var(--color-marca);
+}
+
+.logo:hover .logo-icono {
+    transform: rotate(-8deg);/*Cuando el cursor esta sobre el logo se gira 8 grados*/
+}
+
+.logo-texto {
+    font-family: var(--fuente-titulo);
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+/*NAVEGACIÓN*/
+.menu {
+    display: flex;
+    gap: var(--esp-sm);
+    list-style: none;
+}
+
+.menu-enlace {
+    display: inline-block;/*Esta línea permite aplicar padding vertical*/
+    padding: var(--esp-xs) var(--esp-sm);
+    color: var(--color-tinta);
+    font-weight: 600;
+    border-radius: var(--radio);
+    transition: background-color var(--transicion);
+}
+
+.menu-enlace:hover {
+    background-color: var(--color-fondo-alt);
+    color: var(--color-marca);
+}
+
+.menu-enlace:focus {
+    outline: 0.2rem solid var(--color-acento);
+    outline-offset: 0.2rem;/*Se activa con la tecla TAB al llegar al enlace.
+    permite navegar el sitio con el teclado*/
+}
+
+.menu-enlace-activo {
+    color: var(--color-acento);/*Dos clases del mismo elemento, Significa que marca la página que esta activa*/
+}
