@@ -374,3 +374,33 @@ img {/*Evitan problema de desborde*/
     margin-bottom: 0;
 }
 
+/*DOS COLUMNAS*/
+.dos-columnas {
+    display: flex;
+    gap: var(--esp-lg);
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.columna-texto {
+    flex: 1 1 32rem;
+}
+
+.columna-imagen {
+    flex: 1 1 32rem;
+    margin: 0;
+}
+
+.columna-imagen img {
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-2);
+    width: 100%;
+}
+
+.imagen-pie {
+    margin-top: var(--esp-xs);
+    font-size: 1.3rem;
+    color: var(--color-suave);
+    text-align: center;
+    font-style: italic;
+}
