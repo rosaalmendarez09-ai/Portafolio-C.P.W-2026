@@ -202,3 +202,37 @@ img {/*Evitan problema de desborde*/
 .menu-enlace-activo {
     color: var(--color-acento);/*Dos clases del mismo elemento, Significa que marca la página que esta activa*/
 }
+
+/*PORTADA*/
+/* Aquí va la imagen de fondo */
+.portada {
+    background-image: url('../recursos/portada.webp');
+    background-color:  var(--color-marca);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /*Si la imagen es más pequeña, no se repetiría*/
+    min-height: 55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--esp-md);
+    text-align: center;
+}
+
+.portada-caja {
+    background-color: rgba(0, 0, 0, .45);
+    padding: var(--esp-lg);
+    border-radius: var(--radio);
+    max-width: 70rem;
+}
+
+.portada-titulo {
+    color: var(--color-blanco);
+    margin-bottom: var(--esp-sm);
+}
+
+.portada-bajada {
+    color: var(--color-blanco);
+    font-size: 1.8rem;
+    margin-bottom: var(--esp-md);
+}
