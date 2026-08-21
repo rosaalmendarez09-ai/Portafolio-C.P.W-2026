@@ -331,4 +331,46 @@ img {/*Evitan problema de desborde*/
     transform: translateY(0); /*El pie de foto vuelve a su posición deslizandose desde abajo*/
 }
 
-.
+.rejilla-equipo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    gap: var(--esp-md);
+}
+
+.ficha {
+    background-color: var(--color-blanco);
+    padding: var(--esp-md);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-1);
+    text-align: center;
+    transition: transform var(--transicion), box-shadow var(--transicion);
+}
+
+.ficha-foto {
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto var(--esp-md);
+    border: 0.3rem solid var(--color-fondo-alt);
+}
+
+.ficha-nombre {
+    margin-bottom: 0.2rem;
+}
+
+.ficha-rol {
+    color: var(--color-acento);
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: var(--esp-xs)
+}
+
+.ficha-texto {
+    color: var(--color-suave);
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
