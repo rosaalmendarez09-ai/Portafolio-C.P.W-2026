@@ -96,3 +96,47 @@ img {/*Evitan problema de desborde*/
     background-color: var(--color-fondo-alt);
     max-width: none;/*Se anula el ancho máximo para que el fondo ocupe todo el ancho de la pantalla*/
 }
+
+.seccion-alterna {
+    max-width: var(--ancho-max);
+    margin-left: auto;
+    margin-right: auto;/*el contenido de esta secciónse limita y se centra. el selector > significa "hijo directo".
+    alcanza solo el primer nivel de elementos. No a los nietos*/
+}
+
+.seccion-titulo {
+    margin-bottom: var(--esp-sm);
+    text-align: center;
+}
+
+.seccion-entrada {
+    max-width: 65ch;/*La unidad ch equivale al ancho del caracter "0" de la fuente en uso, son 65 caracteres por linea
+    para una lectura más cómoda*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--esp-lg);
+    text-align: center;
+    color: var(--color-suave);
+}
+
+.pagina-encabezzado {
+    max-width: var(--ancho-max);
+    margin: 0 auto;
+    padding: var(--esp-xl) var(--esp-md) var(--esp-lg);
+    /*Tres valores: afectan arriba, lados y abajo*/
+    text-align: center;
+}
+
+.pagina-titulo {
+    margin-bottom: var(--esp-xs);
+}
+
+.pagina-bajada {
+    color: var(--color-suave);
+    font-size: 1.8rem;
+}
+
+.subtitulo {
+    margin: var(--esp-md);
+    margin-bottom: var(--esp-xs);
+}
