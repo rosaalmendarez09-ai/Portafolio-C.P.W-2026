@@ -435,8 +435,8 @@ form input[type="checkbox"] {
   margin-bottom: 0;
 }
 
-form input [type="radio"] + label 
-form input [type="checkbox"] + label {
+form input[type="radio"] + label, 
+form input[type="checkbox"] + label {
   display: inline;
   font-weight: 400;
 } /*El selector + alcanza la etiqueta y display: inline los coloca una al lado del otro*/
