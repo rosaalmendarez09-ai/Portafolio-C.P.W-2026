@@ -409,12 +409,12 @@ form label {
   font-weight: 600;
 }
 
-form input [type= "text"],
-form input [type= "email"],
-form input [type= "tel"],
-form input [type= "password"],
-form input [type= "number"],
-form input [type= "date"],
+form input[type= "text"],
+form input[type= "email"],
+form input[type= "tel"],
+form input[type= "password"],
+form input[type= "number"],
+form input[type= "date"],
 form select, /* Le da una forma más estética al selector de opciones*/
 form textarea {
   width: 100%;
