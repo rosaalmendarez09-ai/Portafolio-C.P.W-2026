@@ -174,7 +174,7 @@ p {
   color: var(--texto);
 }
 
-.boton {
+.boton-principal {
   color: var(--texto);
   background-color: var(--acento);
   padding: 1rem;
@@ -187,6 +187,19 @@ p {
   box-shadow: var(--sombra);
   color: var(--blanco);
 }
+.boton-secundario {
+  color: var(--texto);
+  background-color: none;
+  box-shadow: var(--sombra2);
+  border: 1px solid var(--acento);
+  padding: 1rem;
+  border-radius: var(--radio);
+  font-weight: 700;
+}
+.boton:hover {
+  background-color: var(--acento);
+  box-shadow: var(--sombra);
+  color: var(--blanco);}
 
 .dos-columnas {
   display: grid;
@@ -195,7 +208,6 @@ p {
   color: var(--texto);
   margin-left: 6rem;
   line-height: 1.4;
-
 }
 
 .columna-texto {
@@ -399,7 +411,7 @@ fieldset {
 
 #pie {
   background: linear-gradient(330deg, #2c5e55, #c28835);
-  color: var(--texto);
+  color: var(--blanco);
   max-width: var(--ancho-max);
   margin-left: auto;
   margin-right: auto;
@@ -410,29 +422,27 @@ fieldset {
 .pie-columnas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));;
+  padding: 3rem 2rem;
 }
 
 .pie-bloque h2 {
   font-size: medium;
-  justify-content: space-between;
-}
-
-.pie-bloque address {
-  font-size: small;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 .pie-enlace {
   color: var(--blanco);
+  border-bottom: 1px solid #fff;
 }
 
 .pie-texto {
   font-size: small;
   text-align: center;
+ margin: 0;
 }
 
 .pie-creditos {
   border-top: 1px solid var(--texto);
-  margin-top: 3rem;
-  padding-top: 1rem;
   text-align: center;
 }
