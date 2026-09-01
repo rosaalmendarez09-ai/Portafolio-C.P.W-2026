@@ -26,7 +26,7 @@ body {
 }
 
 h1 {
-  color: #e8c5c8;
+  color: #fff;
   text-align: center;
   margin-top: 30px;
   font-family: "Courier New", Courier, monospace;
@@ -56,11 +56,13 @@ header {
   left: 0;
   width: 100%;
   background-image: url(../recursos/fondosp.jpg);
+  max-width: 960;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 30px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.1);
   color: #e8c5c8;
   z-index: 100;
   text-align: center;
