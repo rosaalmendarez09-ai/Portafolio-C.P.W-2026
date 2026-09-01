@@ -142,7 +142,7 @@ Introducción a CSS,sintaxis y validación           | [ver](unidad-03-css/sitio
 
 | Sesión | Tema                            | Qué aprendí |      Trabajo      |     Captura      |
 | :----: | :------------------------------ | :---------- | :---------------: | :--------------: |
-|  S23   | Viewport y anchos fluidos       |             | [ver](unidad-04/) | [ver](recursos/) |
+|  S23   | Viewport y anchos fluidos       | Diferenciación con la etiqueta viewport y punto de quiebre  | [ver](unidad-04-responsivo/luz-clara/s23-24-mediaqueries) | [ver](recursos/) |
 |  S24   | Media queries y mobile-first    |             | [ver](unidad-04/) | [ver](recursos/) |
 |  S25   | Menú responsivo e impresión     |             | [ver](unidad-04/) | [ver](recursos/) |
 |  S26   | Imágenes y video adaptativos    |             | [ver](unidad-04/) | [ver](recursos/) |
