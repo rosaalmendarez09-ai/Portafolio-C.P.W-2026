@@ -145,6 +145,7 @@ img {/*Evitan problema de desborde*/
 
 .cabecera {
     display: flex;/*Activa flexbox*/
+    flex-direction: row;
     justify-content: space-between;/*Coloca el primer elemento al inicio y el segundo al final*/
     align-items: center;
     padding: var(--esp-sm) var(--esp-md);
@@ -404,16 +405,20 @@ img {/*Evitan problema de desborde*/
     text-align: center;
     font-style: italic;
 }
+.cita {
+    padding: var(--esp-lg);
+}
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 .cabecera {
- flex-direction: colum;
+ flex-direction: row;
  /*La cabecera de fila a columna*/
+ justify-content: space-between;
  gap: var(--esp-md);
 }
 
-h1 { font-size: 3.2rem;}
-h2 { font-size: 2.4rem;}
+h1 { font-size: 4.8rem;}
+h2 { font-size: 3.2rem;}
 
 
 .seccion {
