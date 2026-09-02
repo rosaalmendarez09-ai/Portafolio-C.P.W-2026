@@ -2002,17 +2002,87 @@ img {
  .seccion { padding: var(--esp-xl) var(--esp-lg);} 
 }
 
-/* CUANTOS PUNTOS DE QUIEBRE HACEN FALTA?
-Para Luz Clara basta con estos dos
- base.         hasta 768px             teléfono
- 768             tableta       
- 1024px        escritorio                         */
+/*  CUANTOS PUINTOS DE QUIEBRE HACEN FALTA
+Para Luz Clara basta con estos dos 
+base    hasta 767px    telefono
+768     tableta
+1024px  escritorio*/
 
- /* Cómo se acumulan las reglas 
- En una pantalla de 1200px se aplican las TRES REGLAS:
- 1. La base 1200px
- 2. La de min-width: 768px (1200px es mayor que 768px)
- 3. La de min-width: 1024 (1200px es mayor que 1024px) 
- Donde se repite una propiedad, gana la ultima.
- Por eso el orden importa: de menor a mayor.
- Si la regla de 1024px estuviera antes de la regla de 768, la última la anularía en pantallas grandes*/
+/*COMO SE ACUMULAN LAS REGLAS
+en una pantalla de 1200px se aplican las TRES REGLAS:
+1.base 1200px
+2. la de min-width:768px (1200 es mayor que 768)
+3. la de min-width : 1024px (1200 es mayor que 1024)
+Donde se repite una propiedad, gana la ultima.
+Por eso el orden importa: de menor a mayor.
+si la regla de 1024 estuviera antes de las reglas de 768, la ultima la anularia en pantallas grandes*/
+
+/*LA ESCALA COMPLETA , POR TRAMOS*/
+/*BASE-TELEFONO*/
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 1.8rem;}
+body{font-size: 1.6rem;}
+
+/*ESCALA TABLETS*/
+@media(min-width: 768px){
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 1.8rem;}
+body{font-size: 1.6rem;}
+}
+
+/*ESCALA ESCRITORIO*/
+@media(min-width: 768px){
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 1.8rem;}
+}
+
+/*LA TABLA DE contacto.html*/
+.tabla-envoltorio{ /*despues de los 360px no hay forma razonable de que una tabla quepa sin perder la relacion entre los datos*/
+  overflow: auto;/*crea su propia barra de desplazamiento*/
+}
+
+@media (max-width: 768px) { /*se usa max en lugar de min porque en media query ataca la parte movil, e ajuste es solo para movil*/
+  .tabla th,
+  .tabla td {
+    padding: var(--esp-xs);
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width:768px) {
+  main p { max-width: 65ch;}
+}
+
+/*En movil no hace falta adaptar texto de los parrafos, la pantalla lo hace. la adaptaciín es para de tables hacia  arriba por comodidad de lectura */
+
+/*  CUANTOS PUINTOS DE QUIEBRE HACEN FALTA
+Para Luz Clara basta con estos dos 
+base    hasta 767px    telefono
+768     tableta
+1024px  escritorio*/
+
+/*TABLETA . A PÁRTIR DE 768PX
+@media (min-width:768) {
+cabecera e fila 
+titulos mas grandes mas relleno en las secciones}*/
+
+/*Escritorio . A PÁRTIR DE 1024pxPX
+@media (min-width:1024) {
+titulos a tamaño completo
+portada más alta
+}*/
+
+/*AJUSTE SOLO PARA PANTALLA PEQUEÑA
+@media (max-width:768) {
+celdas de la tabla mas compactas
+}*/
+
+/*ACCESIBILIDAD DEL MOVIMIENTO
+@media (prefer-reduce-motion:reduce) {
+Va siempre al final de todo. Desactivas las animaciones desde el SO del dispositivo en uso.}*/
+
+/*Estos encabezados NO son decorativos.
+  q uien habra esta hoja de estilos o usted mismo dentro de 6  meses sepa o tenga una idea de lo que se hizo y la estrategia que se uso */
