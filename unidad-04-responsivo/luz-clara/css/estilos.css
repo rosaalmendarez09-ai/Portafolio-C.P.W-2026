@@ -25,7 +25,6 @@
      S27  patrones: Mostly Fluid, Column Drop y Tiny Tweaks
      S28  patrones: Layout Shifter y Off Canvas */
 
-
 /* ÍNDICE
     1 · Variables y configuración          (S20)
     2 · Reset y base tipográfica           (S11 · S13)
@@ -45,7 +44,6 @@
    16 · Movimiento                         (S19)
    17 · Accesibilidad del movimiento       (S19) */
 
-
 /* 1 · VARIABLES Y CONFIGURACIÓN           tema de la S20
 
    Una VARIABLE guarda un valor con un nombre, para poder reutilizarlo.
@@ -63,45 +61,43 @@
    descuadrado—. Con variables se cambia UNA línea.                     */
 
 :root {
-
   /*  COLORES  */
-  --color-tinta:      #1A1A1A;   /* el texto principal · casi negro */
-  --color-suave:      #6B6B6B;   /* texto secundario, pies de foto */
-  --color-marca:      #2C3E50;   /* el azul del estudio */
-  --color-acento:     #C87941;   /* el terracota de los botones */
-  --color-acento-osc: #A45F2E;   /* el mismo terracota, más oscuro */
-  --color-fondo:      #FAFAF8;   /* blanco roto · no blanco puro */
-  --color-fondo-alt:  #F0EEE9;   /* para alternar secciones */
-  --color-linea:      #DDDAD3;   /* bordes y separadores */
-  --color-blanco:     #FFFFFF;
+  --color-tinta: #1a1a1a; /* el texto principal · casi negro */
+  --color-suave: #6b6b6b; /* texto secundario, pies de foto */
+  --color-marca: #2c3e50; /* el azul del estudio */
+  --color-acento: #c87941; /* el terracota de los botones */
+  --color-acento-osc: #a45f2e; /* el mismo terracota, más oscuro */
+  --color-fondo: #fafaf8; /* blanco roto · no blanco puro */
+  --color-fondo-alt: #f0eee9; /* para alternar secciones */
+  --color-linea: #dddad3; /* bordes y separadores */
+  --color-blanco: #ffffff;
 
   /*  TIPOGRAFÍA  */
-  --fuente-titulo: Georgia, 'Times New Roman', serif;
-  --fuente-texto:  'Segoe UI', Arial, sans-serif;
+  --fuente-titulo: Georgia, "Times New Roman", serif;
+  --fuente-texto: "Segoe UI", Arial, sans-serif;
   /* OJO: La LISTA DE RESPALDO: si la primera fuente no está disponible,
      el navegador prueba la siguiente. La última SIEMPRE debe ser una
      familia genérica (serif, sans-serif, monospace), porque esa
      siempre existe.                                                  */
 
   /*  ESPACIADO  */
-  --esp-xs: 0.8rem;    /*  8px */
-  --esp-sm: 1.6rem;    /* 16px */
-  --esp-md: 2.4rem;    /* 24px */
-  --esp-lg: 4.0rem;    /* 40px */
-  --esp-xl: 8.0rem;    /* 80px */
+  --esp-xs: 0.8rem; /*  8px */
+  --esp-sm: 1.6rem; /* 16px */
+  --esp-md: 2.4rem; /* 24px */
+  --esp-lg: 4rem; /* 40px */
+  --esp-xl: 8rem; /* 80px */
   /* Usar una escala fija en vez de números al azar hace que todos los
      espacios del sitio guarden relación entre sí. Es lo que hace que
      una página se vea "ordenada" aunque no se sepa explicar por qué. */
 
   /*  OTROS  */
-  --radio:   0.6rem;                            /*  6px */
-  --sombra-1: 0 0.2rem 0.6rem rgba(0,0,0,.06);  /* apenas separado */
-  --sombra-2: 0 0.4rem 1.2rem rgba(0,0,0,.10);  /* una tarjeta */
-  --sombra-3: 0 0.8rem 2.0rem rgba(0,0,0,.16);  /* elemento elevado */
+  --radio: 0.6rem; /*  6px */
+  --sombra-1: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.06); /* apenas separado */
+  --sombra-2: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1); /* una tarjeta */
+  --sombra-3: 0 0.8rem 2rem rgba(0, 0, 0, 0.16); /* elemento elevado */
   --transicion: 0.25s ease;
-  --ancho-max: 120rem;                          /* 1200px */
+  --ancho-max: 120rem; /* 1200px */
 }
-
 
 /* 2 · RESET Y BASE TIPOGRÁFICA           temas de la S11 y la S13 */
 
@@ -133,7 +129,6 @@
      se descuentan hacia adentro. Es lo que hace que las medidas sean
      predecibles.                                                      */
 }
-
 
 /*  LA BASE DEL TAMAÑO · la técnica del 62.5%  */
 html {
@@ -189,9 +184,10 @@ body {
      sobre un blanco roto se lee mejor durante más tiempo.             */
 }
 
-
 /*  JERARQUÍA DE TÍTULOS  */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--fuente-titulo);
   line-height: 1.2;
   /* Los títulos llevan una altura de línea MENOR que el texto normal.
@@ -200,9 +196,15 @@ h1, h2, h3 {
   color: var(--color-marca);
 }
 
-h1 { font-size: 4.8rem; }   /* 48px */
-h2 { font-size: 3.2rem; }   /* 32px */
-h3 { font-size: 2.0rem; }   /* 20px */
+h1 {
+  font-size: 4.8rem;
+} /* 48px */
+h2 {
+  font-size: 3.2rem;
+} /* 32px */
+h3 {
+  font-size: 2rem;
+} /* 20px */
 /* OJO: Los tamaños guardan PROPORCIÓN entre sí: cada nivel es
    notoriamente más pequeño que el anterior. Elegir números al azar
    —por ejemplo 48, 44 y 40— produce una página donde no se distingue
@@ -231,7 +233,6 @@ img {
        display    quita un pequeño espacio en blanco que los navegadores
                   dejan debajo de las imágenes por tratarlas como texto */
 }
-
 
 /* 3 · CONTENEDORES Y SECCIONES           tema de la S14 */
 
@@ -316,7 +317,6 @@ img {
   margin-bottom: var(--esp-xs);
 }
 
-
 /* 4 · CABECERA Y MENÚ           temas de la S12, S15 y S16 */
 
 .cabecera {
@@ -392,7 +392,7 @@ img {
 
 .logo-texto {
   font-family: var(--fuente-titulo);
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -429,7 +429,9 @@ img {
   color: var(--color-tinta);
   font-weight: 600;
   border-radius: var(--radio);
-  transition: background-color var(--transicion), color var(--transicion);
+  transition:
+    background-color var(--transicion),
+    color var(--transicion);
   /* OJO: La transición va en la regla BASE, no dentro de :hover.
      Si se pusiera en :hover, la entrada sería suave pero la salida
      brusca: al quitar el cursor el color volvería de golpe.           */
@@ -457,14 +459,13 @@ img {
      Marca cuál es la página actual.                                   */
 }
 
-
 /* 5 · PORTADA           temas de la S13 y la S15 */
 
 .portada {
   /*  AQUÍ VA LA IMAGEN DE FONDO
      Descomente la línea siguiente cuando coloque el archivo en
      recursos/portada.jpg                                              */
-  background-image: url('../recursos/portada.webp');   /* <- ya activa */
+  background-image: url("../recursos/portada.webp"); /* <- ya activa */
 
   background-color: var(--color-marca);
   /* Un color de respaldo, por si la imagen no carga o todavía no se
@@ -491,7 +492,7 @@ img {
   /* Sin esto, una imagen más pequeña que el contenedor se repetiría
      en mosaico.                                                       */
 
-  min-height: 55rem;   /* 550px */
+  min-height: 55rem; /* 550px */
   /* OJO: IMPRESCINDIBLE. Una imagen de fondo NO le da altura al elemento.
      Si el contenedor solo tiene un título y un botón, sin esta línea
      la imagen apenas se asomaría.                                     */
@@ -523,7 +524,7 @@ img {
 
   padding: var(--esp-lg);
   border-radius: var(--radio);
-  max-width: 70rem;   /* 700px */
+  max-width: 70rem; /* 700px */
 }
 
 .portada-titulo {
@@ -536,7 +537,6 @@ img {
   font-size: 1.8rem;
   margin-bottom: var(--esp-md);
 }
-
 
 /* 6 · SERVICIOS · FLEXBOX           tema de la S16
 
@@ -589,7 +589,9 @@ img {
      el texto y el precio se apilan.
      OJO: Y AL CAMBIAR LA DIRECCIÓN, LOS DOS EJES SE INTERCAMBIAN.        */
 
-  transition: transform var(--transicion), box-shadow var(--transicion);
+  transition:
+    transform var(--transicion),
+    box-shadow var(--transicion);
 }
 
 .tarjeta-icono {
@@ -624,7 +626,6 @@ img {
   padding-top: var(--esp-sm);
   border-top: 0.1rem solid var(--color-linea);
 }
-
 
 /* 7 · GALERÍA · CSS GRID           tema de la S17
 
@@ -707,7 +708,7 @@ img {
        Es lo que lo hace distinto de las maquetaciones antiguas, donde
        un cálculo mal hecho rompía la página entera.                   */
 
-  grid-row: span 2;   /* y además, 2 filas */
+  grid-row: span 2; /* y además, 2 filas */
 }
 
 .galeria-pieza img {
@@ -719,7 +720,9 @@ img {
      estirarían para llenar su celda y las personas de las fotos
      saldrían achatadas.                                               */
 
-  transition: transform 0.4s ease, filter 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
   filter: grayscale(60%);
   /* Un filtro que quita el 60% del color. Da unidad visual a una
      galería con fotos de tonos muy distintos.                         */
@@ -771,7 +774,6 @@ img {
      desde abajo.                                                      */
 }
 
-
 /* 8 · EQUIPO · CSS GRID           tema de la S17 */
 
 .rejilla-equipo {
@@ -788,11 +790,13 @@ img {
   border-radius: var(--radio);
   box-shadow: var(--sombra-1);
   text-align: center;
-  transition: transform var(--transicion), box-shadow var(--transicion);
+  transition:
+    transform var(--transicion),
+    box-shadow var(--transicion);
 }
 
 .ficha-foto {
-  width: 14rem;    /* 140px */
+  width: 14rem; /* 140px */
   height: 14rem;
   object-fit: cover;
   border-radius: 50%;
@@ -829,7 +833,6 @@ img {
   font-size: 1.4rem;
   margin-bottom: 0;
 }
-
 
 /* 9 · DOS COLUMNAS · FLEXBOX           tema de la S16 */
 
@@ -868,7 +871,6 @@ img {
   text-align: center;
   font-style: italic;
 }
-
 
 /* 10 · LISTAS Y GLOSARIO           tema de la S14 */
 
@@ -922,7 +924,6 @@ img {
      una sucesión de párrafos sueltos.                                 */
 }
 
-
 /* 11 · CITA           temas de la S12 y la S14 */
 
 .cita {
@@ -939,7 +940,7 @@ img {
 }
 
 .cita::before {
-  content: '\201C';
+  content: "\201C";
   /* OJO: ::before es un PSEUDO-ELEMENTO: crea un elemento que no existe
      en el HTML, para poder darle estilo.
 
@@ -974,7 +975,6 @@ img {
   font-size: 1.4rem;
   text-align: right;
 }
-
 
 /* 12 · TABLA           tema de la S18
 
@@ -1059,7 +1059,6 @@ img {
      contenido de la tabla.                                            */
 }
 
-
 /* 13 · FORMULARIO           tema de la S18 */
 
 .formulario {
@@ -1121,7 +1120,9 @@ img {
      inmediato.                                                        */
 
   background-color: var(--color-fondo);
-  transition: border-color var(--transicion), box-shadow var(--transicion);
+  transition:
+    border-color var(--transicion),
+    box-shadow var(--transicion);
 }
 
 .campo-entrada:focus {
@@ -1181,7 +1182,6 @@ img {
   margin-bottom: 0;
 }
 
-
 /* 14 · BOTONES           tema de la S18 */
 
 .boton {
@@ -1197,7 +1197,9 @@ img {
      muestra en la mayoría de navegadores, pero un <a> con aspecto de
      botón NO: conviene declararla siempre para que las dos cosas se
      comporten igual.                                                  */
-  transition: background-color var(--transicion), transform var(--transicion);
+  transition:
+    background-color var(--transicion),
+    transform var(--transicion);
 }
 
 .boton-principal {
@@ -1238,7 +1240,6 @@ img {
      :focus   "estás aquí"                -> PARA QUIEN USA TECLADO
 
    Omitir :focus deja fuera a quien navega con Tab.                    */
-
 
 /* 15 · PIE DE PÁGINA · FLEXBOX           tema de la S16 */
 
@@ -1305,7 +1306,6 @@ img {
   margin-bottom: 0;
 }
 
-
 /* 16 · MOVIMIENTO           tema de la S19
 
    Hay dos formas de producir movimiento en CSS:
@@ -1358,9 +1358,15 @@ img {
      desaparecer y volver a aparecer.                                  */
 }
 
-.fila-servicios .tarjeta:nth-child(1) { animation-delay: 0s; }
-.fila-servicios .tarjeta:nth-child(2) { animation-delay: 0.12s; }
-.fila-servicios .tarjeta:nth-child(3) { animation-delay: 0.24s; }
+.fila-servicios .tarjeta:nth-child(1) {
+  animation-delay: 0s;
+}
+.fila-servicios .tarjeta:nth-child(2) {
+  animation-delay: 0.12s;
+}
+.fila-servicios .tarjeta:nth-child(3) {
+  animation-delay: 0.24s;
+}
 /* OJO: EL RETARDO ESCALONADO.
    Las tres tarjetas aparecen una tras otra en vez de todas a la vez.
    El efecto en cascada se percibe más cuidado y cuesta tres líneas.
@@ -1370,8 +1376,13 @@ img {
 
 /*  ANIMACIÓN EN BUCLE · con mucha moderación  */
 @keyframes latido {
-  0%, 100% { transform: scale(1); }
-  50%      { transform: scale(1.06); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
   /* Con PORCENTAJES se definen varios momentos, no solo el inicio y el
      final.
      OJO: 0% y 100% comparten el mismo valor para que el ciclo sea
@@ -1380,7 +1391,7 @@ img {
 }
 
 .menu-enlace.activo::after {
-  content: '';
+  content: "";
   /* Un pseudo-elemento vacío que sirve solo como forma: el puntito
      bajo el enlace de la página actual.                              */
   display: block;
@@ -1405,7 +1416,6 @@ img {
    En este sitio se anima UN puntito de 6px. Si se animaran las seis
    fotos de la galería, la página resultaría agotadora.                */
 
-
 /* 18 · PÁGINA DE GALERÍA           temas de la S16 y la S17
 
    OJO: CÓMO USAR ESTE BLOQUE
@@ -1421,7 +1431,6 @@ img {
 
      Todo lo de aquí usa las mismas variables ya declaradas en :root, así
      que no hay que tocar nada más del archivo original. */
-
 
 /*  18.1 · LAS CIFRAS · CSS GRID  */
 
@@ -1470,7 +1479,6 @@ img {
      margen dejaría un hueco desigual en la parte de abajo.            */
 }
 
-
 /*  18.2 · LAS ETIQUETAS DE CATEGORÍA · FLEXBOX  */
 
 .fila-etiquetas {
@@ -1514,9 +1522,10 @@ img {
   color: var(--color-tinta);
   font-size: 1.4rem;
   font-weight: 600;
-  transition: background-color var(--transicion),
-              color var(--transicion),
-              border-color var(--transicion);
+  transition:
+    background-color var(--transicion),
+    color var(--transicion),
+    border-color var(--transicion);
   /* OJO: La transición va en la regla BASE, no dentro de :hover.
      Si se pusiera en :hover, la entrada sería suave pero la salida
      brusca: al quitar el cursor el color volvería de golpe.           */
@@ -1535,7 +1544,6 @@ img {
      recorrer las categorías sin ratón. Quitarlo sin poner otra señal
      visible deja a esas personas sin saber dónde están.               */
 }
-
 
 /*  18.3 · EL MOSAICO · CSS GRID con piezas de distinto tamaño  */
 
@@ -1610,7 +1618,6 @@ img {
        columnas, esta pieza ocupa el ancho completo.                   */
 }
 
-
 /*  18.4 · LA PIEZA · imagen con pie superpuesto  */
 
 .pieza {
@@ -1657,7 +1664,9 @@ img {
   /* Quita el pequeño espacio en blanco que los navegadores dejan bajo
      las imágenes por tratarlas como texto en línea.                   */
 
-  transition: transform 0.5s ease, filter 0.5s ease;
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
   filter: grayscale(45%) brightness(0.95);
   /* Dos filtros a la vez, separados por ESPACIO (no por coma).
      Quitan parte del color y bajan un poco el brillo, lo que da unidad
@@ -1675,7 +1684,6 @@ img {
        transform NO altera el espacio que ocupa el elemento, así que
        las piezas vecinas no se mueven y el mosaico no tiembla.        */
 }
-
 
 /*  18.5 · EL PIE DE LA PIEZA · aparece al pasar el cursor  */
 
@@ -1754,7 +1762,6 @@ img {
        casi siempre la empeora.                                        */
 }
 
-
 /*  18.6 · LAS REJILLAS POR CATEGORÍA  */
 
 .rejilla-categoria {
@@ -1783,7 +1790,6 @@ img {
      Aquí sirve para que todas las piezas de una categoría se vean
      iguales aunque las fotos originales tengan proporciones distintas. */
 }
-
 
 /*  18.7 · EL LLAMADO FINAL  */
 
@@ -1825,7 +1831,6 @@ img {
   margin-bottom: var(--esp-xs);
 }
 
-
 /*  18.8 · EL ENLACE DE REGRESO  */
 
 .volver-arriba {
@@ -1838,7 +1843,9 @@ img {
   color: var(--color-suave);
   font-size: 1.4rem;
   border-bottom: 0.1rem solid var(--color-linea);
-  transition: color var(--transicion), border-color var(--transicion);
+  transition:
+    color var(--transicion),
+    border-color var(--transicion);
   /* OJO: El borde inferior sustituye al subrayado que la regla general de
      los enlaces quitó. Un enlace sin ninguna marca distintiva no se
      reconoce como tal, y quien no distingue bien los colores no lo
@@ -1849,7 +1856,6 @@ img {
   color: var(--color-acento);
   border-bottom-color: var(--color-acento);
 }
-
 
 /*  18.9 · ANIMACIÓN DE ENTRADA DEL MOSAICO  */
 
@@ -1865,16 +1871,36 @@ img {
      vería un instante antes de desaparecer y volver a aparecer.       */
 }
 
-.mosaico .pieza:nth-child(1) { animation-delay: 0.00s; }
-.mosaico .pieza:nth-child(2) { animation-delay: 0.06s; }
-.mosaico .pieza:nth-child(3) { animation-delay: 0.12s; }
-.mosaico .pieza:nth-child(4) { animation-delay: 0.18s; }
-.mosaico .pieza:nth-child(5) { animation-delay: 0.24s; }
-.mosaico .pieza:nth-child(6) { animation-delay: 0.30s; }
-.mosaico .pieza:nth-child(7) { animation-delay: 0.36s; }
-.mosaico .pieza:nth-child(8) { animation-delay: 0.42s; }
-.mosaico .pieza:nth-child(9) { animation-delay: 0.48s; }
-.mosaico .pieza:nth-child(10){ animation-delay: 0.54s; }
+.mosaico .pieza:nth-child(1) {
+  animation-delay: 0s;
+}
+.mosaico .pieza:nth-child(2) {
+  animation-delay: 0.06s;
+}
+.mosaico .pieza:nth-child(3) {
+  animation-delay: 0.12s;
+}
+.mosaico .pieza:nth-child(4) {
+  animation-delay: 0.18s;
+}
+.mosaico .pieza:nth-child(5) {
+  animation-delay: 0.24s;
+}
+.mosaico .pieza:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.mosaico .pieza:nth-child(7) {
+  animation-delay: 0.36s;
+}
+.mosaico .pieza:nth-child(8) {
+  animation-delay: 0.42s;
+}
+.mosaico .pieza:nth-child(9) {
+  animation-delay: 0.48s;
+}
+.mosaico .pieza:nth-child(10) {
+  animation-delay: 0.54s;
+}
 /* OJO: EL RETARDO ESCALONADO.
    Las piezas aparecen una tras otra en vez de todas a la vez. El efecto
    en cascada se percibe más cuidado y cuesta diez líneas.
@@ -1886,7 +1912,6 @@ img {
      corto: mientras dura, las piezas están invisibles, y una entrada
      larga hace que la página parezca vacía al abrirla.                */
 
-
 /* FIN DEL BLOQUE DE LA GALERÍA
 
    OJO: RECORDATORIO: pegar ANTES del bloque
@@ -1895,7 +1920,6 @@ img {
    Esa regla desactiva estas animaciones para quien lo haya solicitado
    en su sistema operativo. Si este bloque quedara después, sus
    transiciones se reactivarían y anularían la protección. */
-
 
 /* 17 · ACCESIBILIDAD DEL MOVIMIENTO           tema de la S19 */
 
@@ -1933,7 +1957,6 @@ img {
      estudian a fondo en la Unidad 4; este caso corresponde aquí
      porque trata sobre el movimiento.                                 */
 
-
 /* FIN DE LA HOJA
 
    ANTES DE ENTREGAR:
@@ -1944,3 +1967,23 @@ img {
      3. Verificar el contraste en webaim.org/resources/contrastchecker
      4. Recorrer el sitio con la tecla Tab: debe verse siempre dónde
         está el foco */
+
+@media (max-width: 768px) {
+  .cabera {
+    flex-direction: column;
+    /* La cabecera de fila a columna */
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--esp-md);
+  }
+  h1 {
+    font-size: 4.8rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+
+.seccion {
+  padding: var(--esp-sm) var(--esp-md);
+}
