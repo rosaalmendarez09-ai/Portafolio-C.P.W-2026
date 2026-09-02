@@ -1968,22 +1968,29 @@ img {
      4. Recorrer el sitio con la tecla Tab: debe verse siempre dónde
         está el foco */
 
+/* Modaalidad movile first */
 @media (max-width: 768px) {
   .cabera {
-    flex-direction: column;
+    flex-direction: row;
     /* La cabecera de fila a columna */
     justify-content: space-between;
     align-items: center;
     gap: var(--esp-md);
   }
   h1 {
-    font-size: 4.8rem;
+    font-size: 4.0em;
   }
   h2 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }
 
 .seccion {
-  padding: var(--esp-sm) var(--esp-md);
+  padding: var(--esp-xl) var(--esp-md);
+}
+.portada-caja {
+  padding: var(--esp-lg);
+}
+.cita {
+  padding: var(--esp-lg) ;
 }
