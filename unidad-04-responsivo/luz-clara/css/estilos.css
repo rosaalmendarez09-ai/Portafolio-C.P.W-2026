@@ -1994,3 +1994,25 @@ img {
 .cita {
   padding: var(--esp-lg) ;
 }
+
+/* Apartir de los 1024px - vista escritorio*/
+@media (min-width: 1024px) {
+  h1 {font-size: 4.8rem;} /* El h1 recupera el tamaño original */
+ .portada { min-height: 55rem;}  /* Una portada xon 550px de alto ocupa casi todas las pantallas de un celular */
+ .seccion { padding: var(--esp-xl) var(--esp-lg);} 
+}
+
+/* CUANTOS PUNTOS DE QUIEBRE HACEN FALTA?
+Para Luz Clara basta con estos dos
+ base.         hasta 768px             teléfono
+ 768             tableta       
+ 1024px        escritorio                         */
+
+ /* Cómo se acumulan las reglas 
+ En una pantalla de 1200px se aplican las TRES REGLAS:
+ 1. La base 1200px
+ 2. La de min-width: 768px (1200px es mayor que 768px)
+ 3. La de min-width: 1024 (1200px es mayor que 1024px) 
+ Donde se repite una propiedad, gana la ultima.
+ Por eso el orden importa: de menor a mayor.
+ Si la regla de 1024px estuviera antes de la regla de 768, la última la anularía en pantallas grandes*/
