@@ -2161,4 +2161,14 @@ Va siempre al final de todo. Desactivas las animaciones desde el SO del disposit
    }
   }
 
+  @media (min-width: 768px) { /*Aquí si corresponde porque el botón no debe existir en pantallas grandes*/
+    .menu-boton {
+      display: none;
+    }
+    .menu {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  
   
