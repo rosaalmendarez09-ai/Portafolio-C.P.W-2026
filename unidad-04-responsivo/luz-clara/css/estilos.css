@@ -2092,3 +2092,26 @@ Va siempre al final de todo. Desactivas las animaciones desde el SO del disposit
 
 /*Estos encabezados NO son decorativos.
   q uien habra esta hoja de estilos o usted mismo dentro de 6  meses sepa o tenga una idea de lo que se hizo y la estrategia que se uso */
+
+  /*Media querie para pantalla grande*/
+  @media (min-width: 768px) {
+   .cabera {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .menu {
+    flex-direction: row;
+    gap: var(--esp-sm);
+    width: auto;
+   }
+   .menu-enlace {
+    display: inline-block;
+    padding: var(--esp-xs) var(--esp-sm);
+    border: none;
+    border-bottom: none;
+    border-radius: var(--radio);
+   }
+  }
+
+  
