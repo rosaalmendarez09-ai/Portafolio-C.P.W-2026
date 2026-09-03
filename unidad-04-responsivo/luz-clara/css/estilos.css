@@ -407,22 +407,26 @@ img {
 
 .menu {
   display: flex;
-  gap: var(--esp-sm);
+  flex-direction: column;
+  gap: 0;
   list-style: none;
   /* El menú es una LISTA por su significado —es un conjunto de
      enlaces del mismo nivel— pero no debe VERSE como lista. Por eso
-     se quitan las viñetas con list-style.                             */
+     se quitan las viñetas con list-style. 
+                                 */
+  width: 100%;
 }
 
 .menu-enlace {
-  display: inline-block;
+  /*display: inline-block;*/
+  display: block; /*Ocupa todo el ancho disponible y el area para tocar es mayor*/
   /* OJO: IMPRESCINDIBLE.
      Un enlace es "inline" por omisión, y los elementos inline IGNORAN
      el relleno vertical. Sin esta línea, el padding de arriba y abajo
      de la regla siguiente no haría ningún efecto y el área para hacer
      clic quedaría del alto exacto del texto.                          */
 
-  padding: var(--esp-xs) var(--esp-sm);
+  padding:var(--esp-sm);
   /* Amplía el ÁREA PULSABLE. No es decorativo: un enlace pequeño es
      difícil de acertar con el dedo en un teléfono.                    */
 
@@ -435,6 +439,8 @@ img {
   /* OJO: La transición va en la regla BASE, no dentro de :hover.
      Si se pusiera en :hover, la entrada sería suave pero la salida
      brusca: al quitar el cursor el color volvería de golpe.           */
+     border-bottom: 0.1rem solid var(--color-linea);
+     text-align: center;
 }
 
 .menu-enlace:hover {
