@@ -407,7 +407,30 @@ footer {
 fieldset {
   width: 100%;
 }
+.check {
+  display: none;
 }
+
+.check-label {
+  cursor: pointer;
+}
+.menuH {
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0px;
+  overflow: hidden;
+  height: 0;
+}
+.portada {
+  position: relative;
+}
+;
+}
+
+
+
 
 /* orientacion H/V */
 @media (orientation:landscape) and (max-heigth: 500px){
