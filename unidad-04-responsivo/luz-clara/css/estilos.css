@@ -590,6 +590,39 @@ img {
   margin-bottom: var(--esp-md);
 }
 
+.video-envoltorio {
+  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
+
+  aspect-ratio: 16 / 9;
+  /* Mantiene la proporción sin importar el ancho de la pantalla.
+     La altura se calcula sola a partir del ancho disponible.
+     Antes de que existiera esta propiedad, conseguirlo requería un
+     truco con relleno en porcentaje que costaba explicar.            */
+
+  background-color: var(--color-tinta);
+  /* Color de respaldo mientras el video carga. Sin esto se ve un
+     hueco transparente que parece un error.                          */
+
+  border-radius: var(--radio);
+  overflow: hidden;
+  /* Recorta las esquinas del video para que sigan el redondeado del
+     envoltorio.                                                      */
+
+  box-shadow: var(--sombra-2);
+}
+
+.video-envoltorio video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Igual que con las imágenes: RECORTA en vez de DEFORMAR si la
+     proporción del archivo no coincide con la del envoltorio.        */
+  display: block;
+}
+
+
 
 /* 6 · SERVICIOS · FLEXBOX           tema de la S16
 
@@ -1028,6 +1061,15 @@ img {
   text-align: right;
 }
 
+/*Tiny. pequeños cambios para base teléfono*/
+#testimonio p,
+.cita-texto {
+font-size: 1.6rem;
+line-height: 1.6;
+}
+
+
+
 
 /* 12 · TABLA           tema de la S18
 
@@ -1358,6 +1400,13 @@ img {
   margin-bottom: 0;
 }
 
+/* LOS CINCO PATRONES.
+Son las  formas en que un deseño puede reorganizarse al cambiar el ancho.
+1- Mostly Fluid. Una rejilla que se encoje y al llegar al mínimo sus elementos bajan de línea. En pantalla grande se detiene y se centra.
+2- Colum Drop. Columnas que se apilan una debajo de la otra al angostar. Lo que hace flex-wrap: wrap.
+3- Layout Shifter. Las zonas cambian de posición, no solo de tamañO. Se resuelven con grid.
+4- Tiny Tweaks. Solo ajustan tamaños y espacios, para contenido de una sola columna.
+5- Off Canvas. Contenido que vive fuera de la pantalla y entra al pedirlo, por ejemplo el menú de hamburguesa*/ 
 
 /* 16 · MOVIMIENTO           tema de la S19
 
@@ -2161,6 +2210,89 @@ Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
   .portada-bajada { font-size: 1.5rem;}
 } 
 
+/* Ajuste de pantalla pequeña de video */
+
+@media (max-width: 767px) {
+  .video-envoltorio {
+    border-radius: 0;
+    /* En un teléfono el video ocupa casi todo el ancho: las esquinas
+       redondeadas dejan franjas del fondo que se ven como un error
+       de encuadre.                                                   */
+  }
+}
+
+/*Tiny. pequeños cambios para base tablet*/
+@media (min-width:768) {
+  #testimonio p {
+    font-size: 1.7rem;
+    max-width: 65ch;
+     /*El límite en la línea aparece despúes de tableta*/
+  }
+
+  .cita {
+    padding: var(--esp-lg);
+    .cita-texto {
+      font-size: 2.0rem;
+    }
+  }
+}
+
+
+/*Tiny. pequeños cambios para base escritorio*/
+@media (min-width: 1024px) {
+  #testimonio p {
+    font-size: 1.8rem;
+    line-height: 1.7;
+     /*El límite en la línea aparece despúes de escritorio*/
+  }
+    .cita-texto {
+      font-size: 2.2rem;
+    }
+}
+
+/* Mostly Fluid a .mosaico en galería.html */
+/*Ajuste para telefonos*/
+@media (max-width: 600px) {
+  .mosaico {
+    grid-template-columns: 1fr,;
+    /* Una solo columna de 360px,
+       dos columnas de 180px,
+       las fotos dejan de apreciarse */
+       grid-auto-rows: 24rem;
+  }
+  .pieza-ancha, 
+  .pieza-alta, 
+  .pieza-grande {
+    grid-column: auto;
+    grid-row: auto;
+  }/* Adaptar mosaicos con piezas de distinto tamaño */
+  }
+
+
+/* Mostly Fluid a .mosaico en galería.html */
+/*Ajuste para pantalla grande*/
+@media (min-width: 1400px) {
+  .mosaico {
+    max-width: 130rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* Este patrón no solo de encoge, también se detiene */
+  }
+}
+
+/* Patron column Drop en zonas de columnas-tarjetas de index.html*/
+@media (min-width: 620px) and (max-width: 900px) {
+  .tarjeta {
+    flex: 1 1 calc(50% - var(--esp-md));
+    /* Fuerza a dos por linea
+    calc(). permite mezclar unidades 50% del contenedor menos el hueco */
+  }
+  .tarjeta:last-child {
+    flex-basis: 100%;
+    /* La tercera tarjeta ocupa el ancho completo es una decisión estética por que se ve mejor una tarjeta ancha que angosta y sola*/
+  }
+}
+
 /*LAS CONSULTAS DISPONIBLES
 @media (min-width: 768px) ancho mínimo
 @media (max-width: 767px) ancho maximo
@@ -2171,6 +2303,7 @@ Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
 @media (prefers-reduced-motion) preferencia de movimeinto
 @media (prefers-color-scheme: dark) tema oscuro
 */
+
 @media print {
   /*QUITAR LO QUE NO SIRVE EN EL PAPEL*/
   .cabecera,
@@ -2213,3 +2346,13 @@ main a[href^="http"]::after {
   color: #555;
 }
 }
+
+@media print {
+  .video-envoltorio {
+    display: none;
+  }
+  /* Un video en papel no sirve: no se puede reproducir. Si se quiere
+     dejar constancia de que existe, se puede sustituir por su imagen
+     de portada en lugar de ocultarlo.                                */
+}
+
