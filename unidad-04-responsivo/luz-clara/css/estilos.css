@@ -199,9 +199,9 @@ h1, h2, h3 {
      las dos líneas quedan muy separadas.                              */
   color: var(--color-marca);
 }
-/*tamaños para moviles (se refiere a que a la hora de programar para celular, estos tamaños son opcioness como variables para futuros proyectos )*/
-h1 { font-size: 3.2rem; }   /* 48px */
-h2 { font-size: 2.4rem; }   /* 32px */
+/*Tamaños movil*/
+h1 { font-size: 3.2rem; }   /* 32px */
+h2 { font-size: 2.4rem; }   /* 24px */
 h3 { font-size: 2.0rem; }   /* 20px */
 /* OJO: Los tamaños guardan PROPORCIÓN entre sí: cada nivel es
    notoriamente más pequeño que el anterior. Elegir números al azar
@@ -250,7 +250,7 @@ img {
      contenedor: sin el max-width de arriba, auto no tendría nada
      que repartir.                                                     */
 
-  padding: var(--esp-xl) var(--esp-md);
+  padding: var(--esp-lg) var(--esp-sm);
   /* Dos valores: el primero es arriba y abajo, el segundo izquierda y
      derecha. El relleno lateral es lo que impide que el texto quede
      pegado al borde de la pantalla en un teléfono.                    */
@@ -321,10 +321,10 @@ img {
 
 .cabecera {
   display: flex;
+  flex-direction: column;
   /* OJO: ACTIVA FLEXBOX. Se declara en el CONTENEDOR, nunca en los hijos.
      Los hijos directos —el logo y la navegación— se convierten en
      "elementos flexibles" y se colocan en fila automáticamente.       */
-  flex-direction: column;
   gap: var(--esp-sm);
   justify-content: space-between;
   /* Controla el EJE PRINCIPAL, que con la dirección por omisión (fila)
@@ -341,7 +341,7 @@ img {
      OJO: RECORDAR: si la dirección fuera  column, estos dos ejes se
        INTERCAMBIAN. Es la confusión más común de Flexbox.             */
 
-  padding:var(--esp-lg) var(--esp-sm) ;
+  padding: var(--esp-sm);
   background-color: var(--color-blanco);
   border-bottom: 0.1rem solid var(--color-linea);
 
@@ -405,71 +405,75 @@ img {
      —un botón de búsqueda, por ejemplo—, quede alineado sin
      necesidad de reescribir nada.                                    */
 }
-/*la base para movil*/
+
+/*LA BASE PARA MOVIL*/
 .menu {
   display: flex;
-  flex-direction: column; /*qpor cuestiones de espacio el menu vuelve a ser columna*/
+  flex-direction: column; /*en movil el menu vuelve a columnas*/
   gap: 0;
-  width: 100%;
   list-style: none;
   /* El menú es una LISTA por su significado —es un conjunto de
      enlaces del mismo nivel— pero no debe VERSE como lista. Por eso
      se quitan las viñetas con list-style.                             */
-     display: none;
+  width: 100%;
+  display: none;
 }
-.barritas{
-  display: flex;
-  flex-direction: column;
-}
-.menu-control{
+
+.menu-control {
   position: absolute;
   opacity: 0;
-  width: 1rem;
+  width: 0.1rem;
   height: 0.1rem;
 }
-/*las 3 barritas del icono dibujadas con css en el menu hamburgesa*/
-.menu-barra{ display: block;
-width: 2.4rem;
-height: 0.3rem;
-background-color: var(--color-marca);
-border-radius: 0.2rem;}
-.menu-barra + .menu-barra {
-  margin-top: 0.4rem;
-}
-.caja-menu{
+ /*EL BOTON DEL MENU HAMBURGUEZA*/
+.menu-boton {
   display: flex;
   flex-direction: column;
-}
-.menu-texto{
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-/*boton del menu hamburgesa*/
-.menu-boton{
-  display: flex;
   align-items: center;
   gap: var(--esp-xs);
   cursor: pointer;
   padding: var(--esp-xs);
+}
 
+.menu-barra {
+  display: block;
+  width: 2.4rem;
+  height: 0.3rem;
+  background-color: var(--color-marca);
+  border-radius: 0.2rem; /*Las 3 barras del ícono dibujadas con css*/
 }
-/*menu abierto cuando la casilla es marcada*/
-.menu-control:checked ~ .menu{
-display: flex;
-flex-direction: column;
+.menu-barra + .menu-barra {
+  margin-top: 0.4rem;
 }
-.menu-boton:focus-within{outline: 0.2rem;
-outline-offset: 0.2rem; }
+
+.menu-texto {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/*Menu abierto cuando la casilla esta marcada*/
+.menu-control:checked ~ .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-boton:focus-within {
+  outline: 0.2rem solid var(--color-acento);
+  outline-offset: 0.2rem;
+}
+
+
 .menu-enlace {
- /* display: inline-block;*/
+  /*display: inline-block;*/
   /* OJO: IMPRESCINDIBLE.
      Un enlace es "inline" por omisión, y los elementos inline IGNORAN
      el relleno vertical. Sin esta línea, el padding de arriba y abajo
      de la regla siguiente no haría ningún efecto y el área para hacer
      clic quedaría del alto exacto del texto.                          */
- display: block;/*ocupa todo el espacio disponible y el area a tocar es mayorsirve para gende de dedos grandes*/
-  padding: var(--esp-xs) var(--esp-sm);
+    
+  display: block; /*ocupa todo el ancho disponible y el área para tocar es mayor*/
+  padding: var(--esp-sm);
   /* Amplía el ÁREA PULSABLE. No es decorativo: un enlace pequeño es
      difícil de acertar con el dedo en un teléfono.                    */
 
@@ -480,8 +484,8 @@ outline-offset: 0.2rem; }
   /* OJO: La transición va en la regla BASE, no dentro de :hover.
      Si se pusiera en :hover, la entrada sería suave pero la salida
      brusca: al quitar el cursor el color volvería de golpe.           */
-     border-bottom: 0.1rem solid var(--color-linea);
-     text-align: center;
+  border-bottom: 0.1rem solid var(--color-linea);
+  text-align: center;
 }
 
 .menu-enlace:hover {
@@ -1993,199 +1997,219 @@ outline-offset: 0.2rem; }
      3. Verificar el contraste en webaim.org/resources/contrastchecker
      4. Recorrer el sitio con la tecla Tab: debe verse siempre dónde
         está el foco */
-  /*modalidad movil first (osea prioridad para que se vea bien en moviles)*/
-        @media (min-width: 768px) {
-          .cabecera{
-            flex-direction: row; 
-            /*cabecerapasa de fila a columna*/
-            gap: var(--esp-md);
-            justify-content: space-between;
-            align-items: center;
-          }
-          
-          h1 {font-size: 4.0rem;}
-          h2{font-size: 2.8rem;}
 
-          .seccion{padding: var(--esp-xl) var(--esp-md);}
+  /*Modalidad movil first*/
+@media (min-width: 768px) {
+  .cabecera {
+    flex-direction: row;
+    /*La cabecera de fila a columna*/
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--esp-md);
+  }
+  h1 {font-size: 4.0rem;}
+  h2 {font-size: 2.8rem;}
 
-          .portada-caja{padding: var(--esp-lg);}
-          .cita{padding: var(--esp-lg);}
-        }
-
-        /*apartir de los 1024*/
-        @media (min-width: 1024px){
-        h1 {font-size: 4.8rem;} /*h1 recupera el tamaño original*/
-      .portada{min-height: 55rem;}/*portada con 550 px de alto ocupa casi toda la pantalla de un celular*/
-      .seccion{padding: var(--esp-xl) var(--esp-lg);}
-      }
-
-/*cuantos puntos de quiebre hacen falta*/
-/*para luz clara bastan con estos 2
-base        hasta 767px   telefono
-768px        tableta        
-1024px        escritorio */
-
-/*como se acumulan las 3 reglas
-en una pantalla de 1200px se aplican estas 3 reglas 
-1-la base 
-2-la de min-width : 768px  (1200 es mayor que 768)
-3- la de min-width: 1024px (1200 es mayor que 1024)
-Donde se repiyte un propiedad , gana la utima, por eso el orden importa : de menor a mayor 
-Si la la de 1024 estuviera antes de la regla de 768 , la ultima la anularia en pantallas grandes   */
-
-/* escala completa por tramos */
-
-/*base-telefono */
-h1 {font-size: 3.2rem;}
-h2 {font-size: 2.4rem;}
-h3 {font-size: 1.8rem;}
-body { font-size: 1.6rem;}
-
-/*escala tablets*/
-
-@media (min-width: 768px){
-h1 {font-size: 4.0rem;}
-h2 {font-size: 2.8rem;}
-h3 {font-size: 1.9rem;}
-
-}
-/*escala escritorio*/
-@media (min-width: 1024px){
-h1 {font-size: 4.8rem;}
-h2 {font-size: 3.2rem;}
-h3 {font-size: 2.0rem;}
-
+  .seccion {
+    padding: var(--esp-xl) var(--esp-md);
+  }
+  .portada-caja {
+    padding: var(--esp-lg);
+  }
+  .cita {
+    padding: var(--esp-lg);
+  }
 }
 
-/*tabla de contacto.html*/
-.tabla-envoltorio{/*despues de los 360px no hay forma razonable de que una tabla quepa sin perder la relacion entre datos*/
-  overflow: auto; /*esto la da la parte responsive a la tabla(que se adapte a diferentes tamaños)*/
+/*a partir de los 1024px - vista escritorio*/
+@media (min-width: 1024px) {
+  h1 { font-size: 4.8rem; } /*h1 recupera el tamaño original*/
+
+  .portada { min-height: 55rem; } /*una portada con 50px de alto ocupa casi toda la pantalla de un celular*/
+
+  .seccion { padding: var(--esp-xl) var(--esp-lg); }
 }
-@media (max-width: 768px){ /*se usa max en lugar de min porque en media querry ataca la parte movil , y el ajuste es solo para movil*/
+
+/*CUÁNTOS PUNTOS DE QUIEBRE HACEN FALTA
+Para Luz Clara basta con estos dos
+
+  base              hasta 767px             telefono
+  768px              tableta
+  1024px             escritorio*/
+
+  /*CÓMO SE ACUMULAN LAS REGLAS
+  en una pantalla de 1200px se aplican las TRES REGLAS:
+  1. La base 1200px
+  2. la de min-width: 768px (1200 es mayor que 768)
+  3. la de min-width: 1024px (1200 es mayor que 1024) 
+  Donde se repite una propiedad, gana la última.
+  Por eso el orden importa: de menor a mayor.
+  Si la de 1024 estuviera antes de las regla de 768, la última la anularía en pantallas grandes*/
+
+/*LA ESCLA COMPLETA, POR TRAMOS*/
+
+/*BASE - TELEFONO*/
+h1 { font-size: 3.2rem; }
+h2 { font-size: 2.4rem; }
+h3 { font-size: 1.8rem; }
+body { font-size: 1.6rem; }
+
+/*ESCALA TABLETS*/
+
+@media (min-width: 768px) {
+h1 { font-size: 4.0rem; }
+h2 { font-size: 2.8rem; }
+h3 { font-size: 1.9rem; }
+}
+
+/*ESCALA ESCRITORIO*/
+
+@media (min-width: 1024px) {
+h1 { font-size: 4.8rem; }
+h2 { font-size: 3.2rem; }
+h3 { font-size: 2.0rem; }
+}
+
+/*LA TABLA DE contacto.html*/
+.tabla-envoltorio { /*despues de lo 360px no hay forma razonable de que una tabla quepa sin perder la relacion entre los datos*/
+  overflow-x: auto;  /*crea su propia barra de desplazamiento*/
+}
+
+@media (max-width: 768px) { /*Se uas  max en luga de min porque em media query ataca la parte movil, e lajsute es solo para movil*/
   .tabla th,
-  .tabla td {padding: var(--esp-xs);
-  font-size: 1.4rem;}
+  .tabla td {
+    padding: var(--esp-xs);
+    font-size: 1.4rem;
+  }
 }
 
-@media(min-width:768px){
-  main p {max-width: 65ch;}
+@media (min-width:768px) {
+  main p { max-width: 65ch; }
 }
+/*en movil no hace falta adaptar texto de los párrafos, la pantalla lo hace. la adptación es pata de tablets hacia arriba por comodidad de lectura*/
 
-/*en movil no hace falta adaptar texto de los parrafos , la pantalla lo hace . La adaptacion es pata de tablets hacia arriba por cpmodidad de  lecturas*/
-/*puntos de quiebre 
-base        hasta 767px   telefono
-768px        tableta        
-1024px      escritorio */
+/* PUNTOS DE QUIEBRE
+base              hasta 767px             telefono
+  768px              tableta
+  1024px             escritorio*/
 
-/*TABLETA
-trabajamos a partir de 768px
-@media(min-width:768px){
-.cabecera e fila
-titulos mas grandes 
-mas relleno en las secciones 
-*/
+  /*TABLETA . a partir de 768px
+  @media (min-width:768) {
+  cabecera e fila
+  títulos más grandes
+  más relleno en las secciones
+  }*/
 
-/*ESCRITORIO 
-trabajamos a partir de 1024px
-@media(min-width 1042px){
-portada mas alta
-titulos a tamaño completo 
- 
-*/
-/*ajuste para pantallas pequeñas
-@media(min-width:768px){
-celdas tablas mas compacta
- 
-*/
+  /*ESCRITORIO . a partir de 1024px
+  @media (min-width:1024) {
+  títulos a tamaño completo
+  portada más alta
+  }*/
 
-/*accesibilidad del movimiento
-@media(prefer-reduce-motion:reduce;){
-va siempre al final del todo, desactiva las animaciones o movimientos que puedan causar epilepsia desde el sistema operativo en uso
- 
-*/
+  /*AJUSTES SOLO PARA PANTALLA PEQUEÑA
+  @media (max-width:768) {
+  celdas de la tabla mas compactas 
+  }*/
 
-/*estos encabezados no son decorativos
-Quien habra esta hoj de estilos o para uno mismo , es para saber u obtenerr una idea de lo que se hizo, se puede o deberia hacer y de la estrageia que se uso */
+/*ACCESIBILIDAD DEL MOVIMIENTO
+  @media (prefer-reduce-motion: reduce) {
+  Va siempre al final de todo. Desactivas las animaciones desde el so del disposito en uso. 
+  }*/
 
-/*media querrie para patalla  grande */
-@media (min-width:768px){
-  .cabecera{flex-direction: row;
-  justify-content: space-between;
-align-items: center;}
-  .menu{flex-direction: row;
-  gap: var(--esp-sm);
-width: auto;}
-.menu-enlace{
-  display: inline-block;
-  padding: var(--esp-xs) var(--esp-sm);
-  border-bottom: none;
-  border-radius: var(--radio);
-}
-}
+  /*Estos encabezados NO son decorativos.
+  Quien abra esta hoja de estilos o usted mismo dentro de 6 meses sepat o tenga una idea de lo que se hizo y de la estrategia que se usó*/
 
-@media (min-width:768px){ /*aqui si corresponde el display none porque el boton no debe existir en pantalla grande  */
-  .menu-boton{
+/*Media querie para panttalla grande*/
+  @media (min-width: 768px) {
+    .cabecera {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu {
+      flex-direction: row;
+      gap: var(--esp-sm);
+      width: auto;
+    }
+    .menu-enlace {
+      display: inline-block;
+      padding: var(--esp-xs) var(--esp-sm);
+      border-bottom: none;
+      border-radius: var(--radio);
+    }
+  }
+
+@media (min-width: 768px) { /*Aquí si corresponde el display none porque no deb existir en pantallas grandes*/
+  .menu-boton {
     display: none;
   }
-  .menu{
+  .menu {
     display: flex;
     flex-direction: row;
   }
 }
-/*usar orientacion
-aplicar reglas segun si el dispositivo esta en vertical o horiontal */
 
-@media (orientation:landscape) and (max-heigth: 500px){
-  .portada{min-height: 100vh;
-  padding: var(--esp-sm);}
-  .portada-titulo{font-size: 2.4rem;}
-  .portada-bajada{font-size: 1.5rem;}
-}/*las consultas disponibles 
-@media (min-width: 768px) ancho minimo
+/*Usar orientación
+Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .portada {
+    min-height: 100vh;
+    padding: var(--esp-md);
+  }
+  .portada-titulo { font-size: 2.4rem;}
+  .portada-bajada { font-size: 1.5rem;}
+} 
+
+/*LAS CONSULTAS DISPONIBLES
+@media (min-width: 768px) ancho mínimo
 @media (max-width: 767px) ancho maximo
-@media (min-heigth: 600px) alto minimo
+@media (min-heigth: 600px) alto mínimo
 @media (orientation: portrait) vertical
-@media (orientation:landscape) horizontal
-@media print impresion de la pagina
-@media (prefers-reduced-motion) preferencia de movimiento
-@media (prefers-color-scheme) tema oscuro
+@media (orientation: landscape) horizontal
+@media print  impresion de la página
+@media (prefers-reduced-motion) preferencia de movimeinto
+@media (prefers-color-scheme: dark) tema oscuro
 */
-@media print { 
-  /*QUITAR LO QUE NO SIRVE*/
+@media print {
+  /*QUITAR LO QUE NO SIRVE EN EL PAPEL*/
   .cabecera,
   .menu-boton,
   .pie,
+  .boton,
   .volver-arriba,
   .fila-etiquetas {
     display: none;
   }
-  /*AHORRAR TINTA*/
+
+  /*Ahorrar tinta*/
   body {
     background: white;
     color: black;
     font-size: 11pt;
   }
-  .seccion,
-  .seccion-alterna {
-    background: none;
-    padding: 0;
-    max-width: none;
-  }
-  .tarjeta,
-  .ficha,
-  figure,
-  .tabla {
-    page-break-inside: avoid;
-  }
-  h1, h2, h3 {
-    page-break-after: avoid;
-  }
-  /*Mostrar los enlaces*/
-  main a[href^="http"]::after {
-    content: " (" attr(href)")";
-    font-size: 9pt;
-    color: #555;
-  }
-  }
+.seccion,
+.seccion-alterna {
+  background: none;
+  padding: 0;
+  max-width: none;
+}
 
-  
+.tarjeta,
+.ficha,
+figure,
+.tabla {
+  page-break-inside: avoid;
+}
+
+h1, h2, h3 {
+  page-break-after: avoid;
+}
+
+/*mostrar los enlaces*/
+main a[href^="http"]::after {
+  content: " (" attr(href) ")";
+  font-size: 9pt;
+  color: #555;
+}
+}
