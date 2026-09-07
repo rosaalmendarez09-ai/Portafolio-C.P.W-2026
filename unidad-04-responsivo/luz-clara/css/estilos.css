@@ -2280,6 +2280,18 @@ Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
   }
 }
 
+/* Patron column Drop en zonas de columnas-tarjetas de index.html*/
+@media (min-width: 620px) and (max-width: 900px) {
+  .tarjeta {
+    flex: 1 1 calc(50% - var(--esp-md));
+    /* Fuerza a dos por linea
+    calc(). permite mezclar unidades 50% del contenedor menos el hueco */
+  }
+  .tarjeta:last-child {
+    flex-basis: 100%;
+    /* La tercera tarjeta ocupa el ancho completo es una decisión estética por que se ve mejor una tarjeta ancha que angosta y sola*/
+  }
+}
 
 /*LAS CONSULTAS DISPONIBLES
 @media (min-width: 768px) ancho mínimo
