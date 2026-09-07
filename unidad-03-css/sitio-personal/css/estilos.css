@@ -1,7 +1,39 @@
-html {
-  font-size: 62.5%;
+:root {
+  --color-fondo:       #FDFBF7;  /* Fondo pagina */
+  --color-texto:       #4A3B32;  /* textos */
+  --color-acento-rosa: #E8C5C8;  /* botones secundarios */
+  --color-cta:         #C28E5D;  /* cta */
+  --color-tarjeta:     #FFFFFF;  /* blanco */
+  --color-linea:       #DDDAD3; 
+  --color-titulo:      #9E5B63;  /* titulos, iconos, formularios */
+  
+  
+  /*  TIPOGRAFÍA  */
+  --fuente-titulo: Georgia, 'Times New Roman', serif;
+  --fuente-texto:  'Segoe UI', Arial, sans-serif;
+  
+  /*  ESPACIADO  */
+  --esp-xs: 0.8rem;    /*  8px */
+  --esp-sm: 1.6rem;    /* 16px */
+  --esp-md: 2.4rem;    /* 24px */
+  --esp-lg: 4.0rem;    /* 40px */
+  --esp-xl: 8.0rem;    /* 80px */
+
+  /*  OTROS  */
+  --radio:   0.6rem;                              /*  6px */
+  --sombra-1: 0 0.2rem 0.6rem rgba(0,0,0,.06);  /* apenas separado */
+  --sombra-2: 0 0.4rem 1.2rem rgba(0,0,0,.10);  /* una tarjeta */
+  --sombra-3: 0 0.8rem 2.0rem rgba(0,0,0,.16);  /* elemento elevado */
+  --transicion: 0.25s ease;
+  --ancho-max: 120rem;                            /* 1200px */
 }
 
+
+
+html {
+  font-size: 62.5%;
+
+}
 /*Reset básico*/
 * {
   box-sizing: border-box;
@@ -9,404 +41,39 @@ html {
   padding: 0;
 } 
 
-body {
-  font-size: 1rem;
-  line-height: 1.6;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #4a2e2b;
-  background-color: #e8c5c8;
-  padding-top: 200px;/*Crea distancia entre el texto y el header*/
+h1 { 
+  font-size: var(--esp-lg);
+  font-family: var(--fuente-titulo);
+  color: var(--color-titulo);
 }
 
-.contenido-principal {
-  align-items: center;
-}
-.contenedor {
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 30px;
+h2 {
+  font-size: var(--esp-md);
+  font-family: var(--fuente-texto);
+  color: var(--color-texto);
 }
 
-h1 { font-size: 3.2rem; }   
-h2 { font-size: 2.4rem; }   
-h3 { font-size: 2.0rem; }
-p {
-  font-size: 1.6rem;
-  font-weight: 400;
-  margin-bottom: 16px;
-} 
-
-header {
-  position: sticky;/*Vista fija con respecto a la ventana.Cabecera queda fija arriba*/
-  width: 100%;
-  background-image: url(../recursos/fondosp.jpg);
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  color: #e8c5c8;
-  z-index: 100;
-  text-align: center;
-}
-
-
-header nav ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: space-evenly;
-} /* Quita las viñetas y el subrayado*/
-
-header nav a {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 0.9rem;
-  text-decoration: none;
-  padding: 10px 15px;
-  color: #fff;
-  font-weight: 600;
-}
-
-nav a:hover {
-  color: #d33694;
-}
-header nav li {
-  display: inline-block; /*Acomoda menú en linea*/
-  background-color: rgba(0, 0, 0, 0.1); /*Crea un fondo al texto*/ 
-  border-radius: 8px;
-}
-
-blockquote {
-    font-style: italic;
-    color: #555;
-    border-left: 2px solid #d33694; /*Crea una línea de color*/
-}
-
-.portada-texto {
-  background-color: rgb(0, 0, 0, 0.35);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-h2,
 h3 {
-  color: #4a2e2b;
-  margin-bottom: 12px;
+  font-size: var(--esp-sm);
+  font-family: var(--fuente-texto);
+  color: var(--color-texto);
 }
 
-main p {
-  max-width: 70ch;
+body {
+width: var(--ancho-max);
+background-color: #C28E5D;
+text-align: center;
 }
 
-main a {
-  text-decoration: none;
-}
-
-.destacado {
-  background-color: rgb(224, 187, 213);
-  padding: 20px 10px 20px 10px;
-}
-
-#footer {
-  font-size: small;
-  background-color: rosybrown;
-  color: #fff;
-  padding: 2rem;
-  margin: auto;
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-bottom: 24px;
-}
-
-th,td {
-  padding: 10px;
-  border: 1px solid #e8c5c8;
+.portada {
+  width: var(--ancho-max);
+  background-color: var(--color-acento-rosa);
+  padding: 1rem 3rem;
+  position: sticky;
+  margin: 0 auto;
   text-align: left;
 }
 
-thead th {
-  background-color: rosybrown;
-  color: #4a2e2b;
-}
-
-tbody tr:nth-child(even){
-    background-color: #ecd3ec;
-}
-
-tfoot td {
-  padding: 12px;
-  font-style: italic;
-  background-color: rgb(219, 177, 177);
-}
-
-fieldset {
-  padding: 15px;
-}
-
-section h3::first-letter {
-  color: #4a2e2b;
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 33px;
-}
-
-nav::before {
-  font-size: 2rem;
-  gap: 10px;
-  color: rosybrown;
-}
-
-input:focus {
-  border-color: #d33694;
-  box-shadow: inset 0 0 5px #ff52e5;
-}
-
-aside {
-  padding: 20px;
-  border: 2px solid rosybrown;
-  border-radius: 0px 30px ;
-}
-
-.Irresistible-torta { 
-   position: relative;
-}
-
-
-.etiqueta {  /*Etiqueta a la par de imagen*/
-    position: absolute;
-    top: 20px;
-    right: 100px;
-    background-color: #d33694;
-    color: #4a2e2b;
-    border-radius: 0px 10px 0px 10px;
-    font-size: 0.875rem;
-    z-index: 10;
-    padding: 10px;
-}
-
-::selection{ /*Al seleccionar el texto, se marca con café
- y la tipografía cambia a blanco*/
-    background-color: rosybrown;
-    color: #fff
- }  
-
-#personalizados dt{
-    font-weight: 700;
-    margin-top: 12px;
-}
-
-#personalizados dd {
-    margin-left: 20px;
-    margin-bottom: 8px;
-}
-
-figure {
-    border: 1px solid #dddddd;
-    border-radius: 6px;
-    padding: 12px;
-}
-
-caption {
-    padding: 8px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-button [type="submit"] {
-  background-color: rosybrown;
-  color: #4a2e2b;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 20px 0px 20px 0px;
-}
-
-
-/* Botones y formularios */
-
-form label {
-  display: block; /*Display block: pone la etiqueta sobre el campo funciona mejor en pantallas angostas*/
-  margin-bottom: 15px; /*espacio entre nombre y label*/
-  font-weight: 600;
-}
-
-form input [type= "text"],
-form input [type= "email"],
-form input [type= "tel"],
-form input [type= "password"],
-form input [type= "number"],
-form input [type= "date"],
-form select, /* Le da una forma más estética al selector de opciones*/
-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #4a2e2b;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  font-size: 1rem;
-  font-family: inherit; /*Loa campos de los formularios no hereda la fuente del body por omisión,
-    para que adquiera la fuente que tenemos seleccionada se debe poner inherit*/
-}
-
-/*Casillas por separado*/
-form input[type="radio"],
-form input[type="checkbox"] {
-  width: auto;
-  margin-right: 6px;
-  margin-bottom: 0;
-}
-
-form input [type="radio"] + label 
-form input [type="checkbox"] + label {
-  display: inline;
-  font-weight: 400;
-} /*El selector + alcanza la etiqueta y display: inline los coloca una al lado del otro*/
-
-form input:focus,
-form select:focus,
-form textarea:focus {
-  outline: none;
-  border-color: #d33694;
-  box-shadow: 0 0 0 3px rgba(31, 78, 121, 0.15);
-} /* El halo azul alrededor del campo activo. El focus NO solo es decoración es una guía para el usuario*/
-
-/*Los estados de validación*/
-form input:invalid:not(:placeholder-shown) {
-  border-color: #e8c5c8;
-}
-
-form input:valid:not(placeholder-show) {
-  border-color: #4a2e2b;
-} /*Apoy ala validación html en los required, type, patterns, minlength, etc, 
-    colocando un halo de color según si el dato es correcto o no*/
-
-/*Para los mensajes de ayuda*/
-form small {
-  display: block;
-  margin-top: -04px;
-  margin-bottom: 15px;
-  font-size: 0.8rem;
-  color: #6b7280;
-} /*Los <small> acompañan a los campos con los textos "mínimo 8 caracteres.Entre 1 y 8 sesiones, etc*/
-
-/*Estilizar el botón con los estados*/
-.boton, .boton-secundario {
-  background-color: #c55a11;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 6px;
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer; /*La mano indica elemento pulsable*/
-}
-/*Estado: 1 hover más oscuro al pasar el cursor*/
-.boton:hover {
-  background-color: #a8490e;
-}
-
-/*Estads: 2 active: Aún más oscuro mientras se pulsa*/
-.boton:active {
-  background-color: #8a3b4b;
-}
-
-/*Estads: 3 active*/
-.boton:focus {
-  outline: 2px solid #f5c518;
-  outline-offset: 2px;
-}
-/* Variante secundaria*/
-.boton-secundario {
-  background-color: #6b7280;
-}
-.boton-secundario:hover {
-    background-color: #4d5563;
-}
-
-.boton {
-   transition: background-color 0.3s ease;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/* MEDIA ESCRITORIO */
-@media (width >= 1024px) {
-  h1 { font-size: 4.8rem;}
-  h2 { font-size: 3.2rem;}
-  h3 { font-size: 2rem;}
-  body {
-    font-size: 1.6rem;
-    max-width: 120rem;
-    padding: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .listas {
-    max-width: 90rem;
-  }
-}
-
-/* MEDIA TABLETS */
-@media (width <=1024px) and (width >= 430px) {
-h1 { font-size: 4rem; }
-h2 { font-size: 2.8rem; }
-h3 { font-size: 1.9rem }
-body {
-  font-size: 1.6rem;
-  max-width: 75rem;
-  padding: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-}
-
-/* TELÉFONO */
-@media (width <=430px) {
-h1 {font-size: 1.2rem; }
-h2 {font-size: 2.4rem; }
-h3 {font-size: 1.8rem; }
-body {
-  font-size: 1.6rem;
-  max-width: 40rem;
-  margin-left: auto;
-  margin-right: auto;
-  }
-.header {
-  flex-direction: column;
-  margin-bottom: 3rem;
-}
-.listas {
-  max-width: 90%;
-}
-.boton {
-  margin-bottom: 2rem;
-}
-.tabla {
-  overflow: auto;
-  width: 100%;
-}
-footer {
-  padding: 0 1rem;
-}
-fieldset {
-  width: 100%;
-}
 .check {
   display: none;
 }
@@ -414,47 +81,3 @@ fieldset {
 .check-label {
   cursor: pointer;
 }
-.menuH {
-  flex-direction: column;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 0px;
-  overflow: hidden;
-  height: 0;
-}
-.portada {
-  position: relative;
-}
-;
-}
-
-
-
-
-/* orientacion H/V */
-@media (orientation:landscape) and (max-heigth: 500px){
-  .portada-texto {min-height: 100vh;
-  padding: var(--esp-sm);}
-  .portada-titulo{font-size: 2.4rem;}
-  .portada-bajada{font-size: 1.5rem;}
-}
-
-/* correccion de menu en pantalla grande */
-
-@media (min-width:768px){  
-  .header {flex-direction: row;
-  justify-content: space-between;
-align-items: center;}
-  .menu{flex-direction: row;
-  gap: var(--esp-sm);
-width: auto;}
-.header nav a{
-  display: inline-block;
-  padding: var(--esp-xs) var(--esp-sm);
-  border-bottom: none;
-  border-radius: var(--radio);
-  h1 {font-size: 4rem;}
-}
-}
-
