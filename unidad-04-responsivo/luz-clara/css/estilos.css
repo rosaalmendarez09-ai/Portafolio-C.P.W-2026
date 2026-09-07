@@ -876,11 +876,59 @@ img {
   z-index: 200;
   transform: translateX(-100%); /*Aquí vive fuera de la pantalla y se desplaza 100 de su propio ancho hacia la izquierda*/
   overflow-y: auto;
-
+}
+/*Hacer que el panel se deslice */
+.panel-lateral {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
 }
 
-/* 8 · EQUIPO · CSS GRID           tema de la S17 */
+/* Abierto cuando la casilla este marcada*/
+.panel-control:checked ~ .panel-lateral {
+  transform: translateX(0);
+  /* Vuelve a su posicion deslizandose desde la izquierda*/
+}
 
+/* La capa oscura de fondo*/
+.panel-control:checked ~ ,.panel-lateral::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 28rem;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: -1; /* Oscurece el resto de la página mientras el panel está abierto */
+}
+
+/* El botón y el cierre */
+.panel-boton,
+.panel-cerrar {
+  display: inline-block;
+  padding: var(--esp-xs) var(--esp-md);
+  background-color: var(--color-marca);
+  color: var(--color-blanco);
+  border-radius: var(--radio);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+/* Panel cerrar*/
+.panel-cerrar {
+  margin-top: var(--esp-md);
+  background-color: var(--color-fondo-alt);
+  color: var(--color-tinta);
+}
+
+.panel-boton:focus-within, 
+.panel-cerrar:focus-within {
+  outline: 0.2rem solid var(--color-acento);
+  outline-offset: 0.2rem;
+}
+
+
+/* 8 · EQUIPO · CSS GRID           tema de la S17 */
 .rejilla-equipo {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
