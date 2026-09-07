@@ -1061,6 +1061,15 @@ img {
   text-align: right;
 }
 
+/*Tiny. pequeños cambios para base teléfono*/
+#testimonio p,
+.cita-texto {
+font-size: 1.6rem;
+line-height: 1.6;
+}
+
+
+
 
 /* 12 · TABLA           tema de la S18
 
@@ -2212,6 +2221,34 @@ Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
   }
 }
 
+/*Tiny. pequeños cambios para base tablet*/
+@media (min-width:768) {
+  #testimonio p {
+    font-size: 1.7rem;
+    max-width: 65ch;
+     /*El límite en la línea aparece despúes de tableta*/
+  }
+
+  .cita {
+    padding: var(--esp-lg);
+    .cita-texto {
+      font-size: 2.0rem;
+    }
+  }
+}
+
+
+/*Tiny. pequeños cambios para base escritorio*/
+@media (min-width: 1024px) {
+  #testimonio p {
+    font-size: 1.8rem;
+    line-height: 1.7;
+     /*El límite en la línea aparece despúes de escritorio*/
+  }
+    .cita-texto {
+      font-size: 2.2rem;
+    }
+}
 /*LAS CONSULTAS DISPONIBLES
 @media (min-width: 768px) ancho mínimo
 @media (max-width: 767px) ancho maximo
