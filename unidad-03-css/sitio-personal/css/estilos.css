@@ -15,9 +15,9 @@
   /*  ESPACIADO  */
   --esp-xs: 0.8rem;    /*  8px */
   --esp-sm: 1.6rem;    /* 16px */
-  --esp-md: 2.4rem;    /* 24px */
-  --esp-lg: 4.0rem;    /* 40px */
-  --esp-xl: 8.0rem;    /* 80px */
+  --esp-md: 2.0rem;    /* 24px */
+  --esp-lg: 3.0rem;    /* 40px */
+  --esp-xl: 6.0rem;    /* 80px */
 
   /*  OTROS  */
   --radio:   0.6rem;                              /*  6px */
@@ -28,12 +28,11 @@
   --ancho-max: 120rem;                            /* 1200px */
 }
 
-
-
 html {
   font-size: 62.5%;
-
+  scroll-behavior: smooth;
 }
+
 /*Reset básico*/
 * {
   box-sizing: border-box;
@@ -42,42 +41,100 @@ html {
 } 
 
 h1 { 
-  font-size: var(--esp-lg);
+  font-size: var(--esp-md);
   font-family: var(--fuente-titulo);
   color: var(--color-titulo);
 }
 
 h2 {
-  font-size: var(--esp-md);
-  font-family: var(--fuente-texto);
-  color: var(--color-texto);
-}
-
-h3 {
   font-size: var(--esp-sm);
   font-family: var(--fuente-texto);
   color: var(--color-texto);
 }
 
-body {
-width: var(--ancho-max);
-background-color: #C28E5D;
-text-align: center;
+h3 {
+  font-size: var(--esp-xs);
+  font-family: var(--fuente-texto);
+  color: var(--color-texto);
 }
 
-.portada {
-  width: var(--ancho-max);
+p {
+  font-size: .6rem;
+} 
+
+body {
+margin: 0;} 
+
+ul { list-style: none; }
+li { font-size: var(--esp-xs);
+list-style: none;}
+a { text-decoration: none;}
+
+button {
+font-size: .6rem;
+padding: .2rem .8rem;
+border-radius: 30px;
+border: 1px solid var(--color-acento-rosa);
+box-shadow: var(--sombra-3);
+color: var(--color-texto);
+background-color: var(--color-cta);
+}
+
+button:hover {
+  background-color: #ac7e52;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  background-color: var(--color-fondo);
+}
+
+header {
   background-color: var(--color-acento-rosa);
-  padding: 1rem 3rem;
-  position: sticky;
+  padding: 20px 30px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  z-index: 100;
+  background-image: url(../recursos/fondosp.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-tarjeta);
+  text-align: center;
+}
+header a {
+  padding: 1px;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+}
+
+blockquote {
+  display: block;
+  border-left: 1px solid var(--color-titulo);
+  margin: 30px;
   text-align: left;
 }
 
-.check {
-  display: none;
+#footer {
+  background-color: var(--color-titulo);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: auto;
 }
 
-.check-label {
-  cursor: pointer;
+.tarjetas {
+ background-color: var(--color-acento-rosa);
+ color: var(--color-texto);
+ padding: 20px 0px;
+ margin: 2rem;
+
 }
