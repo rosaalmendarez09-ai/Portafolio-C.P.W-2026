@@ -21,9 +21,8 @@
     <div class="contenedor">
     <!-- Encabezado de la página -->
     <header id="inicio" class="portada">
-        <h1>Pastelería artesanal</h1>
-        <p class="header">Descubre nuestra pastelería artesanal con postres y pasteles horneados con amor y recetas de la abuela<br> con ingredientes frescos cada día.</p>
-
+        <a href="recursos/logo1.svg" class="logo1"></a>
+        <h1>Pastelería<br>Artesanal</h1>
         <nav>
             <input type="checkbox" name="abrir-menu" id="menu-movil" class="check">
             <label for="menu-movil" class="check-label">
@@ -42,21 +41,11 @@
 
     <!-- Contenido principal de Sweet Collection -->
      <main id="contenido-principal">
-        <!-- Anclas internas -->
-        <div>
-            <h2>En esta página</h2>
-            <ul>
-                <li><a href="#productos">Nuestros productos</a></li>
-                <li><a href="#historia">Nuestra historia</a></li>
-                <li><a href="#trucos">Trucos de la Casa</a></li>
-            </ul>
-        </div>
-
             <!-- Bloque de contenido principal -->
-            <article class="contenido">
+            <section class="hero">
                 <h2>Bienvenido a Sweet Collection</h2>
-
-                <section id="frase">
+                <button>Ordena ya!</button>
+            </section id="frase"> 
 
                     <blockquote cite="https://jenniferlopezsa.home.blog/frase-de-buddy-valastro/">
                     <p>
@@ -65,7 +54,12 @@
                     <footer>Buddy Valastro <cite>Blog de Jennifer Lopez</cite></footer>
                     </blockquote>
                 </section>
-
+                 <!-- Ancla interna -->
+            <div>
+               <li><a href="#trucos">Trucos de la Casa</a></li>
+            </div>
+            
+               <div class="tarjetas">
                 <section id="productos">
                     <h3>Nuestros productos</h3>
                     <p>En <abbr title="Sweet Collection">SC</abbr>, ofrecemos una variedad de postres y pasteles <strong>artesanales</strong>, <br>elaborados con ingredientes frescos y recetas tradicionales.<br>Desde pasteles de cumpleaños hasta galletas decoradas, tenemos algo para cada ocasión.</p>
@@ -83,6 +77,7 @@
                     <p>Si dejas tus postres a temperatura ambiente, guárdalos en un recipiente hermético <br>en un lugar fresco y seco, o en la nevera si llevan crema fresca. <br>¡Así disfrutarás de cada bocado como el primer día!</p>
                     <p>Para mantener la frescura de tus pasteles, evita cortarlos hasta el momento de servirlos. <br>Si necesitas transportarlos, utiliza cajas rígidas y asegúrate de que estén bien cerradas <br>para evitar que se aplasten o se desarmen.</p>
                 </section>
+                </div>
 
             <!-- Contenido secundario -->
              <aside>
@@ -91,9 +86,9 @@
             </aside>
 
             <p><a href="#inicio">Volver al inicio</a></p>
-            </article>
+            </section>
         </main>
-
+    </div>  
      <!-- Pie de página -->
         <footer id="footer">    
             <address>
@@ -106,6 +101,5 @@
             <p><small>&copy; 2024 Sweet Collection. Todos los derechos reservados.</small></p>
             <p><small>@by Rosa Almendarez</small></p>
         </footer> 
-    </div>  
 </body>
 </html>
