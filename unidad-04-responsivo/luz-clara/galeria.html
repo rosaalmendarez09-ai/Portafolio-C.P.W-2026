@@ -36,14 +36,19 @@
     </a>
 
     <nav class="navegacion" aria-label="Navegación principal">
-      <!--MENU HAMBURGESA-->
+     
+    <!--MENU HAMBURGESA-->
     <input type="checkbox" id="abrir-menu" class="menu-control">
     <label for="abrir-menu" class="menu-boton">
-      <span class="menu-barra"></span>
-      <span class="menu-barra"></span>
-      <span class="menu-barra"></span>
-      <span>Menú</span>
-      <!--CIERRE MENÚ HAMBURGUESA-->
+      <div class="barritas">
+        <span class="menu-barra"></span>
+        <span class="menu-barra"></span>
+        <span class="menu-barra"></span>
+        <span>Menú</span>
+     </div>
+    </label>
+     <!--CIERRE MENÚ HAMBURGUESA-->
+     
       <ul class="menu">
         <li><a href="index.html" class="menu-enlace">Inicio</a></li>
         <li><a href="galeria.html" class="menu-enlace activo">Galería</a></li>
@@ -112,6 +117,8 @@
 <!--La idea del patron, es generar un contenido secundario que en pantalla ancha se ve siempre y en pantalla pequeñan vive fuera de la vista y entra al pedirlo-->
     <input type="checkbox" id="abrir-filtros" class="panel-control">
     <label for="abrir-filtros" class="panel-boton">Filtrar por categoría</label>
+    <label for="abrir-filtros" class="panel-fondo">Filtrar por categoría</label>
+    
     <aside class="panel-lateral" id="filtros">
       <h2 class="panel-titulo">Categorías</h2>
       <ul class="panel-lista">
