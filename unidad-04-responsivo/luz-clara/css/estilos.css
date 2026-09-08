@@ -869,13 +869,14 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  width: 28rem;
   height: 100vh;
   background-color: var(--color-blanco);
   box-shadow: var(--sombra-3);
   padding: var(--esp-lg) var(--esp-md);
   z-index: 200;
   transform: translateX(-100%); /*Aquí vive fuera de la pantalla y se desplaza 100 de su propio ancho hacia la izquierda*/
-  overflow-y: auto;
+  overflow-y: auto; /*Crece en la parte vertical*/
 }
 /*Hacer que el panel se deslice */
 .panel-lateral {
@@ -889,7 +890,7 @@ img {
   /* Vuelve a su posicion deslizandose desde la izquierda*/
 }
 
-/* La capa oscura de fondo*/
+/* 
 .panel-control:checked ~ ,.panel-lateral::before {
   content: '';
   position: fixed;
@@ -898,8 +899,25 @@ img {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.45);
-  z-index: -1; /* Oscurece el resto de la página mientras el panel está abierto */
-}
+  z-index: -1; } Oscurece el resto de la página mientras el panel está abierto */
+
+
+  /*La capa oscura de fondo*/
+  .panel-fondo {
+    position: fixed;
+    inset: 0; /* Indica que top , rigth , bottom y left estan en 0*/
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 150;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .panel-control:checked ~ .panel-fondo {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+  }
 
 /* El botón y el cierre */
 .panel-boton,
@@ -2392,6 +2410,27 @@ Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
   }
 }
 
+/* Off Canvas solo para pantallas pequeñas*/
+@media (min-width: 1024px) {
+.panel-boton,
+.panel-cerrar {
+  display: none ;}
+  .panel-fondo {
+    display: none;}
+    .panel-lateral {
+      position: static;
+      transform: none;
+      width: auto;
+      height: auto;
+      padding-left: 5rem;
+      z-index: auto; }
+      #mosaico {
+        display: grid;
+        grid-template-columns: 24rem 1fr;
+        gap: var(--esp-lg);
+        align-items: center;
+      }
+}
 
 
 /*LAS CONSULTAS DISPONIBLES
