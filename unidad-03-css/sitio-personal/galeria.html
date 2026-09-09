@@ -19,11 +19,20 @@
 
 <body>
   <div class="contenedor">
-    <header id="inicio" class="portada-texto">
-        <h1>Sweet Collection</h1>
-        <p>Descubre nuestra pastelería artesanal con postres y pasteles horneados con amor y recetas de la abuela<br> con ingredientes frescos cada día.</p>
+    <!-- Encabezado de la página -->
+    <header id="inicio" class="inicio">
+        <a href="#">
+        <img src="recursos/logo1.svg" class="logo1" alt="Pastelería-Artesanal">
+        </a>
+        <h1>Pastelería Artesanal</h1>
         <nav>
-            <ul>
+            <input type="checkbox" name="abrir-menu" id="menu-movil" class="check">
+            <label for="menu-movil" class="check-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+
+            <ul class="menuH">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="listas.html">Catálogo</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
